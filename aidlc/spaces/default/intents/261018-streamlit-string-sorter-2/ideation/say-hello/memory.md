@@ -8,7 +8,7 @@
 <!-- example: 2026-05-29T10:14:32Z — skipped the optional caching layer the stage prose suggested; the dataset is small enough that it adds risk -->
 
 ## Tradeoffs
-<!-- example: 2026-05-29T10:14:32Z — picked TDD over BDD this run; the team is unit-first and the domain is well-understood -->
+- 2026-10-18T04:48:14Z — took the person's explicit speed request to heart: move to working code early. Since this is a personal project, I won't over-correct; I'll bias toward generating runnable code in the next phases (Code Generation, Build and Test) rather than over-polishing artifacts.
 
 ## Open questions
 <!-- example: 2026-05-29T10:14:32Z — confirm the retention window with compliance before the next stage hardens the schema -->
