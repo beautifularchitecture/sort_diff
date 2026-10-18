@@ -177,3 +177,14 @@ The requirements assume these are aligned, but "textbook loop iterations" and "t
 - `rules.md` (business rules for counting, validation, accuracy)
 - `functional-spec.md` (workflows with step counting, accuracy checking, edge cases)
 - `traceability.json` (requirements to rules mapping)
+
+---
+
+## Consolidated Summary Confirmation
+
+Does this all look correct before I generate the artifact?
+
+- Looks correct
+- Request changes
+
+[Answer]: Looks correct

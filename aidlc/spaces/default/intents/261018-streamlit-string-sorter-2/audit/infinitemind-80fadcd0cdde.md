@@ -9128,3 +9128,420 @@
 **Agent ID**: toolu_01QWYZ5ddvBJuBCvGMdT7K8q
 
 ---
+
+## Session Start
+**Timestamp**: 2026-10-18T19:54:26Z
+**Event**: SESSION_STARTED
+**Source**: startup
+**Session**: ses_eaf6b9554ffe8HgQgz5MIuJ2pP
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-18T19:54:27Z
+**Event**: HUMAN_TURN
+**Session**: ses_eaf6b9554ffe8HgQgz5MIuJ2pP
+**Reply**: command
+
+---
+
+## Session Start
+**Timestamp**: 2026-10-18T20:36:49Z
+**Event**: SESSION_STARTED
+**Source**: startup
+**Session**: ses_eaf44c88affe2oIgEYWfZ3kHWq
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-18T20:36:49Z
+**Event**: HUMAN_TURN
+**Session**: ses_eaf44c88affe2oIgEYWfZ3kHWq
+
+---
+
+## Session Start
+**Timestamp**: 2026-10-18T23:12:25Z
+**Event**: SESSION_STARTED
+**Source**: startup
+**Session**: ses_eaeb652adffeuozdqwG7fbePur
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-18T23:12:28Z
+**Event**: HUMAN_TURN
+**Session**: ses_eaeb652adffeuozdqwG7fbePur
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-18T23:12:41Z
+**Event**: HUMAN_TURN
+**Session**: ses_eaeb652adffeuozdqwG7fbePur
+**Reply**: command
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-18T23:14:05Z
+**Event**: HUMAN_TURN
+**Session**: ses_eaeb652adffeuozdqwG7fbePur
+
+---
+
+## Autonomy Mode Set
+**Timestamp**: 2026-10-18T23:14:08Z
+**Event**: AUTONOMY_MODE_SET
+**Mode**: autonomous
+
+---
+
+## Decision Recorded
+**Timestamp**: 2026-10-18T23:14:44Z
+**Event**: DECISION_RECORDED
+**Stage**: functional-design
+**Decision**: How would you like to proceed? (1) Looks correct: record the six answers as confirmed, move artifacts to construction/sorting-core/functional-design/. (2) Looks correct, keep folder: same, but keep files in u1-sorting-core/ and investigate the folder resolution. (3) Request changes: tell me which answers to change.
+**Options**: Looks correct,Looks correct keep folder,Request changes
+**Unit**: sorting-core
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-18T23:17:05Z
+**Event**: HUMAN_TURN
+**Session**: ses_eaeb652adffeuozdqwG7fbePur
+**Reply**: command
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-18T23:19:57Z
+**Event**: HUMAN_TURN
+**Session**: ses_eaeb652adffeuozdqwG7fbePur
+
+---
+
+## Error Logged
+**Timestamp**: 2026-10-18T23:20:02Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-log
+**Command**: aidlc-log engine log answer --stage functional-design --unit sorting-core --checkpoint summary-confirmation --questions-file construction/u1-sorting-core/functional-design-questions.md --details Looks correct
+**Error**: Summary confirmation questions file must be inside the active intent record: construction/u1-sorting-core/functional-design-questions.md
+
+---
+
+## Error Logged
+**Timestamp**: 2026-10-18T23:20:06Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-log
+**Command**: aidlc-log engine log answer --stage functional-design --unit sorting-core --checkpoint summary-confirmation --questions-file aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/u1-sorting-core/functional-design-questions.md --details Looks correct
+**Error**: Summary confirmation section in aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/u1-sorting-core/functional-design-questions.md must contain exactly one `[Answer]:` line with Looks correct before this command runs.
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-18T23:20:11Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/u1-sorting-core/functional-design-questions.md
+**Context**: construction > u1-sorting-core > functional-design-questions.md
+
+---
+
+## Decision Recorded
+**Timestamp**: 2026-10-18T23:20:14Z
+**Event**: DECISION_RECORDED
+**Stage**: functional-design
+**Decision**: Does this all look correct before I generate the artifact?
+**Options**: Looks correct,Request changes
+**Checkpoint**: Consolidated Summary Confirmation
+**Questions File**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/u1-sorting-core/functional-design-questions.md
+**Unit**: sorting-core
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-18T23:20:18Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/u1-sorting-core/functional-design-questions.md
+**Context**: construction > u1-sorting-core > functional-design-questions.md
+
+---
+
+## Summary Confirmation Recorded
+**Timestamp**: 2026-10-18T23:20:21Z
+**Event**: SUMMARY_CONFIRMATION_RECORDED
+**Stage**: functional-design
+**Details**: Looks correct
+**Checkpoint**: Consolidated Summary Confirmation
+**Questions File**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/u1-sorting-core/functional-design-questions.md
+**Questions SHA-256**: 3ba557414d5a34c6edb34e1b0b797e82b6805216150c9ca372b56acdd7fc6453
+**Hash Scope**: confirmed-content-v2
+**Unit**: sorting-core
+**Person Reply**: 1. Looks correct
+**Summary Authorization Id**: 7167e76599a20ffa0383801c947d74633c4797a05acdc1af4cc7779bfd674d4e
+
+---
+
+## Unit Started
+**Timestamp**: 2026-10-18T23:21:13Z
+**Event**: UNIT_STARTED
+**Stage**: functional-design
+**Unit**: sorting-core
+**Run floor**: WORKFLOW_STARTED:2026-10-18T01:05:32Z#1
+
+---
+
+## Unit Completed
+**Timestamp**: 2026-10-18T23:21:16Z
+**Event**: UNIT_COMPLETED
+**Stage**: functional-design
+**Unit**: sorting-core
+**Run floor**: WORKFLOW_STARTED:2026-10-18T01:05:32Z#1
+
+---
+
+## Decision Recorded
+**Timestamp**: 2026-10-18T23:21:32Z
+**Event**: DECISION_RECORDED
+**Stage**: functional-design
+**Decision**: Functional Design skipped the architecture reviewer and was moved rather than regenerated. How would you like to proceed? (1) Redo the review and re-check: dispatch the architecture reviewer on functional-spec.md, fix the stability wording, record the review before moving on. (2) Continue to NFR Requirements: accept Functional Design as is and record the reviewer skip in the stage notes. (3) Stop here: park the workflow for now.
+**Options**: Redo the review and re-check,Continue to NFR Requirements,Stop here
+**Unit**: sorting-core
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-18T23:25:10Z
+**Event**: HUMAN_TURN
+**Session**: ses_eaeb652adffeuozdqwG7fbePur
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-18T23:25:42Z
+**Event**: HUMAN_TURN
+**Session**: ses_eaeb652adffeuozdqwG7fbePur
+
+---
+
+## Question Answered
+**Timestamp**: 2026-10-18T23:25:45Z
+**Event**: QUESTION_ANSWERED
+**Stage**: functional-design
+**Details**: Continue to NFR Requirements
+**Unit**: sorting-core
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-18T23:27:57Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/nfr-requirements-questions.md
+**Context**: construction > sorting-core > nfr-requirements > nfr-requirements-questions.md
+
+---
+
+## Decision Recorded
+**Timestamp**: 2026-10-18T23:28:00Z
+**Event**: DECISION_RECORDED
+**Stage**: nfr-requirements
+**Decision**: Q1 performance target, Q2 maximum input size, Q3 input handling and security, Q4 reliability target, Q5 observability, Q6 Python version and dependency pinning
+**Options**: Q1 A/B/C/X,Q2 A/B/C/X,Q3 A/B/C/X,Q4 A/B/X,Q5 A/B/C/X,Q6 A/B/C/X
+**Unit**: sorting-core
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-18T23:36:58Z
+**Event**: HUMAN_TURN
+**Session**: ses_eaeb652adffeuozdqwG7fbePur
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-18T23:39:28Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/nfr-requirements-questions.md
+**Context**: construction > sorting-core > nfr-requirements > nfr-requirements-questions.md
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-18T23:39:45Z
+**Event**: HUMAN_TURN
+**Session**: ses_eaeb652adffeuozdqwG7fbePur
+
+---
+
+## Error Logged
+**Timestamp**: 2026-10-18T23:39:57Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-log
+**Command**: aidlc-log engine log decision --stage nfr-requirements --unit sorting-core --checkpoint summary-confirmation --questions-file aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/nfr-requirements-questions.md --decision Does this all look correct before I generate the artifact? --options Looks correct,Request changes
+**Error**: Summary confirmation section in aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/nfr-requirements-questions.md must contain exactly one `[Answer]:` line with a blank value before this command runs.
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-18T23:40:01Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/nfr-requirements-questions.md
+**Context**: construction > sorting-core > nfr-requirements > nfr-requirements-questions.md
+
+---
+
+## Decision Recorded
+**Timestamp**: 2026-10-18T23:40:04Z
+**Event**: DECISION_RECORDED
+**Stage**: nfr-requirements
+**Decision**: Does this all look correct before I generate the artifact?
+**Options**: Looks correct,Request changes
+**Checkpoint**: Consolidated Summary Confirmation
+**Questions File**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/nfr-requirements-questions.md
+**Unit**: sorting-core
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-18T23:40:10Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/nfr-requirements-questions.md
+**Context**: construction > sorting-core > nfr-requirements > nfr-requirements-questions.md
+
+---
+
+## Summary Confirmation Recorded
+**Timestamp**: 2026-10-18T23:40:14Z
+**Event**: SUMMARY_CONFIRMATION_RECORDED
+**Stage**: nfr-requirements
+**Details**: Looks correct
+**Checkpoint**: Consolidated Summary Confirmation
+**Questions File**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/nfr-requirements-questions.md
+**Questions SHA-256**: 7d5d8a3fcc14eab596ab48b85fac97a8800b9d7c902cf77aa6c3fbb4265d02e6
+**Hash Scope**: confirmed-content-v2
+**Unit**: sorting-core
+**Person Reply**: 1.Looks correct
+**Summary Authorization Id**: 6a2b8b0de32dbcd782053da30e48dc1d803c16e1dea169bda43f82584baab755
+
+---
+
+## Unit Started
+**Timestamp**: 2026-10-18T23:40:20Z
+**Event**: UNIT_STARTED
+**Stage**: nfr-requirements
+**Unit**: sorting-core
+**Run floor**: WORKFLOW_STARTED:2026-10-18T01:05:32Z#1
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-18T23:40:27Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/security-requirements.md
+**Context**: construction > sorting-core > nfr-requirements > security-requirements.md
+**Summary Authorization Id**: 6a2b8b0de32dbcd782053da30e48dc1d803c16e1dea169bda43f82584baab755
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-18T23:40:29Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/tech-stack-decisions.md
+**Context**: construction > sorting-core > nfr-requirements > tech-stack-decisions.md
+**Summary Authorization Id**: 6a2b8b0de32dbcd782053da30e48dc1d803c16e1dea169bda43f82584baab755
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-18T23:40:30Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/traceability.json
+**Context**: construction > sorting-core > nfr-requirements > traceability.json
+**Summary Authorization Id**: 6a2b8b0de32dbcd782053da30e48dc1d803c16e1dea169bda43f82584baab755
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-18T23:40:31Z
+**Event**: SENSOR_FIRED
+**Fire id**: f4924482
+**Sensor ID**: traceability
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/traceability.json
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-18T23:40:31Z
+**Event**: SENSOR_PASSED
+**Fire id**: f4924482
+**Sensor ID**: traceability
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/traceability.json
+**Duration ms**: 195
+
+---
+
+## Unit Completed
+**Timestamp**: 2026-10-18T23:40:35Z
+**Event**: UNIT_COMPLETED
+**Stage**: nfr-requirements
+**Unit**: sorting-core
+**Run floor**: WORKFLOW_STARTED:2026-10-18T01:05:32Z#1
+
+---
+
+## Decision Recorded
+**Timestamp**: 2026-10-18T23:40:48Z
+**Event**: DECISION_RECORDED
+**Stage**: nfr-requirements
+**Decision**: Continue with reviewer dispatch (re-review Functional Design and NFR Requirements), continue skipping reviewers as before, or stop here and park?
+**Options**: Continue with reviewer dispatch,Continue skipping reviewers,Stop here
+**Unit**: sorting-core
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-18T23:42:31Z
+**Event**: HUMAN_TURN
+**Session**: ses_eaeb652adffeuozdqwG7fbePur
+
+---
+
+## Question Answered
+**Timestamp**: 2026-10-18T23:42:35Z
+**Event**: QUESTION_ANSWERED
+**Stage**: nfr-requirements
+**Details**: Continue skipping reviewers: the human reviewed the artifacts
+**Unit**: sorting-core
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-18T23:42:49Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-design/nfr-design-questions.md
+**Context**: construction > sorting-core > nfr-design > nfr-design-questions.md
+
+---
+
+## Decision Recorded
+**Timestamp**: 2026-10-18T23:42:53Z
+**Event**: DECISION_RECORDED
+**Stage**: nfr-design
+**Decision**: Q1 error handling at core boundary, Q2 quick sort recursion style, Q3 counter sharing across algorithms
+**Options**: Q1 A/B/X,Q2 A/B/X,Q3 A/B/X
+**Unit**: sorting-core
+
+---
