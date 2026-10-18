@@ -2,26 +2,32 @@
 
 ## Way of Working
 
-- **Proposal (to be confirmed by interview):** Follow trunk-based development aligned with org defaults. Short-lived feature branches off `main` (resolved within 1-2 days). Squash-merge into `main` with the Bolt/branch name as the commit message. Keep trunk clean and avoid long-lived release branches; gate production via tags or environment-specific deployment configs if multiple environments are needed.
+- We use trunk-based development: every change lands on a short-lived branch off `main` and is squash-merged back into `main` within a day or two, with the branch/Bolt name as the commit message.
+- No long-lived branches and no release branches; if multiple environments are ever needed, we gate releases via tags or environment-specific deployment configs, never via long-lived release branches.
+- Construction worktrees branch from `main` (`--base main`) and merge back to `main` with the squash strategy (`--target main --strategy squash`).
 
 ## Walking Skeleton
 
-- **Proposal (to be confirmed):** For this feature scope with a single-developer/fast-moving build, a walking skeleton is **not required**. The slice is small (three sorting algorithms + Streamlit UI + backend sort button). We can start from the minimal working app and iterate. If the human prefers to prove the end-to-end path early, we will build the thinnest possible skeleton (enter/select strings → backend sort with one algorithm → display result) first. The org's skeleton-on/off guidance (skeleton-on when scope declares skeleton: on; per-unit checkpoints) applies once chosen.
+- This intent does **not** build a walking skeleton. The human chose to go straight at the three sorting algorithms and the Streamlit UI rather than proving a thin end-to-end slice first (interview Q2, answer B).
+- No skeleton slice is built before the real features, and no skeleton bootstrap checkpoint applies to this intent; ordinary per-stage approvals follow the workflow's normal policy.
 
 ## Testing Posture
 
 - **Methodology**: test-after
-- **Methodology evidence**: The org default for feature scope is test-after (implement each testable layer, then write/run its tests). Given this is a simple deterministic app (sorting), test-after is pragmatic for a first pass while keeping tests present. TDD is possible but not mandated.
-- **Ordering**: Implement backend sorting logic and core utilities first, then write unit tests for each algorithm (correctness, step counts) and edge cases; then implement UI wiring and add minimal integration checks as needed.
-- **Coverage/tooling (proposed):** Target >= 80% line coverage for core logic (sorting algorithms) as per org guidance for feature scope. Use pytest for unit tests. Run tests in CI before merge (proposed). No BDD feature files unless specified.
-- **Scope notes (proposed):** Bugfix/security-patch style regressions not applicable. Focus on correctness and step-count accuracy for bubble, selection, and quick sort.
+- **Methodology evidence**: The human chose "tests after each piece is implemented" in the interview (Q3, answer A — the org default for this scope), so tests are written after each piece of code rather than first.
+- **Ordering**: Implement each testable piece — each sorting algorithm, then the UI wiring — and then write and run that piece's tests before moving on to the next piece.
+- **Tooling**: pytest for unit tests; the test suite runs in CI before merge.
+- **Coverage**: roughly 80% line coverage on the sorting logic (the three algorithms), held as a floor in Build and Test and never weakened to make a step pass.
+- **Scope notes**: focus on correctness and step-count accuracy for bubble sort, selection sort, and quick sort; no BDD feature files unless a later stage introduces them.
 
 ## Deployment
 
-- **Proposal (to be confirmed):** Deploy on merge to staging (per org default). Production requires separate manual approval (tech lead + product owner sign-off) via the CD platform/environment protection. No continuous production deploy by default. For a local/dev Streamlit app, deployment target may be a simple hosting environment (Streamlit Cloud, container, or internal); specific target to be confirmed. Keep one trunk; no long-lived release branches.
+- We deploy to production automatically on every merge: continuous deployment, no staging tier and no manual production-approval gate between a green `main` commit and production.
+- This deliberately departs from the org default (deploy on merge to *staging*, production gated by a separate manual approval). The human chose it explicitly in the interview (Q4, answer B); `memory/org.md` frames continuous production deployment as a team decision, and this is that decision.
+- The deployment target itself (Streamlit Cloud, container, or internal hosting) is not yet chosen and stays open for Requirements Analysis; this practice says *when* we deploy, not *where*.
 
 ## Code Style
 
-- **Proposal (to be confirmed):** Follow Python idioms (snake_case, type hints where helpful). Use a formatter (Black) and linter (Ruff) if configured; if not present, add minimal config. Prefer small, testable modules (separate `sorting/` module for algorithms, `app.py` for Streamlit UI). Avoid hardcoded secrets. Validate/sanitize inputs minimally (strings from UI). Read project linter config first if it exists (per org guidance).
-
-**Note:** These are proposals based on org defaults and the greenfield project description. They will be refined via the human interview (Step 4) and integrated (Step 5). No team.md edits have been made yet (promotion happens later).
+- Python defaults: Black as the formatter, Ruff as the linter, snake_case naming.
+- We follow idiomatic Python style, with type hints where they help, and read the project's linter/formatter configuration first when making style judgments — this team's configuration is Black + Ruff.
+- Lint and format checks run in CI before merge and a failure blocks the merge; no project-wide rename rules beyond snake_case.

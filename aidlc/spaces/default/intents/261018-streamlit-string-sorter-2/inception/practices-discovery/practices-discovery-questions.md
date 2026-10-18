@@ -57,7 +57,7 @@ Does this all look correct before I finalize the practices artifact?
 - Looks correct
 - Request changes
 
-[Answer]:
+[Answer]: Looks correct
 
 ## Assumption Confirmation
 
@@ -69,4 +69,4 @@ Two assumptions went into these questions — confirm how to treat them:
 A. Accept assumptions
 B. Convert to follow-up questions
 
-[Answer]:
+[Answer]: A. Accept assumptions

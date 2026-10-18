@@ -56,11 +56,19 @@
 <!-- Format: NEVER [behavior] (affirmed [date]) -->
 <!-- Example: NEVER throw exceptions across service layer boundaries (affirmed 2026-05-17) -->
 
+- NEVER use a sorting algorithm other than bubble sort, selection sort, or quick sort in this first step. (affirmed 2026-10-18)
+
 ## Mandated
 
 <!-- Populated by practices-discovery affirmation gate. -->
 <!-- Format: ALWAYS [behavior] (affirmed [date]) -->
 <!-- Example: ALWAYS use Result<T,E> for fallible operations in service layer (affirmed 2026-05-17) -->
+
+- ALWAYS check every sort result for accuracy against the expected result and report the number of steps taken (accuracy and step counts are stated requirements of this app). (affirmed 2026-10-18)
+
+- ALWAYS run the sort in the backend when the UI button is pressed and return the result to the frontend. (affirmed 2026-10-18)
+
+- ALWAYS deploy to production automatically whenever a change merges to `main` (the human's affirmed choice, departing from the org default). (affirmed 2026-10-18)
 
 ## Corrections
 
