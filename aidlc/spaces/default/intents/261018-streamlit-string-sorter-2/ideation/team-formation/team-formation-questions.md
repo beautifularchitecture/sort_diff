@@ -18,7 +18,7 @@ X. Other (please specify)
 
 This decides the working model recorded in the mob composition plan.
 
-[Answer]:
+[Answer]:A
 
 A. I drive and decide; the AI specialists do the design and building under my direction
 B. The AI specialists do the work end to end; I only review at the stage gates
@@ -29,7 +29,7 @@ X. Other (please specify)
 
 Capacity shapes how work is batched, not whether it gets done (there is no deadline).
 
-[Answer]:
+[Answer]:A
 
 A. A few hours here and there as time allows
 B. Blocks of focused time (for example weekend sessions)
@@ -38,7 +38,7 @@ X. Other (please specify)
 
 ## Q4. Does anyone else need to be involved in decisions or review?
 
-[Answer]:
+[Answer]:A
 
 A. No — I decide everything at the gates myself
 B. Yes — someone else reviews before key steps
@@ -46,8 +46,17 @@ X. Other (please specify)
 
 ## Q5. Any preferred way of working you want recorded beyond what the project rules already say?
 
-[Answer]:
+[Answer]:A
 
 A. None — the recorded defaults are fine
 B. I'd like a regular review rhythm (for example, pause after each stage)
 X. Other (please specify)
+
+## Consolidated Summary Confirmation
+
+Does this all look correct before I generate the artifact?
+
+- Looks correct
+- Request changes
+
+[Answer]: Looks correct

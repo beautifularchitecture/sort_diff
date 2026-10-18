@@ -2101,3 +2101,477 @@
 **Context**: ideation > team-formation > team-formation-questions.md
 
 ---
+
+## Artifact Updated
+**Timestamp**: 2026-10-18T03:07:36Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/team-formation/team-formation-questions.md
+**Context**: ideation > team-formation > team-formation-questions.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-18T03:07:46Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/team-formation/team-formation-questions.md
+**Context**: ideation > team-formation > team-formation-questions.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-18T03:07:56Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/team-formation/team-formation-questions.md
+**Context**: ideation > team-formation > team-formation-questions.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-18T03:08:03Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/team-formation/team-formation-questions.md
+**Context**: ideation > team-formation > team-formation-questions.md
+
+---
+
+## Question Answered
+**Timestamp**: 2026-10-18T03:08:09Z
+**Event**: QUESTION_ANSWERED
+**Stage**: team-formation
+**Details**: Q1: A; Q2: A; Q3: A; Q4: A; Q5: A
+**Person Reply**: ## Sources\n\n- [desc] Initial description: simple Streamlit app — personal educational project.\n- [scope] Workflow-selected scope: `feature`.\n- Upstream artifacts: `ideation/scope-definition/scope-document.md` and `ideation/scope-definition/intent-backlog.md` (5 Must-Have slices); `ideation/feasibility/feasibility-assessment.md` (no budget, personal time, no deadline, Python + Streamlit comfortable).\n\n## Q1. Who is working on this project?\n\nThis sets the team size the rest of the assessment assumes.\n\n[Answer]:A\n\nA. Just me — a solo builder\nB. Me plus another person occasionally\nX. Other (please specify)\n\n## Q2. How do you want to split the work between you and the AI specialists?\n\nThis decides the working model recorded in the mob composition plan.\n\n[Answer]:A\n\nA. I drive and decide; the AI specialists do the design and building under my direction\nB. The AI specialists do the work end to end; I only review at the stage gates\nC. A mix — I'll take some parts hands-on\nX. Other (please specify)\n\n## Q3. How much time can you put into this, roughly?\n\nCapacity shapes how work is batched, not whether it gets done (there is no deadline).\n\n[Answer]:A\n\nA. A few hours here and there as time allows\nB. Blocks of focused time (for example weekend sessions)\nC. Variable — depends on the week\nX. Other (please specify)\n\n## Q4. Does anyone else need to be involved in decisions or review?\n\n[Answer]:A\n\nA. No — I decide everything at the gates myself\nB. Yes — someone else reviews before key steps\nX. Other (please specify)\n\n## Q5. Any preferred way of working you want recorded beyond what the project rules already say?\n\n[Answer]:A\n\nA. None — the recorded defaults are fine\nB. I'd like a regular review rhythm (for example, pause after each stage)\nX. Other (please specify)
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-18T03:08:16Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/team-formation/team-formation-questions.md
+**Context**: ideation > team-formation > team-formation-questions.md
+
+---
+
+## Decision Recorded
+**Timestamp**: 2026-10-18T03:08:24Z
+**Event**: DECISION_RECORDED
+**Stage**: team-formation
+**Decision**: Does this all look correct before I generate the artifact?
+**Options**: Looks correct,Request changes
+**Checkpoint**: Consolidated Summary Confirmation
+**Questions File**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/team-formation/team-formation-questions.md
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-18T03:09:06Z
+**Event**: HUMAN_TURN
+**Session**: ses_eb35cea51ffeEYzStE32IIA1DZ
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-18T03:09:13Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/team-formation/team-formation-questions.md
+**Context**: ideation > team-formation > team-formation-questions.md
+
+---
+
+## Summary Confirmation Recorded
+**Timestamp**: 2026-10-18T03:09:23Z
+**Event**: SUMMARY_CONFIRMATION_RECORDED
+**Stage**: team-formation
+**Details**: Looks correct
+**Checkpoint**: Consolidated Summary Confirmation
+**Questions File**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/team-formation/team-formation-questions.md
+**Questions SHA-256**: acffcdcb82fcf872a85ddd329c58851f3c1219902d152ebc3b9803cde4c4419a
+**Hash Scope**: confirmed-content-v2
+**Person Reply**: 1. Looks correct
+**Summary Authorization Id**: 1ea7ef1c62b50a0b5e9f6664cdb58e65dd2509a77c6595a0e111cd37c86993dd
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-18T03:09:46Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/team-formation/team-assessment.md
+**Context**: ideation > team-formation > team-assessment.md
+**Summary Authorization Id**: 1ea7ef1c62b50a0b5e9f6664cdb58e65dd2509a77c6595a0e111cd37c86993dd
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-18T03:10:07Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/team-formation/skill-matrix.md
+**Context**: ideation > team-formation > skill-matrix.md
+**Summary Authorization Id**: 1ea7ef1c62b50a0b5e9f6664cdb58e65dd2509a77c6595a0e111cd37c86993dd
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-18T03:10:38Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/team-formation/mob-composition.md
+**Context**: ideation > team-formation > mob-composition.md
+**Summary Authorization Id**: 1ea7ef1c62b50a0b5e9f6664cdb58e65dd2509a77c6595a0e111cd37c86993dd
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-18T03:11:02Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/team-formation/memory.md
+**Context**: ideation > team-formation > memory.md
+**Summary Authorization Id**: 1ea7ef1c62b50a0b5e9f6664cdb58e65dd2509a77c6595a0e111cd37c86993dd
+
+---
+
+## Decision Recorded
+**Timestamp**: 2026-10-18T03:11:19Z
+**Event**: DECISION_RECORDED
+**Stage**: team-formation
+**Decision**: Which of these notes should we keep? (Keep none of these is a pick of its own)
+**Options**: Keep none of these,solo builder plus AI specialists mapped onto driver/navigator roles,light RACI and no onboarding ceremony
+
+---
+
+## Session Compacted
+**Timestamp**: 2026-10-18T03:11:20Z
+**Event**: SESSION_COMPACTED
+**Current Stage**: team-formation
+**State Validity**: valid
+
+---
+
+## Decision Recorded
+**Timestamp**: 2026-10-18T03:12:16Z
+**Event**: DECISION_RECORDED
+**Stage**: team-formation
+**Decision**: Anything to add for next time?
+**Options**: Nothing to add,Add a note
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-18T03:13:52Z
+**Event**: HUMAN_TURN
+**Session**: ses_eb35cea51ffeEYzStE32IIA1DZ
+
+---
+
+## Error Logged
+**Timestamp**: 2026-10-18T03:14:04Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-log
+**Command**: aidlc-log engine log answer --stage team-formation --checkpoint learnings-candidates --details Keep none of these
+**Error**: Unknown --checkpoint "learnings-candidates". Accepted: summary-confirmation, plan-approval, verification-command, construction-policy, guard-recovery
+
+---
+
+## Question Answered
+**Timestamp**: 2026-10-18T03:14:11Z
+**Event**: QUESTION_ANSWERED
+**Stage**: team-formation
+**Details**: Keep none of these
+**Person Reply**: 1. nothing to add
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-18T03:14:19Z
+**Event**: SENSOR_FIRED
+**Fire id**: 60cf30d8
+**Sensor ID**: required-sections
+**Stage slug**: team-formation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/team-formation/team-assessment.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-18T03:14:20Z
+**Event**: SENSOR_PASSED
+**Fire id**: 60cf30d8
+**Sensor ID**: required-sections
+**Stage slug**: team-formation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/team-formation/team-assessment.md
+**Duration ms**: 197
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-18T03:14:20Z
+**Event**: SENSOR_FIRED
+**Fire id**: 3c8d319e
+**Sensor ID**: required-sections
+**Stage slug**: team-formation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/team-formation/skill-matrix.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-18T03:14:20Z
+**Event**: SENSOR_PASSED
+**Fire id**: 3c8d319e
+**Sensor ID**: required-sections
+**Stage slug**: team-formation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/team-formation/skill-matrix.md
+**Duration ms**: 207
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-18T03:14:20Z
+**Event**: SENSOR_FIRED
+**Fire id**: cd365d05
+**Sensor ID**: required-sections
+**Stage slug**: team-formation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/team-formation/mob-composition.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-18T03:14:20Z
+**Event**: SENSOR_PASSED
+**Fire id**: cd365d05
+**Sensor ID**: required-sections
+**Stage slug**: team-formation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/team-formation/mob-composition.md
+**Duration ms**: 222
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-18T03:14:21Z
+**Event**: SENSOR_FIRED
+**Fire id**: 3b8f4bc9
+**Sensor ID**: required-sections
+**Stage slug**: team-formation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/team-formation/team-formation-questions.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-18T03:14:21Z
+**Event**: SENSOR_PASSED
+**Fire id**: 3b8f4bc9
+**Sensor ID**: required-sections
+**Stage slug**: team-formation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/team-formation/team-formation-questions.md
+**Duration ms**: 250
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-18T03:14:21Z
+**Event**: SENSOR_FIRED
+**Fire id**: b94c3d38
+**Sensor ID**: upstream-coverage
+**Stage slug**: team-formation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/team-formation/team-assessment.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-18T03:14:21Z
+**Event**: SENSOR_PASSED
+**Fire id**: b94c3d38
+**Sensor ID**: upstream-coverage
+**Stage slug**: team-formation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/team-formation/team-assessment.md
+**Duration ms**: 208
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-18T03:14:22Z
+**Event**: SENSOR_FIRED
+**Fire id**: 2e4092e4
+**Sensor ID**: upstream-coverage
+**Stage slug**: team-formation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/team-formation/skill-matrix.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-18T03:14:22Z
+**Event**: SENSOR_PASSED
+**Fire id**: 2e4092e4
+**Sensor ID**: upstream-coverage
+**Stage slug**: team-formation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/team-formation/skill-matrix.md
+**Duration ms**: 202
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-18T03:14:22Z
+**Event**: SENSOR_FIRED
+**Fire id**: b517feea
+**Sensor ID**: upstream-coverage
+**Stage slug**: team-formation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/team-formation/mob-composition.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-18T03:14:22Z
+**Event**: SENSOR_PASSED
+**Fire id**: b517feea
+**Sensor ID**: upstream-coverage
+**Stage slug**: team-formation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/team-formation/mob-composition.md
+**Duration ms**: 206
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-18T03:14:22Z
+**Event**: SENSOR_FIRED
+**Fire id**: 110bc0d1
+**Sensor ID**: upstream-coverage
+**Stage slug**: team-formation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/team-formation/team-formation-questions.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-18T03:14:23Z
+**Event**: SENSOR_PASSED
+**Fire id**: 110bc0d1
+**Sensor ID**: upstream-coverage
+**Stage slug**: team-formation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/team-formation/team-formation-questions.md
+**Duration ms**: 206
+
+---
+
+## Stage Awaiting Approval
+**Timestamp**: 2026-10-18T03:14:23Z
+**Event**: STAGE_AWAITING_APPROVAL
+**Stage**: team-formation
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-18T03:15:41Z
+**Event**: HUMAN_TURN
+**Session**: ses_eb35cea51ffeEYzStE32IIA1DZ
+
+---
+
+## Error Logged
+**Timestamp**: 2026-10-18T03:15:48Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-log
+**Command**: aidlc-log engine log answer --stage team-formation --checkpoint summary-confirmation --questions-file aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/team-formation/team-formation-questions.md --details Approve
+**Error**: Cannot record the summary choice because --details "Approve" does not name a choice. Pass the choice the person made, "Looks correct" or "Request changes", as you read it from their reply, with what they asked to change after it.
+
+---
+
+## Gate Approved
+**Timestamp**: 2026-10-18T03:15:59Z
+**Event**: GATE_APPROVED
+**Stage**: team-formation
+**User Input**: Approve
+**Person Reply**: 1. Approve
+
+---
+
+## Stage Completion
+**Timestamp**: 2026-10-18T03:15:59Z
+**Event**: STAGE_COMPLETED
+**Stage**: team-formation
+**Validation Basis**: {"graphContract":"sha256:e661f4c04fda668c89e5738883b120350b929b6231a304c499e49a4e3a743c33","inputs":[{"artifact":"feasibility-assessment","contentHash":"sha256:882354f13871a5f81dae6700e2b048014b7bd43073b468169588609cd96229a7","instanceCount":1,"presentCount":1,"producer":"feasibility","required":false,"structureHash":"sha256:711254bca0685c8e4db4cbed59e7550d2b8221483f2ef2fe4b69825be8172fe6"},{"artifact":"intent-backlog","contentHash":"sha256:c0b5705269376238cc7d327277d6ed97b5bdc5bfab600cbd9444f2c0517a0303","instanceCount":1,"presentCount":1,"producer":"scope-definition","required":true,"structureHash":"sha256:2ad9a7a28d361114e483a7c95e3a6a02fbb4d2ab43c650c33d141c68f70602a7"},{"artifact":"scope-document","contentHash":"sha256:5abc0d4cf4196d70b0cf3e26b0975c275579526c6b7ffeb392ae5ad5c9551fc7","instanceCount":1,"presentCount":1,"producer":"scope-definition","required":true,"structureHash":"sha256:ba56201abb9ba23785558b90d719e19c839386178f17e61826cf9f084f6b2207"}],"outputs":[{"artifact":"mob-composition","contentHash":"sha256:44267be11d4f00c8e1b1c01724d54d0bc4047e60d193d48e688e4f23bdce8f0c","instanceCount":1,"presentCount":1,"producer":"team-formation","required":true,"structureHash":"sha256:abca58953b3cad2b16802182e3d8ccecabcdc4348bc25a32fcbc6b92ce8e0b45"},{"artifact":"skill-matrix","contentHash":"sha256:da10c4da60335b275d1a9e1e7e7a59802068f9220667e816073efbfb67cab1c5","instanceCount":1,"presentCount":1,"producer":"team-formation","required":true,"structureHash":"sha256:9c453fc9e436caeea4cdceabc28c712dadedb0fdd5054f5ae78101d1e1bb1c10"},{"artifact":"team-assessment","contentHash":"sha256:5e140171c994cddcbe5f833586155126306029bea9408fc2d618e6e0c9062521","instanceCount":1,"presentCount":1,"producer":"team-formation","required":true,"structureHash":"sha256:cbee4a9d70530aaca81c5aec5b31afbb7bbaa013843375cdf9ae0647939034ca"},{"artifact":"team-formation-questions","contentHash":"sha256:6b92a80fc2c8f36341c5abe853b1efa0b12ce7f251b232d967bd9374a46da768","instanceCount":1,"presentCount":1,"producer":"team-formation","required":true,"structureHash":"sha256:502124f3fa8754492320887a13497671bda35a522c2b6fd7360693d81a081ef7"}],"projectType":"brownfield","schema":3}
+**Details**: Stage Team Formation approved by gate
+
+---
+
+## Stage Start
+**Timestamp**: 2026-10-18T03:15:59Z
+**Event**: STAGE_STARTED
+**Stage**: rough-mockups
+**Agent**: aidlc-design-agent
+**Answer Mode**: guide (reused from market-research)
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-18T03:16:54Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/rough-mockups/rough-mockups-questions.md
+**Context**: ideation > rough-mockups > rough-mockups-questions.md
+
+---
+
+## Decision Recorded
+**Timestamp**: 2026-10-18T03:17:03Z
+**Event**: DECISION_RECORDED
+**Stage**: rough-mockups
+**Decision**: Q1-Q7: screens, results layout, manual entry, word-list picker, result detail, devices, accessibility
+**Options**: Q1:A-B,Q2:A-B,q3:A-B,q4:A-B,q5:A-B,q6:A-B,q7:A-B
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-18T03:19:31Z
+**Event**: HUMAN_TURN
+**Session**: ses_eb35cea51ffeEYzStE32IIA1DZ
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-18T03:19:44Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/rough-mockups/rough-mockups-questions.md
+**Context**: ideation > rough-mockups > rough-mockups-questions.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-18T03:19:49Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/rough-mockups/rough-mockups-questions.md
+**Context**: ideation > rough-mockups > rough-mockups-questions.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-18T03:19:55Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/rough-mockups/rough-mockups-questions.md
+**Context**: ideation > rough-mockups > rough-mockups-questions.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-18T03:20:01Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/rough-mockups/rough-mockups-questions.md
+**Context**: ideation > rough-mockups > rough-mockups-questions.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-18T03:20:07Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/ideation/rough-mockups/rough-mockups-questions.md
+**Context**: ideation > rough-mockups > rough-mockups-questions.md
+
+---
