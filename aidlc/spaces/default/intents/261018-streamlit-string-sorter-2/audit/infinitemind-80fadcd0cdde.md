@@ -4893,3 +4893,218 @@
 **Context**: inception > practices-discovery > team-practices.md
 
 ---
+
+## Artifact Created
+**Timestamp**: 2026-10-18T06:21:05Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/inception/practices-discovery/discovered-rules.md
+**Context**: inception > practices-discovery > discovered-rules.md
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-18T06:21:27Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/inception/practices-discovery/evidence.md
+**Context**: inception > practices-discovery > evidence.md
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-18T06:21:32Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/inception/practices-discovery/practices-discovery-timestamp.md
+**Context**: inception > practices-discovery > practices-discovery-timestamp.md
+
+---
+
+## Subagent Completed
+**Timestamp**: 2026-10-18T06:22:34Z
+**Event**: SUBAGENT_COMPLETED
+**Agent Type**: aidlc-pipeline-deploy-agent
+**Agent ID**: call_00_lz13fl84x2ij8yazyfkpe4ff
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-18T06:23:04Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/inception/practices-discovery/practices-discovery-questions.md
+**Context**: inception > practices-discovery > practices-discovery-questions.md
+
+---
+
+## Decision Recorded
+**Timestamp**: 2026-10-18T06:23:14Z
+**Event**: DECISION_RECORDED
+**Stage**: practices-discovery
+**Decision**: How should changes land in the code?
+**Options**: A. Short-lived branch off main, squash-merged into main,B. Commit straight to main,C. Longer-lived feature branches,X. Other (please specify)
+
+---
+
+## Decision Recorded
+**Timestamp**: 2026-10-18T06:23:15Z
+**Event**: DECISION_RECORDED
+**Stage**: practices-discovery
+**Decision**: Build a thin end-to-end slice first? A walking skeleton is a minimal version that runs the whole way through, built first to prove the pieces connect before the real features go in.
+**Options**: A. Yes - build the thin end-to-end slice first,B. No - go straight at the three sorting algorithms and the UI,X. Other (please specify)
+
+---
+
+## Decision Recorded
+**Timestamp**: 2026-10-18T06:23:15Z
+**Event**: DECISION_RECORDED
+**Stage**: practices-discovery
+**Decision**: How should tests fit in?
+**Options**: A. Tests after each piece, pytest, ~80%% coverage on sorting logic,B. Tests first then code (test-driven),C. Behaviour scenarios first (BDD),D. No automated tests for now,X. Other (please specify)
+
+---
+
+## Decision Recorded
+**Timestamp**: 2026-10-18T06:23:15Z
+**Event**: DECISION_RECORDED
+**Stage**: practices-discovery
+**Decision**: How should the app be deployed?
+**Options**: A. Deploy to staging on merge; production needs manual approval,B. Deploy to production automatically on every merge,C. No deployment pipeline for now - runs locally,X. Other (please specify)
+
+---
+
+## Decision Recorded
+**Timestamp**: 2026-10-18T06:23:15Z
+**Event**: DECISION_RECORDED
+**Stage**: practices-discovery
+**Decision**: What code style should we hold to?
+**Options**: A. Python defaults - Black formatter, Ruff linter, snake_case,B. No formatter or linter config for now,X. Other (please specify)
+
+---
+
+## Error Logged
+**Timestamp**: 2026-10-18T06:23:16Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-log
+**Command**: aidlc-log engine log decision --stage practices-discovery --decision Does this all look correct before I finalize the practices artifact? --options Looks correct,Request changes
+**Error**: Refusing to record this decision: "practices-discovery" owes a consolidated summary confirmation, and a decision without `--checkpoint summary-confirmation --questions-file <path>` is an ordinary question that never counts toward it. Run `aidlc engine log decision --checkpoint summary-confirmation --stage practices-discovery --questions-file aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/inception/practices-discovery/practices-discovery-questions.md --decision 'Does this all look correct?' --options 'Looks correct,Request changes'` instead (the summary section needs exactly one blank `[Answer]:` line), end the turn, and after the human replies run `aidlc engine log answer --checkpoint summary-confirmation --stage practices-discovery --questions-file aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/inception/practices-discovery/practices-discovery-questions.md --details 'Looks correct'`.
+
+---
+
+## Decision Recorded
+**Timestamp**: 2026-10-18T06:23:16Z
+**Event**: DECISION_RECORDED
+**Stage**: practices-discovery
+**Decision**: Two assumptions went into these questions - confirm how to treat them (org defaults are the framework defaults, no team practices yet; no deployment target named yet).
+**Options**: A. Accept assumptions,B. Convert to follow-up questions
+
+---
+
+## Decision Recorded
+**Timestamp**: 2026-10-18T06:23:24Z
+**Event**: DECISION_RECORDED
+**Stage**: practices-discovery
+**Decision**: Does this all look correct?
+**Options**: Looks correct,Request changes
+**Checkpoint**: Consolidated Summary Confirmation
+**Questions File**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/inception/practices-discovery/practices-discovery-questions.md
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-18T06:49:15Z
+**Event**: HUMAN_TURN
+**Session**: ses_eb29326fcffe0dlAT7GoLjvwwa
+
+---
+
+## Error Logged
+**Timestamp**: 2026-10-18T06:49:27Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-log
+**Command**: aidlc-log engine log answer --stage practices-discovery --details B. No - go straight at the three sorting algorithms and the UI
+**Error**: Refusing to record this answer: "practices-discovery" owes a consolidated summary confirmation, and an answer without `--checkpoint summary-confirmation --questions-file <path>` is an ordinary question that never counts toward it. The summary question is already recorded and answered; write the choice they made in its `[Answer]:` line and run `aidlc engine log answer --checkpoint summary-confirmation --stage practices-discovery --questions-file aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/inception/practices-discovery/practices-discovery-questions.md --details '<their choice>'` with "Looks correct" or 'Request changes: <what they asked to change>' (single-quoted) in place of <their choice>.
+
+---
+
+## Error Logged
+**Timestamp**: 2026-10-18T06:49:27Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-log
+**Command**: aidlc-log engine log answer --stage practices-discovery --details A. A short-lived branch off main, squash-merged into main within a day or two - the org default
+**Error**: Refusing to record this answer: "practices-discovery" owes a consolidated summary confirmation, and an answer without `--checkpoint summary-confirmation --questions-file <path>` is an ordinary question that never counts toward it. The summary question is already recorded and answered; write the choice they made in its `[Answer]:` line and run `aidlc engine log answer --checkpoint summary-confirmation --stage practices-discovery --questions-file aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/inception/practices-discovery/practices-discovery-questions.md --details '<their choice>'` with "Looks correct" or 'Request changes: <what they asked to change>' (single-quoted) in place of <their choice>.
+
+---
+
+## Error Logged
+**Timestamp**: 2026-10-18T06:49:27Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-log
+**Command**: aidlc-log engine log answer --stage practices-discovery --details A. Tests after each piece is implemented - pytest, with roughly 80% line coverage on the sorting logic
+**Error**: Refusing to record this answer: "practices-discovery" owes a consolidated summary confirmation, and an answer without `--checkpoint summary-confirmation --questions-file <path>` is an ordinary question that never counts toward it. The summary question is already recorded and answered; write the choice they made in its `[Answer]:` line and run `aidlc engine log answer --checkpoint summary-confirmation --stage practices-discovery --questions-file aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/inception/practices-discovery/practices-discovery-questions.md --details '<their choice>'` with "Looks correct" or 'Request changes: <what they asked to change>' (single-quoted) in place of <their choice>.
+
+---
+
+## Error Logged
+**Timestamp**: 2026-10-18T06:49:28Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-log
+**Command**: aidlc-log engine log answer --stage practices-discovery --details B. Deploy to production automatically on every merge
+**Error**: Refusing to record this answer: "practices-discovery" owes a consolidated summary confirmation, and an answer without `--checkpoint summary-confirmation --questions-file <path>` is an ordinary question that never counts toward it. The summary question is already recorded and answered; write the choice they made in its `[Answer]:` line and run `aidlc engine log answer --checkpoint summary-confirmation --stage practices-discovery --questions-file aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/inception/practices-discovery/practices-discovery-questions.md --details '<their choice>'` with "Looks correct" or 'Request changes: <what they asked to change>' (single-quoted) in place of <their choice>.
+
+---
+
+## Error Logged
+**Timestamp**: 2026-10-18T06:49:28Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-log
+**Command**: aidlc-log engine log answer --stage practices-discovery --details A. Python defaults - Black formatter, Ruff linter, snake_case
+**Error**: Refusing to record this answer: "practices-discovery" owes a consolidated summary confirmation, and an answer without `--checkpoint summary-confirmation --questions-file <path>` is an ordinary question that never counts toward it. The summary question is already recorded and answered; write the choice they made in its `[Answer]:` line and run `aidlc engine log answer --checkpoint summary-confirmation --stage practices-discovery --questions-file aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/inception/practices-discovery/practices-discovery-questions.md --details '<their choice>'` with "Looks correct" or 'Request changes: <what they asked to change>' (single-quoted) in place of <their choice>.
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-18T06:49:37Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/inception/practices-discovery/practices-discovery-questions.md
+**Context**: inception > practices-discovery > practices-discovery-questions.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-18T06:49:37Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/inception/practices-discovery/practices-discovery-questions.md
+**Context**: inception > practices-discovery > practices-discovery-questions.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-18T06:49:38Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/inception/practices-discovery/practices-discovery-questions.md
+**Context**: inception > practices-discovery > practices-discovery-questions.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-18T06:49:39Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/inception/practices-discovery/practices-discovery-questions.md
+**Context**: inception > practices-discovery > practices-discovery-questions.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-18T06:49:39Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/inception/practices-discovery/practices-discovery-questions.md
+**Context**: inception > practices-discovery > practices-discovery-questions.md
+
+---
