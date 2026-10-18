@@ -1,0 +1,690 @@
+{
+  "traceability_matrix": {
+    "metadata": {
+      "unit": "U1 sorting-core",
+      "stage": "functional-design",
+      "date": "2026-10-19",
+      "version": "1.0",
+      "description": "Requirements-to-design traceability: functional requirements and acceptance criteria mapped to entities, business rules, and workflows"
+    },
+    "requirements": [
+      {
+        "req_id": "FR1.1",
+        "req_text": "The system must accept string input via manual entry in the UI.",
+        "type": "functional",
+        "unit_assigned": "U2",
+        "unit_supported_by": "U1",
+        "design_elements": [
+          {
+            "type": "entity",
+            "id": "SortInput",
+            "description": "Captures raw and normalized entries from U2; normalized_strings is the result after U1 processing"
+          },
+          {
+            "type": "workflow",
+            "id": "Workflow 1: Input Normalization",
+            "description": "normalize() accepts raw_entries from U2; produces SortInput with normalized_strings"
+          }
+        ],
+        "business_rules": [
+          "BR-INP-1 (Input Normalization)",
+          "BR-INP-3 (Run Identifier Generation)"
+        ],
+        "coverage": "Complete"
+      },
+      {
+        "req_id": "FR1.2",
+        "req_text": "The system must accept string input via selection from a bundled word list.",
+        "type": "functional",
+        "unit_assigned": "U2",
+        "unit_supported_by": "U1",
+        "design_elements": [
+          {
+            "type": "entity",
+            "id": "BundledWordList",
+            "description": "Owned by U2 (WordListProvider); picked words are merged with typed entries into raw_entries passed to U1"
+          }
+        ],
+        "business_rules": [
+          "BR-WLP-1 (Bundled Word List — Fixed and Immutable)"
+        ],
+        "coverage": "Supported"
+      },
+      {
+        "req_id": "FR1.3",
+        "req_text": "Input processing must normalize strings to lowercase when encountering capital letters; the system only allows lowercase letters, numbers, and special characters based on ASCII value.",
+        "type": "functional",
+        "unit_assigned": "U1",
+        "design_elements": [
+          {
+            "type": "workflow",
+            "id": "Workflow 1: Input Normalization",
+            "description": "Step 3.2.3: lowercase ASCII capitals; pass non-ASCII unchanged"
+          },
+          {
+            "type": "entity",
+            "id": "SortInput.normalized_strings",
+            "description": "Contains the result after normalization"
+          }
+        ],
+        "business_rules": [
+          "BR-INP-1 (Input Normalization)"
+        ],
+        "test_cases": [
+          "normalize(['HELLO']) → ['hello']",
+          "normalize(['cäfe']) → ['cäfe']",
+          "normalize(['Hello,WORLD']) → ['hello', 'world']"
+        ],
+        "coverage": "Complete"
+      },
+      {
+        "req_id": "FR1.4",
+        "req_text": "The system must preserve the original string forms as entered (after normalization rule applied consistently) in both input display and output.",
+        "type": "functional",
+        "unit_assigned": "U1",
+        "design_elements": [
+          {
+            "type": "workflow",
+            "id": "Workflow 1: Input Normalization",
+            "description": "SortInput.raw_entries preserves original; SortInput.normalized_strings shows normalized form"
+          },
+          {
+            "type": "entity",
+            "id": "SortInput",
+            "description": "raw_entries field preserves originals; normalized_strings field shows normalized result"
+          }
+        ],
+        "business_rules": [
+          "BR-INP-1 (Input Normalization)",
+          "BR-INP-3 (Run Identifier Generation)"
+        ],
+        "coverage": "Complete"
+      },
+      {
+        "req_id": "FR1.5",
+        "req_text": "The bundled word list must be included with the app (no external data source).",
+        "type": "functional",
+        "unit_assigned": "U2",
+        "design_elements": [
+          {
+            "type": "entity",
+            "id": "BundledWordList",
+            "description": "Immutable, shipped with application"
+          }
+        ],
+        "business_rules": [
+          "BR-WLP-1 (Bundled Word List — Fixed and Immutable)"
+        ],
+        "coverage": "Specified"
+      },
+      {
+        "req_id": "FR2.1",
+        "req_text": "The system must implement bubble sort for strings.",
+        "type": "functional",
+        "unit_assigned": "U1",
+        "design_elements": [
+          {
+            "type": "workflow",
+            "id": "Workflow 2: Run All Three Algorithms → Bubble Sort",
+            "description": "Formal bubble sort algorithm with comparison and swap counting"
+          }
+        ],
+        "business_rules": [
+          "BR-SE-1 (Comparison Counting)",
+          "BR-SE-2 (Swap Counting)",
+          "BR-SE-3 (Lexicographic Ordering)",
+          "BR-SE-4 (Three Algorithms Only)",
+          "BR-SE-5 (Stable Sort Semantics)"
+        ],
+        "test_cases": [
+          "run_all([charlie, apple, bob]) → bubble_result with sorted_strings=[apple, bob, charlie]",
+          "Comparison count: 3",
+          "Swap count: 2"
+        ],
+        "coverage": "Complete"
+      },
+      {
+        "req_id": "FR2.2",
+        "req_text": "The system must implement selection sort for strings.",
+        "type": "functional",
+        "unit_assigned": "U1",
+        "design_elements": [
+          {
+            "type": "workflow",
+            "id": "Workflow 2: Run All Three Algorithms → Selection Sort",
+            "description": "Formal selection sort algorithm (stable variant recommended) with counting"
+          }
+        ],
+        "business_rules": [
+          "BR-SE-1 (Comparison Counting)",
+          "BR-SE-2 (Swap Counting)",
+          "BR-SE-3 (Lexicographic Ordering)",
+          "BR-SE-4 (Three Algorithms Only)",
+          "BR-SE-5 (Stable Sort Semantics)"
+        ],
+        "test_cases": [
+          "run_all([charlie, apple, bob]) → selection_result with sorted_strings=[apple, bob, charlie]",
+          "Comparison count: 3",
+          "Swap count: 2"
+        ],
+        "coverage": "Complete"
+      },
+      {
+        "req_id": "FR2.3",
+        "req_text": "The system must implement quick sort for strings.",
+        "type": "functional",
+        "unit_assigned": "U1",
+        "design_elements": [
+          {
+            "type": "workflow",
+            "id": "Workflow 2: Run All Three Algorithms → Quick Sort (Lomuto Partition)",
+            "description": "Formal quick sort with Lomuto partitioning and counting"
+          }
+        ],
+        "business_rules": [
+          "BR-SE-1 (Comparison Counting)",
+          "BR-SE-2 (Swap Counting)",
+          "BR-SE-3 (Lexicographic Ordering)",
+          "BR-SE-4 (Three Algorithms Only)"
+        ],
+        "test_cases": [
+          "run_all([charlie, apple, bob]) → quick_result with sorted_strings=[apple, bob, charlie]"
+        ],
+        "design_decision": "Q6: Lomuto partition chosen for educational clarity",
+        "coverage": "Complete"
+      },
+      {
+        "req_id": "FR2.4",
+        "req_text": "All three algorithms must sort strings lexicographically (ASCII/Unicode as-is, default lexicographic ordering).",
+        "type": "functional",
+        "unit_assigned": "U1",
+        "design_elements": [
+          {
+            "type": "workflow",
+            "id": "Workflow 2: Run All Three Algorithms → All per-algorithm workflows",
+            "description": "All use Python's default string comparison (<, >, ==) for lexicographic order"
+          }
+        ],
+        "business_rules": [
+          "BR-SE-3 (Lexicographic Ordering)"
+        ],
+        "design_decision": "Q5: Use Python's default Unicode lexicographic order for all strings",
+        "test_cases": [
+          "sorted(['b', 'A', 'a']) should match all three algorithms' output",
+          "Mixed ASCII/non-ASCII: ['café', 'cafe', 'bag'] sorted by Unicode values"
+        ],
+        "coverage": "Complete"
+      },
+      {
+        "req_id": "FR2.5",
+        "req_text": "All three algorithms must run on the same input when sorting is triggered.",
+        "type": "functional",
+        "unit_assigned": "U1",
+        "design_elements": [
+          {
+            "type": "workflow",
+            "id": "Workflow 2: Run All Three Algorithms",
+            "description": "run_all() invokes all three on the same normalized_strings"
+          }
+        ],
+        "business_rules": [
+          "BR-INT-2 (All Algorithms Receive Identical Input)"
+        ],
+        "coverage": "Complete"
+      },
+      {
+        "req_id": "FR3.1",
+        "req_text": "For each algorithm, the system must verify accuracy by comparing its sorted result against Python's built-in sorted() (default lexicographic, deterministic).",
+        "type": "functional",
+        "unit_assigned": "U1",
+        "design_elements": [
+          {
+            "type": "workflow",
+            "id": "Workflow 3: Verify Accuracy",
+            "description": "AccuracyChecker.check() compares result against sorted(normalized_strings)"
+          },
+          {
+            "type": "entity",
+            "id": "AccuracyCheck",
+            "description": "Record of pass/fail verification"
+          }
+        ],
+        "business_rules": [
+          "BR-AC-1 (Accuracy Check — Exact Match Against Reference)"
+        ],
+        "test_cases": [
+          "check(bubble_result, sort_input) → AccuracyCheck(passed=True) when sorted_strings matches",
+          "check with mismatched order → AccuracyCheck(passed=False)"
+        ],
+        "coverage": "Complete"
+      },
+      {
+        "req_id": "FR3.2",
+        "req_text": "Accuracy must be reported as pass/fail for each algorithm (exact order match to reference).",
+        "type": "functional",
+        "unit_assigned": "U1",
+        "design_elements": [
+          {
+            "type": "entity",
+            "id": "AccuracyCheck.passed",
+            "description": "Boolean; true only on exact-order match"
+          }
+        ],
+        "business_rules": [
+          "BR-AC-1 (Accuracy Check — Exact Match Against Reference)"
+        ],
+        "coverage": "Complete"
+      },
+      {
+        "req_id": "FR3.3",
+        "req_text": "All three algorithms must be checked for accuracy independently.",
+        "type": "functional",
+        "unit_assigned": "U1",
+        "design_elements": [
+          {
+            "type": "workflow",
+            "id": "Workflow 3: Verify Accuracy (called three times)",
+            "description": "One check per algorithm; no cascade failures"
+          }
+        ],
+        "business_rules": [
+          "BR-AC-2 (Independent Algorithm Verification)"
+        ],
+        "coverage": "Complete"
+      },
+      {
+        "req_id": "FR4.1",
+        "req_text": "The system must track step counts for each algorithm using the textbook definition: measure iterations of outer/inner loops as defined in the standard textbook form for each algorithm.",
+        "type": "functional",
+        "unit_assigned": "U1",
+        "design_elements": [
+          {
+            "type": "workflow",
+            "id": "Workflow 2: Run All Three Algorithms → Comparison Counting",
+            "description": "Formal definitions for bubble, selection, quick in Section 3 of functional-spec.md"
+          }
+        ],
+        "business_rules": [
+          "BR-SE-1 (Comparison Counting — Single Definition for All Algorithms)"
+        ],
+        "design_decision": "Q1: Resolved to 'total element comparisons' (primary metric) per FR4.2 requirement for direct cross-algorithm comparison",
+        "coverage": "Complete"
+      },
+      {
+        "req_id": "FR4.2",
+        "req_text": "The same definition of 'total element comparisons' must be used as the primary comparable count for UI display across all three algorithms (to enable direct comparison).",
+        "type": "functional",
+        "unit_assigned": "U1",
+        "design_elements": [
+          {
+            "type": "entity",
+            "id": "AlgorithmResult.comparisons",
+            "description": "Total element comparisons; same definition for bubble, selection, quick"
+          },
+          {
+            "type": "workflow",
+            "id": "Workflow 2: Run All Three Algorithms",
+            "description": "Each algorithm increments comparisons counter for every element-to-element comparison"
+          }
+        ],
+        "business_rules": [
+          "BR-SE-1 (Comparison Counting — Single Definition for All Algorithms)"
+        ],
+        "test_cases": [
+          "Bubble sort [3,1,2]: 5 comparisons",
+          "Selection sort [3,1,2]: 3 comparisons",
+          "Quick sort [3,1,2]: 2 comparisons",
+          "All counts are directly comparable in the UI"
+        ],
+        "coverage": "Complete"
+      },
+      {
+        "req_id": "FR4.3",
+        "req_text": "The system must also track and display swap counts separately for each algorithm (complementary to comparisons).",
+        "type": "functional",
+        "unit_assigned": "U1",
+        "design_elements": [
+          {
+            "type": "entity",
+            "id": "AlgorithmResult.swaps",
+            "description": "Algorithm-specific swap count; secondary metric"
+          },
+          {
+            "type": "workflow",
+            "id": "Workflow 2: Run All Three Algorithms",
+            "description": "Each algorithm counts swaps per its natural definition"
+          }
+        ],
+        "business_rules": [
+          "BR-SE-2 (Swap Counting — Algorithm-Specific, Secondary Metric)"
+        ],
+        "coverage": "Complete"
+      },
+      {
+        "req_id": "FR4.4",
+        "req_text": "Step/comparison counts are integers and must be displayed without truncation (no limits on classroom-sized inputs).",
+        "type": "functional",
+        "unit_assigned": "U1",
+        "design_elements": [
+          {
+            "type": "entity",
+            "id": "AlgorithmResult.comparisons, AlgorithmResult.swaps",
+            "description": "Both are Python integers; no truncation or limits"
+          }
+        ],
+        "business_rules": [
+          "BR-SE-1 (Comparison Counting)",
+          "BR-SE-2 (Swap Counting)"
+        ],
+        "coverage": "Complete"
+      },
+      {
+        "req_id": "FR4.5",
+        "req_text": "For edge cases (single element, all equal), counts must be recorded correctly (e.g., minimal counts).",
+        "type": "functional",
+        "unit_assigned": "U1",
+        "design_elements": [
+          {
+            "type": "workflow",
+            "id": "Workflow 2: Run All Three Algorithms → Edge Cases",
+            "description": "Part 6 of functional-spec.md: empty input, single element, all identical"
+          }
+        ],
+        "business_rules": [
+          "BR-EDGE-1 (Empty Input)",
+          "BR-EDGE-2 (Single Element)",
+          "BR-EDGE-3 (All Identical Strings)"
+        ],
+        "test_cases": [
+          "Single element: comparisons=0, swaps=0",
+          "All identical: comparisons>=0 (varies), swaps=0",
+          "Empty: comparisons=0, swaps=0"
+        ],
+        "coverage": "Complete"
+      },
+      {
+        "req_id": "FR5.1",
+        "req_text": "The UI must be implemented as a simple Streamlit application.",
+        "type": "functional",
+        "unit_assigned": "U2",
+        "design_elements": [
+          {
+            "type": "entity",
+            "id": "SortingPlaygroundApp",
+            "description": "Streamlit component in U2; imports U1 library"
+          }
+        ],
+        "coverage": "Specified in U2"
+      },
+      {
+        "req_id": "FR5.2",
+        "req_text": "A single 'Sort' button must run all three algorithms on the same input and display all three results side-by-side.",
+        "type": "functional",
+        "unit_assigned": "U2",
+        "unit_supported_by": "U1",
+        "design_elements": [
+          {
+            "type": "workflow",
+            "id": "Part 3: Integration Sequence",
+            "description": "U2 calls run_all() once; receives three results"
+          },
+          {
+            "type": "entity",
+            "id": "AlgorithmResult",
+            "description": "U2 receives three per sort run"
+          }
+        ],
+        "coverage": "Supported by U1 API"
+      },
+      {
+        "req_id": "FR5.3",
+        "req_text": "For each algorithm, the UI must display: algorithm name, sorted list, comparisons count, swaps count, and accuracy (pass/fail).",
+        "type": "functional",
+        "unit_assigned": "U2",
+        "unit_supported_by": "U1",
+        "design_elements": [
+          {
+            "type": "entity",
+            "id": "AlgorithmResult",
+            "description": "Provides algorithm name, sorted_strings, comparisons, swaps"
+          },
+          {
+            "type": "entity",
+            "id": "AccuracyCheck",
+            "description": "Provides passed boolean"
+          }
+        ],
+        "coverage": "Data model supports; display is U2"
+      },
+      {
+        "req_id": "FR5.4",
+        "req_text": "The UI must show the input that was sorted.",
+        "type": "functional",
+        "unit_assigned": "U2",
+        "unit_supported_by": "U1",
+        "design_elements": [
+          {
+            "type": "entity",
+            "id": "SortInput.normalized_strings",
+            "description": "U2 displays this as the echo of sorted input"
+          }
+        ],
+        "coverage": "Supported by U1 API"
+      },
+      {
+        "req_id": "FR5.5",
+        "req_text": "The UI must provide clear, intuitive presentation suitable for educational use.",
+        "type": "functional",
+        "unit_assigned": "U2",
+        "design_elements": [],
+        "coverage": "Specified in U2"
+      },
+      {
+        "req_id": "FR6.1",
+        "req_text": "If the input is empty (no strings entered/selected), the system must display a message 'Enter or select at least one string' and must not run sorting.",
+        "type": "functional",
+        "unit_assigned": "U2",
+        "unit_supported_by": "U1",
+        "design_elements": [
+          {
+            "type": "workflow",
+            "id": "Workflow 1: Input Normalization",
+            "description": "normalize() produces empty normalized_strings; U2 validates before calling sort"
+          },
+          {
+            "type": "business_rule",
+            "id": "BR-INP-2 (Empty String Handling)",
+            "description": "U2 validates non-empty constraint; U1 does not"
+          }
+        ],
+        "design_decision": "Q2: U2 validates empty input before calling U1; renders message without invoking sorting",
+        "coverage": "Supported by U1 (returns empty) and implemented in U2 (validation)"
+      },
+      {
+        "req_id": "FR6.2",
+        "req_text": "For a single string input, the system must return it correctly with appropriate step counts (minimal/zero as defined by algorithm implementation) and accuracy pass.",
+        "type": "functional",
+        "unit_assigned": "U1",
+        "design_elements": [
+          {
+            "type": "workflow",
+            "id": "Workflow 2: Run All Three Algorithms → Edge Cases (Single Element)",
+            "description": "Part 6 of functional-spec.md: single element case"
+          }
+        ],
+        "business_rules": [
+          "BR-EDGE-2 (Single Element)"
+        ],
+        "test_cases": [
+          "Single element: sorted_strings = input, comparisons=0, swaps=0, passed=True"
+        ],
+        "coverage": "Complete"
+      },
+      {
+        "req_id": "FR6.3",
+        "req_text": "For inputs where all strings are identical, the system must return the same list correctly with accuracy pass.",
+        "type": "functional",
+        "unit_assigned": "U1",
+        "design_elements": [
+          {
+            "type": "workflow",
+            "id": "Workflow 2: Run All Three Algorithms → Edge Cases (All Identical)",
+            "description": "Part 6 of functional-spec.md: all identical case"
+          }
+        ],
+        "business_rules": [
+          "BR-EDGE-3 (All Identical Strings)"
+        ],
+        "test_cases": [
+          "All identical: sorted_strings = input (in order), swaps=0, passed=True"
+        ],
+        "coverage": "Complete"
+      },
+      {
+        "req_id": "FR6.4",
+        "req_text": "The system must reject/ignore empty strings appropriately when processing input.",
+        "type": "functional",
+        "unit_assigned": "U1",
+        "design_elements": [
+          {
+            "type": "workflow",
+            "id": "Workflow 1: Input Normalization",
+            "description": "Step 3.2.2: Drop empty tokens after trimming"
+          }
+        ],
+        "business_rules": [
+          "BR-INP-2 (Empty String Handling)"
+        ],
+        "test_cases": [
+          "normalize(['', '  ', 'hello']) → ['hello']"
+        ],
+        "coverage": "Complete"
+      },
+      {
+        "req_id": "FR7.1",
+        "req_text": "The app must run locally for testing (via `streamlit run`).",
+        "type": "functional",
+        "unit_assigned": "U2",
+        "design_elements": [],
+        "coverage": "Specified in U2"
+      },
+      {
+        "req_id": "FR7.2",
+        "req_text": "The system must be deployable to Streamlit Community Cloud.",
+        "type": "functional",
+        "unit_assigned": "U3",
+        "design_elements": [],
+        "coverage": "Specified in U3"
+      },
+      {
+        "req_id": "FR7.3",
+        "req_text": "Deployment to production (Streamlit Community Cloud) must occur automatically on merge to `main` via GitHub Actions (continuous deployment), consistent with team practice of auto-deploying to production on merge.",
+        "type": "functional",
+        "unit_assigned": "U3",
+        "design_elements": [],
+        "coverage": "Specified in U3"
+      },
+      {
+        "req_id": "NFR1.1",
+        "req_text": "Sorting results must be exactly correct as verified against the reference sort.",
+        "type": "non-functional",
+        "unit_assigned": "U1",
+        "design_elements": [
+          {
+            "type": "workflow",
+            "id": "Workflow 3: Verify Accuracy",
+            "description": "AccuracyChecker ensures exact-match verification"
+          }
+        ],
+        "business_rules": [
+          "BR-AC-1 (Accuracy Check — Exact Match Against Reference)"
+        ],
+        "coverage": "Complete"
+      },
+      {
+        "req_id": "NFR1.2",
+        "req_text": "Step counting must be implemented consistently according to the chosen definitions.",
+        "type": "non-functional",
+        "unit_assigned": "U1",
+        "design_elements": [
+          {
+            "type": "workflow",
+            "id": "Workflow 2: Run All Three Algorithms",
+            "description": "Formal algorithms with consistent comparison and swap counting"
+          }
+        ],
+        "business_rules": [
+          "BR-SE-1 (Comparison Counting)",
+          "BR-SE-2 (Swap Counting)"
+        ],
+        "coverage": "Complete"
+      },
+      {
+        "req_id": "NFR4.2",
+        "req_text": "Tests (pytest) must achieve at least ~80% line coverage on sorting logic, following test-after methodology.",
+        "type": "non-functional",
+        "unit_assigned": "U1",
+        "design_elements": [],
+        "test_orientation": "Part 10 of functional-spec.md lists key testable behaviors",
+        "coverage": "Test targets specified"
+      }
+    ],
+    "design_decisions_applied": [
+      {
+        "question_id": "Q1",
+        "question": "Step Count Definition (FR4.1 vs FR4.2)",
+        "decision": "Option A: Track ONLY total element comparisons (primary UI metric); same definition for all three",
+        "rationale": "Required by FR4.2's explicit requirement for 'same definition… as the primary comparable count… to enable direct comparison'",
+        "artifact": "BR-SE-1 (Comparison Counting), AlgorithmResult.comparisons"
+      },
+      {
+        "question_id": "Q2",
+        "question": "Empty Input Handling",
+        "decision": "Option B: U2 validates before calling U1; U1 returns empty results if called",
+        "rationale": "Keeps U1 as pure computation layer per ADR-004",
+        "artifact": "BR-INP-2, Workflow 1: Input Normalization"
+      },
+      {
+        "question_id": "Q3",
+        "question": "Swap Counting Definition",
+        "decision": "Option A: Natural swap count per algorithm; no normalization",
+        "rationale": "Simpler; comparisons is the primary metric",
+        "artifact": "BR-SE-2 (Swap Counting), AlgorithmResult.swaps"
+      },
+      {
+        "question_id": "Q4",
+        "question": "Duplicate String Handling",
+        "decision": "Option A: Stable sort (preserve input order of duplicates)",
+        "rationale": "Required by FR3.1 (exact match vs Python sorted(), which is stable)",
+        "artifact": "BR-SE-5 (Stable Sort Semantics), BR-EDGE-3"
+      },
+      {
+        "question_id": "Q5",
+        "question": "Lexicographic Ordering for Mixed ASCII/Non-ASCII",
+        "decision": "Option A: Default Python Unicode lexicographic order",
+        "rationale": "Simplest; verifiable vs Python sorted()",
+        "artifact": "BR-SE-3 (Lexicographic Ordering)"
+      },
+      {
+        "question_id": "Q6",
+        "question": "Quick Sort Partitioning Strategy",
+        "decision": "Option A: Lomuto partition",
+        "rationale": "Simpler, more predictable for educational use",
+        "artifact": "Workflow 2: Quick Sort (Lomuto Partition)"
+      }
+    ],
+    "summary": {
+      "total_requirements": 32,
+      "assigned_to_u1": 22,
+      "supported_by_u1": 8,
+      "assigned_to_u2": 8,
+      "assigned_to_u3": 2,
+      "full_traceability": true,
+      "design_complete": true,
+      "entities_defined": 4,
+      "business_rules_defined": 16,
+      "workflows_defined": 3,
+      "edge_cases_specified": 6
+    }
+  }
+}
