@@ -1,14 +1,20 @@
-<!-- INVARIANT: examples are single-line HTML comments so a fresh template parses to total=0 (MEMORY_EMPTY). Do NOT un-comment or split across lines. t100 guards this. -->
-> This file is kept up to date automatically while the stage runs. Add observations at the review step, not by editing here directly.
+# Contract Design — Observation Diary
 
 ## Interpretations
-<!-- example: 2026-05-29T10:14:32Z — chose REST over GraphQL; the consuming team only needs CRUD, revisit if subscriptions land -->
+
+- The external-API branch of the stage is determined by the requirements (NFR3.4 and out-of-scope list), so no external contract was produced and no question was asked about it.
+- Contract 1 encodes decision D10 (non-ASCII passes through unchanged), so the FR1.3 wording and the design are reconciled at contract level, and the requirement text is flagged for its owner.
 
 ## Deviations
-<!-- example: 2026-05-29T10:14:32Z — skipped the optional caching layer the stage prose suggested; the dataset is small enough that it adds risk -->
+
+- The stage's Step 2 question flow was resolved from requirements rather than asked, consistent with the autopilot instruction; the single open point (Python version and pinning) is recorded as an open question, not asked.
 
 ## Tradeoffs
-<!-- example: 2026-05-29T10:14:32Z — picked TDD over BDD this run; the team is unit-first and the domain is well-understood -->
+
+- Two contracts, not one: the packaging interface is a real boundary (U2 to U3) and the CI workflow would otherwise reach into U2 source.
+- Operation-level contracts (normalize, run_all, check) rather than a schema-only contract, because the boundary is a Python call, not a serialized payload.
 
 ## Open questions
-<!-- example: 2026-05-29T10:14:32Z — confirm the retention window with compliance before the next stage hardens the schema -->
+
+- Target Python version and dependency pinning, blocking U3 CI configuration.
+- Review finding: `requirements.md` FR1.3 still reads as an ASCII-only restriction; owner to update the wording.
