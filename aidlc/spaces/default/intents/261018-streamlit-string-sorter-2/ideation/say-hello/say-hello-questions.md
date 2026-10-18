@@ -45,3 +45,15 @@ Does this all look correct before I generate the artifact?
 - Request changes
 
 [Answer]: Looks correct
+
+## Assumption Confirmation
+
+Two assumptions went into the artifact — confirm how to treat them:
+
+1. [assumption] "This approach" in Q1 refers to the step-by-step ideation workflow, not the app idea itself.
+2. [assumption] Confidence in the work itself: Not reported (open question) — you didn't give an explicit confidence level.
+
+[Answer]:
+
+A. Accept assumptions
+B. Convert to follow-up questions
