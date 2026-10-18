@@ -7,7 +7,7 @@
 
 No wrong answer here — this just helps later steps pace themselves around you.
 
-[Answer]:
+[Answer]:X (Things are going very slow with this approach I really wish it could be much faster)
 
 A. Excited
 B. Optimistic but cautious
@@ -18,7 +18,7 @@ X. Other (please specify)
 
 ## Q2. What is your biggest worry or concern going into this work?
 
-[Answer]:
+[Answer]:D
 
 A. That the sorting algorithms won't be correct
 B. That the UI will get more complicated than I want
@@ -28,7 +28,7 @@ X. Other (please specify)
 
 ## Q3. What would help you feel more confident about how this goes?
 
-[Answer]:
+[Answer]:A
 
 A. Seeing working code early
 B. Clear step-by-step progress I can review at each stage
@@ -36,3 +36,12 @@ C. Tests that prove the algorithms are correct
 D. Not sure
 E. Nothing needed — I'm fine as is
 X. Other (please specify)
+
+## Consolidated Summary Confirmation
+
+Does this all look correct before I generate the artifact?
+
+- Looks correct
+- Request changes
+
+[Answer]: Looks correct
