@@ -747,6 +747,65 @@
     ]
   },
   {
+    "slug": "say-hello",
+    "number": "1.8",
+    "name": "Say Hello",
+    "phase": "ideation",
+    "execution": "ALWAYS",
+    "condition": "Runs in Ideation to check in on the person's state of mind before the rest of the workflow proceeds.",
+    "lead_agent": "psychological-safety-agent",
+    "support_agents": [],
+    "mode": "inline",
+    "produces": [
+      "user-state-of-mind",
+      "say-hello-questions"
+    ],
+    "consumes": [],
+    "requires_stage": [
+      "intent-capture"
+    ],
+    "sensors": [
+      "required-sections"
+    ],
+    "scopes": [
+      "enterprise",
+      "feature",
+      "mvp",
+      "poc"
+    ],
+    "summary_confirmation": "required",
+    "inputs": "The person's own account of how they are feeling about this work",
+    "outputs": "user-state-of-mind.md, say-hello-questions.md (under this stage's record dir, engine-resolved)",
+    "rules_in_context": [
+      {
+        "path": "aidlc/spaces/default/memory/org.md",
+        "scope": "org"
+      },
+      {
+        "path": "aidlc/spaces/default/memory/team.md",
+        "scope": "team"
+      },
+      {
+        "path": "aidlc/spaces/default/memory/project.md",
+        "scope": "project"
+      },
+      {
+        "path": "aidlc/spaces/default/memory/phases/ideation.md",
+        "scope": "phase"
+      }
+    ],
+    "sensors_applicable": [
+      {
+        "id": "required-sections",
+        "path": ".aidlc/sensors/aidlc-required-sections.md",
+        "fire_on": "gate",
+        "default_severity": "advisory",
+        "category": "document-shape",
+        "matches": "**/{aidlc-docs,intents,codekb}/**"
+      }
+    ]
+  },
+  {
     "slug": "reverse-engineering",
     "number": "2.1",
     "name": "Reverse Engineering",
