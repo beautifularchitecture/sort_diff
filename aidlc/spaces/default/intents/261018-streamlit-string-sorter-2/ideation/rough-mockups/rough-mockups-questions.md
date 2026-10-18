@@ -50,7 +50,7 @@ X. Other (please specify)
 
 ## Q6. Which devices do you care about?
 
-[Answer]:
+[Answer]:A
 
 A. Desktop browser only — this is a learning tool on a laptop
 B. Desktop first, but keep it usable on a phone if Streamlit allows it for free
@@ -58,8 +58,17 @@ X. Other (please specify)
 
 ## Q7. Accessibility — any requirements to record?
 
-[Answer]:
+[Answer]:A
 
 A. Basic only: sensible labels, keyboard works, readable text (Streamlit defaults)
 B. Aim for WCAG AA — stronger contrast and clearer structure from the start
 X. Other (please specify)
+
+## Consolidated Summary Confirmation
+
+Does this all look correct before I generate the artifact?
+
+- Looks correct
+- Request changes
+
+[Answer]: Looks correct
