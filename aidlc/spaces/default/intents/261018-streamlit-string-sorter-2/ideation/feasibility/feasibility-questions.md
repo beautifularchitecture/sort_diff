@@ -64,3 +64,12 @@ A. Locally on the builder's machine only
 B. Locally now, possibly deployed to a small host later
 C. Must run on specific shared infrastructure
 X. Other (please specify)
+
+## Consolidated Summary Confirmation
+
+Does this all look correct before I generate the artifact?
+
+- Looks correct
+- Request changes
+
+[Answer]: Looks correct
