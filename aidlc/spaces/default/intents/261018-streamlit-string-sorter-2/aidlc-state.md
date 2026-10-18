@@ -3,20 +3,20 @@
 ## Project Information
 - **Project**: this is an application which will take a bunch of strings and runs it through various sorting algorithms. it will check for accuracy of result, how many steps it took to come up with the output. as the first step we only implement bubble sort, selection sort and quick sort. the strings are either entered or selected from a bunch of words from the ui and a button will sort it in the backend and show the result back in the front end. keep it as a simple streamlit application.
 - **Project Description Source**: project-description.json
-- **Project Type**: Brownfield
-- **Project Type Source**: workspace scan
+- **Project Type**: Greenfield
+- **Project Type Source**: you
 - **Scope**: feature
 - **Start Date**: 2026-10-18T01:05:32Z
 - **Question Id**: 6b06ff2d
 - **State Version**: 8
-- **Active Agent**: aidlc-developer-agent
+- **Active Agent**: aidlc-pipeline-deploy-agent
 - **Worktree Path**:
 - **Bolt Refs**:
 - **Practices Affirmed Timestamp**:
 
 ## Scope Configuration
-- **Stages to Execute**: 0.1, 0.2, 0.3, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7
-- **Stages to Skip**: none
+- **Stages to Execute**: 0.1, 0.2, 0.3, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7
+- **Stages to Skip**: 2.1 (reverse-engineering — greenfield)
 - **Depth**: Standard
 - **Test Strategy**: Standard
 - **Review Override**: 
@@ -29,14 +29,14 @@
 
 ## Workspace State
 - **Project Root**: .
-- **Languages**: Python
+- **Languages**: Unknown
 - **Frameworks**: Unknown
 - **Build System**: Unknown
 
 ## Execution Plan Summary
-- **Total Stages**: 34
+- **Total Stages**: 33
 - **Completed**: 11
-- **In Progress**: reverse-engineering
+- **In Progress**: practices-discovery
 
 ## Runtime State
 - **Revision Count**: 0
@@ -80,8 +80,8 @@
 - [x] say-hello — EXECUTE
 
 ### INCEPTION PHASE
-- [-] reverse-engineering — EXECUTE
-- [ ] practices-discovery — EXECUTE
+- [S] reverse-engineering — SKIP
+- [-] practices-discovery — EXECUTE
 - [ ] requirements-analysis — EXECUTE
 - [ ] user-stories — EXECUTE
 - [ ] refined-mockups — EXECUTE
@@ -111,12 +111,12 @@ Per unit: [TBD]
 
 ## Current Status
 - **Lifecycle Phase**: INCEPTION
-- **Current Stage**: reverse-engineering
-- **Next Stage**: practices-discovery
+- **Current Stage**: practices-discovery
+- **Next Stage**: requirements-analysis
 - **Status**: Running
-- **Last Updated**: 2026-10-18T05:44:01Z
+- **Last Updated**: 2026-10-18T06:02:00Z
 
 ## Session Resume Point
 - **Last Completed Stage**: say-hello
-- **Next Action**: Execute Reverse Engineering
+- **Next Action**: Execute Practices Discovery
 - **Pending Artifacts**: none
