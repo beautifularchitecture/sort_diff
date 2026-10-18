@@ -1,0 +1,15 @@
+{
+  "stage": "domain-design",
+  "upstream_ids": ["US1.1", "US1.2", "US2.1", "US3.1", "US3.2", "US4.1", "US4.2", "US5.1", "US5.2"],
+  "coverage": [
+    { "id": "US1.1", "status": "OK", "target": "InputProcessor" },
+    { "id": "US1.2", "status": "OK", "target": "WordListProvider, InputProcessor" },
+    { "id": "US2.1", "status": "OK", "target": "SortingEngine" },
+    { "id": "US3.1", "status": "OK", "target": "SortingPlaygroundApp" },
+    { "id": "US3.2", "status": "OK", "target": "SortingEngine, AccuracyChecker" },
+    { "id": "US4.1", "status": "OK", "target": "SortingPlaygroundApp, InputProcessor" },
+    { "id": "US4.2", "status": "OK", "target": "InputProcessor, SortingEngine" },
+    { "id": "US5.1", "status": "Deferred", "target": "build-and-test" },
+    { "id": "US5.2", "status": "Deferred", "target": "deployment-pipeline" }
+  ]
+}
