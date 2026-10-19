@@ -18,8 +18,9 @@ Single job `tests` (simplest option per Q2):
 3. **Install dependencies**: `pip install -r requirements.txt` (minimum-version ranges per Q6)
 4. **Format check**: `black --check .` (team code style)
 5. **Lint**: `ruff check .` (team code style)
-6. **Unit tests + coverage**: `pytest --cov=sorting_core --cov-report=term-missing --cov-fail-under=80` covering the sorting logic (Q1, NFR4.2)
-7. **Report**: Publish coverage summary in the job output
+6. **No-I/O guard (SD-4, NFR3.2)**: fail the job if any module in `sorting_core/` imports an I/O, network, process, or environment module, or calls the builtin `open`. Command: `! grep -rEn "^\s*(import|from)\s+(socket|requests|urllib|http|subprocess|pathlib|shutil|os)\b|\bopen\(" sorting_core/`
+7. **Unit tests + coverage**: `pytest --cov=sorting_core --cov-report=term-missing --cov-fail-under=80` covering the sorting logic (Q1, NFR4.2)
+8. **Report**: Publish coverage summary in the job output
 
 ## Coverage Scope
 
@@ -55,5 +56,6 @@ jobs:
       - run: pip install -r requirements.txt
       - run: black --check .
       - run: ruff check .
+      - run: '! grep -rEn "^\s*(import|from)\s+(socket|requests|urllib|http|subprocess|pathlib|shutil|os)\b|\bopen\(" sorting_core/'
       - run: pytest --cov=sorting_core --cov-report=term-missing --cov-fail-under=80
 ```

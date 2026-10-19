@@ -1,10 +1,11 @@
 {
   "stage": "infrastructure-design",
   "unit": "sorting-core",
-  "upstream_ids": ["FR7.3", "NFR4.1", "NFR4.2"],
+  "upstream_ids": ["NFR2.1", "NFR2.2", "NFR3.2", "NFR3.3"],
   "coverage": [
-    { "id": "FR7.3", "status": "OK", "target": "GitHub Actions workflow defined (FR7.3, RQ16)" },
-    { "id": "NFR4.1", "status": "OK", "target": "Black and Ruff checks" },
-    { "id": "NFR4.2", "status": "OK", "target": "pytest with 80% line coverage gate; single job for simplicity" }
+    { "id": "NFR2.1", "status": "OK", "target": "CI test job runs unit tests that sort literal text (no evaluation); pytest step in cicd-pipeline.md" },
+    { "id": "NFR2.2", "status": "OK", "target": "No markup in core; escaping is a U2 caller obligation (security-design.md Caller Obligations)" },
+    { "id": "NFR3.2", "status": "OK", "target": "No-I/O guard step in cicd-pipeline.md CI Job step 6 (SD-4)" },
+    { "id": "NFR3.3", "status": "OK", "target": "No user identity inputs; design review only (security-design.md SD-5)" }
   ]
 }

@@ -69,6 +69,8 @@
 
 
 
+- **Construction Verification Command**: pytest tests/ -q
+
 ## Phase Progress
 <!-- Status values: Pending, Active, Verified, Skipped -->
 
