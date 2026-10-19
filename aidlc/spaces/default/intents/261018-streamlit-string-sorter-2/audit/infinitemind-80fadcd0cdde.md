@@ -12660,3 +12660,433 @@
 **Details**: . (unit sorting-core)
 
 ---
+
+## Human Turn
+**Timestamp**: 2026-10-19T10:27:37Z
+**Event**: HUMAN_TURN
+**Session**: ses_eadbaadf8ffez0O6jhuS3t9M0k
+**Reply**: command
+
+---
+
+## Guard Stood Aside
+**Timestamp**: 2026-10-19T10:29:22Z
+**Event**: GUARD_STOOD_ASIDE
+**Guard**: plan-approval
+**Authority**: grant
+**Grant**: turn-marker
+**Actor**: main
+**Stage**: code-generation
+**Tool**: Bash
+**Details**: aidlc engine sensor-traceability --output-path aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/functional-design/traceab
+
+---
+
+## Guard Stood Aside
+**Timestamp**: 2026-10-19T10:29:31Z
+**Event**: GUARD_STOOD_ASIDE
+**Guard**: plan-approval
+**Authority**: grant
+**Grant**: turn-marker
+**Actor**: main
+**Stage**: code-generation
+**Tool**: Bash
+**Details**: aidlc engine sensor-upstream-coverage --output-path aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/functional-design/fu
+
+---
+
+## Guard Stood Aside
+**Timestamp**: 2026-10-19T10:29:59Z
+**Event**: GUARD_STOOD_ASIDE
+**Guard**: reviewer-scope
+**Authority**: instruction
+**Grant**: none
+**Actor**: subagent
+**Stage**: functional-design
+**Tool**: Bash
+**Details**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction (unit sorting-core)
+
+---
+
+## Guard Stood Aside
+**Timestamp**: 2026-10-19T10:30:35Z
+**Event**: GUARD_STOOD_ASIDE
+**Guard**: plan-approval
+**Authority**: grant
+**Grant**: turn-marker
+**Actor**: main
+**Stage**: code-generation
+**Tool**: Bash
+**Details**: python3 -c "\nimport json\nd=json.load(open('aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/.aidlc-engine/reviews/functional-design/units/sorting-c
+
+---
+
+## Guard Stood Aside
+**Timestamp**: 2026-10-19T10:30:50Z
+**Event**: GUARD_STOOD_ASIDE
+**Guard**: plan-approval
+**Authority**: grant
+**Grant**: turn-marker
+**Actor**: main
+**Stage**: code-generation
+**Tool**: Bash
+**Details**: python3 -c "\nimport json\nd=json.load(open('aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/.aidlc-engine/reviews/functional-design/units/sorting-c
+
+---
+
+## Guard Stood Aside
+**Timestamp**: 2026-10-19T10:33:04Z
+**Event**: GUARD_STOOD_ASIDE
+**Guard**: reviewer-scope
+**Authority**: instruction
+**Grant**: none
+**Actor**: subagent
+**Stage**: functional-design
+**Tool**: Grep
+**Details**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2 (unit sorting-core)
+
+---
+
+## Guard Stood Aside
+**Timestamp**: 2026-10-19T10:34:04Z
+**Event**: GUARD_STOOD_ASIDE
+**Guard**: plan-approval
+**Authority**: grant
+**Grant**: turn-marker
+**Actor**: main
+**Stage**: code-generation
+**Tool**: Bash
+**Details**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/.aidlc-engine/reviews/functional-design/units/sorting-core/4be437220155d14b/2.e5f539759033413c4859cff8d5d193d7.review.md
+
+---
+
+## Subagent Completed
+**Timestamp**: 2026-10-19T10:40:23Z
+**Event**: SUBAGENT_COMPLETED
+**Agent Type**: aidlc-architecture-reviewer-agent
+**Agent ID**: call_00_6au039yfs0tzbq5sxf7wydhv
+
+---
+
+## Guard Stood Aside
+**Timestamp**: 2026-10-19T10:40:56Z
+**Event**: GUARD_STOOD_ASIDE
+**Guard**: plan-approval
+**Authority**: instruction
+**Grant**: none
+**Actor**: main
+**Stage**: code-generation
+**Tool**: Bash
+**Details**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/.aidlc-engine/reviewer-dispatch.json
+
+---
+
+## Error Logged
+**Timestamp**: 2026-10-19T10:40:56Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-log
+**Command**: aidlc-log engine log review --stage functional-design --reviewer aidlc-architecture-reviewer-agent --unit sorting-core --iteration 2 --verdict READY --review-file aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/.aidlc-engine/reviews/functional-design/units/sorting-core/4be437220155d14b/2.e5f539759033413c4859cff8d5d193d7.review.md --project-dir <project-dir>
+**Error**: Refusing REVIEW_COMPLETED for "functional-design": the findings report could not be read. Write the whole review again with the required Prior findings and New findings tables. Rerun this review request with --retry-pending and dispatch the reviewer once more.
+
+---
+
+## Review Requested
+**Timestamp**: 2026-10-19T10:41:07Z
+**Event**: REVIEW_REQUESTED
+**Stage**: functional-design
+**Reviewer**: aidlc-architecture-reviewer-agent
+**Unit**: sorting-core
+**Iteration**: 2
+**Retry**: pending-request
+**Artifact Fingerprint**: sha256:c9bf55966e4c7b0ee0109900526b9fd31d4aa9712555c8fa3004a9301afab507
+**Request Id**: review:e5f539759033413c4859cff8d5d193d7
+**Review File**: .aidlc-engine/reviews/functional-design/units/sorting-core/4be437220155d14b/2.e5f539759033413c4859cff8d5d193d7.review.md
+
+---
+
+## Guard Stood Aside
+**Timestamp**: 2026-10-19T10:41:14Z
+**Event**: GUARD_STOOD_ASIDE
+**Guard**: plan-approval
+**Authority**: instruction
+**Grant**: none
+**Actor**: main
+**Stage**: code-generation
+**Tool**: Write
+**Details**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/.aidlc-engine/reviewer-dispatch.json
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-19T10:41:14Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/.aidlc-engine/reviewer-dispatch.json
+**Context**: .aidlc-engine > reviewer-dispatch.json
+
+---
+
+## Guard Stood Aside
+**Timestamp**: 2026-10-19T10:42:17Z
+**Event**: GUARD_STOOD_ASIDE
+**Guard**: plan-approval
+**Authority**: instruction
+**Grant**: none
+**Actor**: main
+**Stage**: code-generation
+**Tool**: Bash
+**Details**: aidlc engine sensor-traceability --output-path aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/functional-design/traceab
+
+---
+
+## Guard Stood Aside
+**Timestamp**: 2026-10-19T10:42:56Z
+**Event**: GUARD_STOOD_ASIDE
+**Guard**: plan-approval
+**Authority**: instruction
+**Grant**: none
+**Actor**: main
+**Stage**: code-generation
+**Tool**: Write
+**Details**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/.aidlc-engine/reviews/functional-design/units/sorting-core/4be437220155d14b/2.e5f539759033413c4859cff8d5d193d7.review.md
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-19T10:42:57Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/.aidlc-engine/reviews/functional-design/units/sorting-core/4be437220155d14b/2.e5f539759033413c4859cff8d5d193d7.review.md
+**Context**: .aidlc-engine > reviews > functional-design > units > sorting-core > 4be437220155d14b > 2.e5f539759033413c4859cff8d5d193d7.review.md
+
+---
+
+## Subagent Completed
+**Timestamp**: 2026-10-19T10:43:01Z
+**Event**: SUBAGENT_COMPLETED
+**Agent Type**: aidlc-architecture-reviewer-agent
+**Agent ID**: toolu_01RWAwjDopjYPxgo5ftwYiMN
+
+---
+
+## Guard Stood Aside
+**Timestamp**: 2026-10-19T10:43:18Z
+**Event**: GUARD_STOOD_ASIDE
+**Guard**: plan-approval
+**Authority**: instruction
+**Grant**: none
+**Actor**: main
+**Stage**: code-generation
+**Tool**: Bash
+**Details**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/.aidlc-engine/reviewer-dispatch.json
+
+---
+
+## Guard Stood Aside
+**Timestamp**: 2026-10-19T10:43:31Z
+**Event**: GUARD_STOOD_ASIDE
+**Guard**: plan-approval
+**Authority**: instruction
+**Grant**: none
+**Actor**: main
+**Stage**: code-generation
+**Tool**: Bash
+**Details**: aidlc engine log decision --stage functional-design --unit sorting-core --decision "Functional-design review iteration 2 returned READY with two verified Major 
+
+---
+
+## Decision Recorded
+**Timestamp**: 2026-10-19T10:43:32Z
+**Event**: DECISION_RECORDED
+**Stage**: functional-design
+**Decision**: Functional-design review iteration 2 returned READY with two verified Major errors (BR1.1 example token count; Part 10 selection reversed swaps). How to proceed?
+**Options**: A. Record READY as returned, fix errors at approval gate; B. Fix the two errors now and record a verdict on corrected files (past review cap, needs sign-off); C. Hold the stage and handle separately
+**Unit**: sorting-core
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-19T10:55:26Z
+**Event**: HUMAN_TURN
+**Session**: ses_eadbaadf8ffez0O6jhuS3t9M0k
+**Reply**: command
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-19T10:56:24Z
+**Event**: HUMAN_TURN
+**Session**: ses_eadbaadf8ffez0O6jhuS3t9M0k
+
+---
+
+## Review Completed
+**Timestamp**: 2026-10-19T10:56:32Z
+**Event**: REVIEW_COMPLETED
+**Stage**: functional-design
+**Reviewer**: aidlc-architecture-reviewer-agent
+**Unit**: sorting-core
+**Iteration**: 2
+**Verdict**: READY
+**Request Fingerprint**: sha256:c9bf55966e4c7b0ee0109900526b9fd31d4aa9712555c8fa3004a9301afab507
+**Artifact Fingerprint**: sha256:c9bf55966e4c7b0ee0109900526b9fd31d4aa9712555c8fa3004a9301afab507
+**Request Id**: review:e5f539759033413c4859cff8d5d193d7
+**Review Record**: .aidlc-engine/reviews/functional-design/units/sorting-core/4be437220155d14b/2.json
+**Review Record Digest**: sha256:acb7130a8c3cd2986e5338a1e1e8ffa93f5b6c8e1e859b19894bc2210fe63371
+
+---
+
+## Review Requested
+**Timestamp**: 2026-10-19T10:56:42Z
+**Event**: REVIEW_REQUESTED
+**Stage**: nfr-requirements
+**Reviewer**: aidlc-architecture-reviewer-agent
+**Unit**: sorting-core
+**Iteration**: 1
+**Artifact Fingerprint**: sha256:7dc801f86bc0b8e80b40611d83779127ff64b9ec056fe7e712c7adfda84eabef
+**Request Id**: review:1a2f2edc26054124129d09b47154cd79
+**Review File**: .aidlc-engine/reviews/nfr-requirements/units/sorting-core/4be437220155d14b/1.1a2f2edc26054124129d09b47154cd79.review.md
+
+---
+
+## Guard Stood Aside
+**Timestamp**: 2026-10-19T10:56:48Z
+**Event**: GUARD_STOOD_ASIDE
+**Guard**: plan-approval
+**Authority**: instruction
+**Grant**: none
+**Actor**: main
+**Stage**: code-generation
+**Tool**: Write
+**Details**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/.aidlc-engine/reviewer-dispatch.json
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-19T10:56:49Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/.aidlc-engine/reviewer-dispatch.json
+**Context**: .aidlc-engine > reviewer-dispatch.json
+
+---
+
+## Guard Stood Aside
+**Timestamp**: 2026-10-19T10:57:11Z
+**Event**: GUARD_STOOD_ASIDE
+**Guard**: plan-approval
+**Authority**: instruction
+**Grant**: none
+**Actor**: main
+**Stage**: code-generation
+**Tool**: Bash
+**Details**: aidlc engine sensor-traceability --output-path aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/traceabi
+
+---
+
+## Guard Stood Aside
+**Timestamp**: 2026-10-19T10:57:44Z
+**Event**: GUARD_STOOD_ASIDE
+**Guard**: plan-approval
+**Authority**: instruction
+**Grant**: none
+**Actor**: main
+**Stage**: code-generation
+**Tool**: Write
+**Details**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/.aidlc-engine/reviews/nfr-requirements/units/sorting-core/4be437220155d14b/1.1a2f2edc26054124129d09b47154cd79.review.md
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-19T10:57:44Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/.aidlc-engine/reviews/nfr-requirements/units/sorting-core/4be437220155d14b/1.1a2f2edc26054124129d09b47154cd79.review.md
+**Context**: .aidlc-engine > reviews > nfr-requirements > units > sorting-core > 4be437220155d14b > 1.1a2f2edc26054124129d09b47154cd79.review.md
+
+---
+
+## Subagent Completed
+**Timestamp**: 2026-10-19T10:57:49Z
+**Event**: SUBAGENT_COMPLETED
+**Agent Type**: aidlc-architecture-reviewer-agent
+**Agent ID**: toolu_012KoXqdJ2qYTWW7jZTViZ7Q
+
+---
+
+## Guard Stood Aside
+**Timestamp**: 2026-10-19T10:57:54Z
+**Event**: GUARD_STOOD_ASIDE
+**Guard**: plan-approval
+**Authority**: instruction
+**Grant**: none
+**Actor**: main
+**Stage**: code-generation
+**Tool**: Bash
+**Details**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/.aidlc-engine/reviewer-dispatch.json
+
+---
+
+## Review Completed
+**Timestamp**: 2026-10-19T10:57:55Z
+**Event**: REVIEW_COMPLETED
+**Stage**: nfr-requirements
+**Reviewer**: aidlc-architecture-reviewer-agent
+**Unit**: sorting-core
+**Iteration**: 1
+**Verdict**: READY
+**Request Fingerprint**: sha256:7dc801f86bc0b8e80b40611d83779127ff64b9ec056fe7e712c7adfda84eabef
+**Artifact Fingerprint**: sha256:7dc801f86bc0b8e80b40611d83779127ff64b9ec056fe7e712c7adfda84eabef
+**Request Id**: review:1a2f2edc26054124129d09b47154cd79
+**Review Record**: .aidlc-engine/reviews/nfr-requirements/units/sorting-core/4be437220155d14b/1.json
+**Review Record Digest**: sha256:101cb5aa5ea00d9064b7f79f3f3454250d64bee66b0ed62544675e3ddfeb83f9
+
+---
+
+## Review Requested
+**Timestamp**: 2026-10-19T10:58:07Z
+**Event**: REVIEW_REQUESTED
+**Stage**: nfr-design
+**Reviewer**: aidlc-architecture-reviewer-agent
+**Unit**: sorting-core
+**Iteration**: 1
+**Artifact Fingerprint**: sha256:eaedf7f51f7b2f21f27e92d44c20fcba8c5607fab82947900c432853514b19e8
+**Request Id**: review:4c09e1922fbb58dbefca8328e33564dc
+**Review File**: .aidlc-engine/reviews/nfr-design/units/sorting-core/4be437220155d14b/1.4c09e1922fbb58dbefca8328e33564dc.review.md
+
+---
+
+## Guard Stood Aside
+**Timestamp**: 2026-10-19T10:58:13Z
+**Event**: GUARD_STOOD_ASIDE
+**Guard**: plan-approval
+**Authority**: instruction
+**Grant**: none
+**Actor**: main
+**Stage**: code-generation
+**Tool**: Write
+**Details**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/.aidlc-engine/reviewer-dispatch.json
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-19T10:58:13Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/.aidlc-engine/reviewer-dispatch.json
+**Context**: .aidlc-engine > reviewer-dispatch.json
+
+---
+
+## Guard Stood Aside
+**Timestamp**: 2026-10-19T10:58:51Z
+**Event**: GUARD_STOOD_ASIDE
+**Guard**: plan-approval
+**Authority**: instruction
+**Grant**: none
+**Actor**: main
+**Stage**: code-generation
+**Tool**: Bash
+**Details**: aidlc engine sensor-traceability --output-path aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-design/traceability.j
+
+---
