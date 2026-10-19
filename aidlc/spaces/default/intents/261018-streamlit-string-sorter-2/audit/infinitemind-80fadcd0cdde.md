@@ -14189,3 +14189,178 @@
 **Session**: ses_eadbaadf8ffez0O6jhuS3t9M0k
 
 ---
+
+## Guard Stood Aside
+**Timestamp**: 2026-10-19T11:12:58Z
+**Event**: GUARD_STOOD_ASIDE
+**Guard**: review-freeze
+**Authority**: grant
+**Grant**: turn-marker
+**Actor**: main
+**Stage**: code-generation
+**Tool**: Write
+**Details**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/code-generation/code-generation-plan.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-19T11:12:59Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/code-generation/code-generation-plan.md
+**Context**: construction > sorting-core > code-generation > code-generation-plan.md
+
+---
+
+## Guard Stood Aside
+**Timestamp**: 2026-10-19T11:13:11Z
+**Event**: GUARD_STOOD_ASIDE
+**Guard**: review-freeze
+**Authority**: grant
+**Grant**: turn-marker
+**Actor**: main
+**Stage**: code-generation
+**Tool**: Write
+**Details**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/code-generation/unit-test-instructions.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-19T11:13:12Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/code-generation/unit-test-instructions.md
+**Context**: construction > sorting-core > code-generation > unit-test-instructions.md
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-19T11:15:09Z
+**Event**: HUMAN_TURN
+**Session**: ses_eadbaadf8ffez0O6jhuS3t9M0k
+
+---
+
+## Guard Stood Aside
+**Timestamp**: 2026-10-19T11:15:45Z
+**Event**: GUARD_STOOD_ASIDE
+**Guard**: plan-approval
+**Authority**: instruction
+**Grant**: none
+**Actor**: main
+**Stage**: code-generation
+**Tool**: Bash
+**Details**: pytest tests/ -q 2>&1 | tail -30
+
+---
+
+## Decision Recorded
+**Timestamp**: 2026-10-19T11:17:10Z
+**Event**: DECISION_RECORDED
+**Stage**: code-generation
+**Decision**: The engine routes sorting-core to checkpoint verification of the existing code (no plan-approval beat), and pytest tests/ -q passes 97 tests on the current code. That code still differs from the repaired design (bubble early exit, shift-based selection swaps, quick-sort equal-value guards). How should sorting-core proceed?
+**Options**: A. Verify the existing code now (checkpoint verify); B. Rework the code to the repaired design via a fresh code-generation attempt (re-opens Plan Approval); C. Hold
+**Unit**: sorting-core
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-19T11:20:14Z
+**Event**: HUMAN_TURN
+**Session**: ses_eadbaadf8ffez0O6jhuS3t9M0k
+
+---
+
+## Guard Stood Aside
+**Timestamp**: 2026-10-19T11:20:20Z
+**Event**: GUARD_STOOD_ASIDE
+**Guard**: plan-approval
+**Authority**: grant
+**Grant**: turn-marker
+**Actor**: main
+**Stage**: code-generation
+**Tool**: Bash
+**Details**: aidlc engine bolt checkpoint --action verify --unit sorting-core --kind unit
+
+---
+
+## Change Accepted
+**Timestamp**: 2026-10-19T11:20:21Z
+**Event**: CHANGE_ACCEPTED
+**Stage**: code-generation
+**Unit**: sorting-core
+**Checkpoint**: review-receipt
+**Changed**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/code-generation/traceability.json, aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/code-generation/code-generation-plan.md, aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/code-generation/unit-test-instructions.md
+**Recorded**: sha256:8b492aff85a08f698755db2bee04cc3ca8d07a3785a020a4f93a68f3ccee36f1
+**Current**: sha256:7eca8bc4d371fff4b7d1544d35fc8abaf80b36aa9db6c291f65f8e308dbbe541
+**Details**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/code-generation/traceability.json, aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/code-generation/code-generation-plan.md, aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/code-generation/unit-test-instructions.md changed after the sorting core Unit was reviewed; carrying on.
+
+---
+
+## Checkpoint Verification Recorded
+**Timestamp**: 2026-10-19T11:20:22Z
+**Event**: CHECKPOINT_VERIFICATION_RECORDED
+**Unit**: sorting-core
+**Kind**: unit
+**Stage**: code-generation
+**Stages**: functional-design, nfr-requirements, nfr-design, infrastructure-design, code-generation
+**Verification Id**: 45c3bb70-0a72-446a-8e7c-fdc4a8e3b01f
+**Fingerprint**: sha256:b12bb57b8c942ceac8559ada57f0c599fb94ea3ecb771a95e197dc3c9af29ea1
+**Command SHA-256**: b41e751e8fb423b60d38ca77647d89e9a26fe62bd57769fc568e144084c4a0b3
+**Exit Code**: 0
+**Verified**: true
+**Run floor**: WORKFLOW_STARTED:2026-10-18T01:05:32Z#1
+
+---
+
+## Gate Approved
+**Timestamp**: 2026-10-19T11:20:32Z
+**Event**: GATE_APPROVED
+**Unit**: sorting-core
+**Stage**: code-generation
+**Stages**: functional-design, nfr-requirements, nfr-design, infrastructure-design, code-generation
+**Gate Stages**: functional-design, nfr-requirements, nfr-design, infrastructure-design, code-generation
+**Gate Scope**: unit-end
+**Checkpoint**: construction-unit
+**Fingerprint**: sha256:b12bb57b8c942ceac8559ada57f0c599fb94ea3ecb771a95e197dc3c9af29ea1
+**Run floor**: WORKFLOW_STARTED:2026-10-18T01:05:32Z#1
+**Run floors**: {"functional-design":"WORKFLOW_STARTED:2026-10-18T01:05:32Z#1","nfr-requirements":"WORKFLOW_STARTED:2026-10-18T01:05:32Z#1","nfr-design":"WORKFLOW_STARTED:2026-10-18T01:05:32Z#1","infrastructure-design":"WORKFLOW_STARTED:2026-10-18T01:05:32Z#1","code-generation":"WORKFLOW_STARTED:2026-10-18T01:05:32Z#1"}
+**Verification Command SHA-256**: b41e751e8fb423b60d38ca77647d89e9a26fe62bd57769fc568e144084c4a0b3
+**Verification Id**: 45c3bb70-0a72-446a-8e7c-fdc4a8e3b01f
+**Approved Evidence**: {"functional-design":["sha256:c9bf55966e4c7b0ee0109900526b9fd31d4aa9712555c8fa3004a9301afab507",null],"nfr-requirements":["sha256:7dc801f86bc0b8e80b40611d83779127ff64b9ec056fe7e712c7adfda84eabef",null],"nfr-design":["sha256:8099b0659de44eb425ce20d3afa5b278afe124e58139f5e56e3e319c73acad95",null],"infrastructure-design":["sha256:0f0604ad93e13030f8cf9ce032cbaf00ff702c8edfa5c8a4b0aa4296c302af64",null],"code-generation":["sha256:8b492aff85a08f698755db2bee04cc3ca8d07a3785a020a4f93a68f3ccee36f1","sha256:4145da255eb6b6b21ae7d25ab08b4bb8995375c0a52f494a8d98e78a87a2a93c",{"\u0000pyproject.toml":"100644 984721db7d5d0a6190872dcc87f07a0178a01dfdc1c11838abdc7e6b2a63739d","\u0000requirements.txt":"100644 ad7caab8688dc8a0330c02e5c537fd3b1160a8614977e9b4dd452db5842c3f62","\u0000sorting_core/__init__.py":"100644 3a193a64d53caced1d8093cb7aa41e74baaee72d58af4ec6aa78423c22001e05","\u0000sorting_core/algorithms.py":"100644 ce90778fe516e935b1c36af999e51463c187fd7dff50e58642f7a644120126d5","\u0000sorting_core/checker.py":"100644 eac3863955dca95a17763b77e76c549617174b60062a7d80bbe65f4577b229a3","\u0000sorting_core/engine.py":"100644 b892a1ef78e189d6f371f57ef7d830f69f09ea11712c550f6668f6561b186693","\u0000sorting_core/normalize.py":"100644 9c4c9ac3be8fa040e6504cefa10ae47633e9462241ff821ca405f6a52ff5ef96","\u0000sorting_core/runner.py":"100644 138a6c3613244769fb3c61791fedca7e5863255dc6afda2c8ff15c1a35b7b121","\u0000sorting_core/types.py":"100644 c410e2858d6a7c9f2d0bbd4d28b0ac959b4e3f4a5072161cb795e735ca39d52b","\u0000sorting_core/words.py":"100644 d0eec3ad353b0d2eef6bc8231c0343a01346e3f40226539560fc53e52d717db5","\u0000tests/test_algorithms.py":"100644 098dc40673d02a4d3088ece2094f3330dba1deccf012f4eb1828f7e1631f4072","\u0000tests/test_checker.py":"100644 75cd92c1b19bf64fd14601f0316fb11ac9974ff2a2d8c382eb757540d8e58ba8","\u0000tests/test_engine.py":"100644 175b0e5ecb4e92dd8eede59317a884531281e7a261e128f19c4329657dd57b36","\u0000tests/test_normalize.py":"100644 d4bf6de1141ed08bfac0d3a7355001a67c2c71d206f3efd6c599efe77fbeaaab","\u0000tests/test_runner.py":"100644 c631f7774dbb9b9bc3617444087a396884ac6a75f14f8f01b193c3aaf51deb3d","\u0000tests/test_types.py":"100644 950241a7d261cc51a53e4b74d53c2fa35a5f0384a93a8077b5167eed20b236cc","\u0000tests/test_words.py":"100644 9523f79a9ea4b375f1f60595a8cccf9e8b69fdc8a37d9ef38c79315c7d71d5f6"}]}
+**Autonomous**: true
+
+---
+
+## Decision Recorded
+**Timestamp**: 2026-10-19T11:21:02Z
+**Event**: DECISION_RECORDED
+**Stage**: functional-design
+**Decision**: Start playground-ui Functional Design by reading the U2 inputs and drafting its questions file for your answers. Proceed?
+**Options**: Proceed; Hold for now
+**Unit**: playground-ui
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-19T11:21:27Z
+**Event**: HUMAN_TURN
+**Session**: ses_eadbaadf8ffez0O6jhuS3t9M0k
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-19T11:21:46Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/u2-playground-ui/functional-design-questions.md
+**Context**: construction > u2-playground-ui > functional-design-questions.md
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-19T11:24:07Z
+**Event**: HUMAN_TURN
+**Session**: ses_eadbaadf8ffez0O6jhuS3t9M0k
+
+---

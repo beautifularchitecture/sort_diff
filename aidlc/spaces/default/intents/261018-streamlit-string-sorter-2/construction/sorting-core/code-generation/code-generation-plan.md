@@ -1,54 +1,67 @@
 # Code Generation Plan — sorting-core (U1)
 
+## Summary
+
+- Builds: the sorting-core package, aligned to the repaired functional and NFR design (bubble, selection, guarded Lomuto quick sort, per-algorithm counters).
+- Touches: `sorting_core/algorithms.py`, `sorting_core/engine.py`, `sorting_core/normalize.py`, `sorting_core/__init__.py`, `tests/test_*.py`, `pyproject.toml` (test config only if missing).
+- Tests: standard strategy, test-after: unit tests per component plus boundary tests for the counting rules, about 30 tests, run with `pytest tests/ -q`.
+
 ## Goals
-- Implement an in-process Python package `sorting_core` that realizes the sorting-core unit.
-- Follow `entities.md`, `rules.md`, `functional-spec.md`, and `security-design.md`.
-- Meet the team posture (test-after, but plan covers implementation; tests will be written after code per team instructions; NFR4.2 still requires coverage).
-- Output plain values only; no HTML/markup, no I/O, no network, no auth.
 
-## Package Structure
-- `sorting_core/__init__.py` — exports public API: `SortInput`, `AlgorithmResult`, `AccuracyCheck`, `Counter`, `InputProcessor`, `SortingEngine`, `AccuracyChecker`, `WordListProvider`, `run_all`.
-- `sorting_core/types.py` — dataclasses for `SortInput`, `AlgorithmResult`, `AccuracyCheck`, `Counter`.
-- `sorting_core/normalize.py` — `InputProcessor` (BR-INP-1, BR-INP-2, BR-INP-3).
-- `sorting_core/algorithms.py` — bubble, selection, quick (Lomuto) with shared `Counter` (BR-SE-1, BR-SE-2, BR-SE-3, BR-SE-4, BR-SE-5; NFR design Q2 recursive quick, Q3 shared counter).
-- `sorting_core/engine.py` — `SortingEngine` (BR-INT-2, BR-SE-4).
-- `sorting_core/checker.py` — `AccuracyChecker` (BR-AC-1, BR-AC-2).
-- `sorting_core/words.py` — `WordListProvider` (BR-WLP-1).
-- `sorting_core/runner.py` — convenience `run_all` combining InputProcessor, SortingEngine, AccuracyChecker.
+- Implement the `sorting_core` package so it realizes the approved design: `functional-design/entities.md`, `rules.md` (BR1.1–BR5.3), `functional-spec.md`, `nfr-design/security-design.md`, `nfr-design/logical-components.md`.
+- Counting follows BR2.1 (comparisons: bubble and selection exactly n(n-1)/2; quick sort counts every partition comparison) and BR2.2 (swaps: only real exchanges, positions and values both differ).
+- Output equals `sorted(normalized_strings)` (BR2.5). Internal stability is not observable for strings, so no index-pair or stable-variant machinery is required.
+- No HTML, no I/O, no network, no eval (SD-1, SD-3, SD-4). Standard library only (NFR3.4).
 
-## Key Implementation Notes
-- Input validation: `normalize` and public entry points raise `TypeError` for invalid types (security design SD-2). `AccuracyChecker` raises `ValueError` on `run_id` mismatch (BR-INT-1).
-- Normalization: split on `\n` and `,`; trim; drop empty after trim; lowercase ASCII A-Z only (BR-INP-1).
-- Run ID: stable identifier (uuid4) generated on `normalize` (BR-INP-3).
-- Counter: single object passed into each algorithm (Q3); `comparisons` and `swaps` incremented as specified.
-- Quick sort: recursive Lomuto (Q2). Depth ≤ 100 for max 100 strings; Python recursionlimit default is fine.
-- Lexicographic order: default string `<`/`>` (BR-SE-3).
-- Stable semantics: implement selection/quick so duplicates preserve input order for matching `sorted()`? Quick sort is not inherently stable. Implement stable version (e.g. Hoare is not trivially stable; Lomuto can be adapted or just use stable approach — easier: for quicksort, sort indices or use `bisect` pattern not allowed; implement stable quicksort by swapping equal elements carefully, or note that to match `sorted()` (Timsort, stable) we must produce stable order. But easier: implement bubble (stable), selection (stable if we don't swap equal elements unnecessarily), and quicksort in a stable way by sorting key with original index; but that changes data model. Alternatively implement quicksort to match `sorted()` by using Python comparison and ensure stability by not reordering equal elements. But default Lomuto swaps equal elements. To satisfy BR-SE-5 (must match `sorted()`), prefer implementing algorithms that produce stable results or adjust quicksort to be stable. For this exercise, implement bubble as stable (adjacent swaps don't reorder equal), selection: when min is found, only swap if different; Lomuto quicksort: treat elements as equal and don't swap when equal to pivot in a way that breaks stability — or implement introsort? Or use index-based approach: work with (index, value) to preserve original index, then discard index. That makes all algorithms stable and preserves input order for equal elements.)
-  - Recommendation: use (index, value) pairs for sorting to guarantee stability across all three, then extract values. This is straightforward and guarantees exact match with `sorted()` for equal elements.
-- Accuracy: `passed` true iff `sorted_strings == sorted(normalized_strings)` (element-wise equality). (BR-AC-1, BR-AC-2.)
+## Traceability (plan step → design rule)
 
-## Files to Create
-1. [x] `types.py` — dataclasses with type hints.
-2. [x] `normalize.py` — InputProcessor.
-3. [x] `algorithms.py` — implementations + Counter.
-4. [x] `engine.py` — SortingEngine.
-5. [x] `checker.py` — AccuracyChecker.
-6. [x] `words.py` — WordListProvider (fixed list; non-empty).
-7. [x] `runner.py` — `run_all` helper (combines processor, engine, checker).
-8. [x] `__init__.py` — re-exports and `__all__`.
-9. `__version__.py` (optional) — not required, skip.
-10. `py.typed` (optional) — not required for this demo.
+| Plan step | Design IDs |
+|---|---|
+| 1 Bubble sort | BR2.1, BR2.2, BR2.3, BR2.5, AC2.1.2, AC3.2.1, AC3.2.2 |
+| 2 Selection sort | BR2.1, BR2.2, BR2.3, BR2.5, AC3.2.1, AC3.2.2 |
+| 3 Quick sort (guarded Lomuto) | BR2.1, BR2.2, BR5.2, BR5.3, AC4.2.1, AC4.2.2 |
+| 4 Per-algorithm counters in engine | BR2.4, BR4.2, AC2.1.1, AC2.1.3 |
+| 5 Normalization | BR1.1, BR1.2, BR1.3, AC1.1.2, AC1.1.4, AC4.2.3 |
+| 6 Boundary type checks | SD-1, SD-2, BR3.1 (run_id mismatch), NFR2.1 |
+| 7 Accuracy checker | BR3.1, BR3.2, AC3.2.3, AC3.2.4 |
+| 8 Documentation and rule IDs | BR4.1, NFR2.2, NFR3.4 |
+| 9 Tests | all of the above; NFR4.2 |
+| 10 Test configuration and coverage gate | NFR4.1, NFR4.2 |
+| 11 Code summary, traceability, source manifest | Step 5 artifacts |
+
+## Implementation Steps
+
+1. [ ] **Bubble sort (`algorithms.py`).** Remove the early-exit flag so the outer and inner loops always run; comparisons equal n(n-1)/2 for every input. Count a swap only when two adjacent positions hold different values and are out of order (BR2.2). Source: BR2.1, BR2.2.
+2. [ ] **Selection sort (`algorithms.py`).** Replace the shift-based placement with one exchange per pass when the pass minimum is not already in place; comparisons equal n(n-1)/2; swaps count only real exchanges. Source: BR2.1, BR2.2.
+3. [ ] **Quick sort, guarded Lomuto (`algorithms.py`).** Keep the recursive Lomuto partition with the last element as pivot (Q6). Count an inner exchange and the final pivot placement only when positions differ and values differ, so sorted and all-identical input yield 0 swaps (BR2.2, BR5.2, BR5.3). Comparisons count every partition comparison (BR2.1).
+4. [ ] **Engine (`engine.py`).** `run_all` creates three fresh `Counter` objects per call, one per algorithm; each algorithm increments only its own counter (logical-components.md, Shared Counter). Source: BR2.4, BR4.2.
+5. [ ] **Normalization (`normalize.py`).** Verify: split on `\n` and `,`, trim, drop empty tokens, lowercase ASCII A–Z only, duplicates kept, run_id generated once per SortInput (BR1.1–BR1.3). Adjust only if behavior differs from these rules.
+6. [ ] **Boundary checks (`normalize.py`, `engine.py`, `checker.py`).** `TypeError` for wrong input types (SD-2); `ValueError` on `run_id` mismatch in the checker (BR3.1 and BR4.1). Verify against the existing code.
+7. [ ] **Accuracy checker (`checker.py`).** `passed` is true only when `sorted_strings == sorted(normalized_strings)` position by position; each algorithm is checked independently (BR3.1, BR3.2).
+8. [ ] **Documentation and rule IDs.** Replace legacy `BR-*` identifiers in docstrings and comments with the `BRx.y` IDs used by `rules.md`; remove any claim of a stable-variant selection sort. Source: BR4.1, NFR2.2, NFR3.4.
+9. [ ] **Tests (`tests/`).** Add or update unit tests after each implemented piece (test-after, team posture):
+   - bubble: `[3,1,2]` gives comparisons 3, swaps 2; sorted n=4 gives comparisons 6, swaps 0.
+   - selection: `[3,1,2]` gives comparisons 3, swaps 2; reversed n=4 gives comparisons 6, swaps 2.
+   - quick: `[3,1,2]` gives comparisons 2, swaps 2; sorted n=3 gives comparisons 3, swaps 0; all-identical n=3 gives comparisons 3, swaps 0.
+   - single element and empty input give 0 comparisons and 0 swaps.
+   - duplicates and non-ASCII input match `sorted()`.
+   - engine: each algorithm's count comes from its own counter.
+   - normalization and boundary cases (BR1.1–BR1.3, SD-2, BR3.1).
+   - Coverage floor 80% on `sorting_core` (NFR4.2).
+10. [ ] **Test configuration.** Use the existing `pyproject.toml` pytest configuration (`testpaths = ["tests"]`, `pythonpath = ["."]`). Add `pytest-cov` to the dev requirements only if it is missing; do not lower the 80% coverage floor.
+11. [ ] **Step 5 artifacts.** Write `code-summary.md`, `traceability.json` (every assigned AC, NFR sub-ID, and BRx.y ID; every OK target an existing file), and `source-manifest.json` listing every application-source path created or modified.
 
 ## Test Considerations (for code writer)
-- Edge cases: empty input (if called), single element, all identical, duplicates preserve order, ASCII vs non-ASCII, normalization (commas/newlines, trim, drop empty, ASCII lowercase only).
-- Counting: follow BR-SE-1 examples (bubble [3,1,2] gives 5 comparisons; selection gives 3; quick Lomuto on [3,1,2] pivot 2 gives 2).
-- Boundary: invalid types raise TypeError; run_id mismatch raises ValueError.
+
+- Counting examples above are taken from `functional-spec.md` and `rules.md`; do not change the expected numbers to match the code.
+- Boundary: invalid types raise `TypeError`; `run_id` mismatch raises `ValueError`.
+- Do not weaken the 80% coverage floor to make a step pass; surface the gap instead.
 
 ## Non-Functional Notes
-- No third-party deps; stdlib only.
-- No I/O, network, eval, HTML (SD-1, SD-3, SD-4).
-- No secrets.
-- 100-string max is fine for O(n²); quicksort recursive depth fine.
+
+- No third-party runtime deps; stdlib only.
+- No I/O, network, eval, or HTML in `sorting_core/` (checked by the CI guard in infrastructure-design).
+- 100-string maximum is the caller's obligation (security-design.md Caller Obligations); recursion depth stays bounded in practice.
 
 ## Testing Contract
 
