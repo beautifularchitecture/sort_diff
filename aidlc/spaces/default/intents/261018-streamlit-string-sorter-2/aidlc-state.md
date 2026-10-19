@@ -63,6 +63,15 @@
 
 
 
+
+
+
+- **Active Unit**: sorting-core
+
+- **Unit Stage**: code-generation
+
+- **Unit State**: in-progress
+
 ## Phase Progress
 <!-- Status values: Pending, Active, Verified, Skipped -->
 
@@ -125,7 +134,7 @@ Per unit: [TBD]
 - **Current Stage**: functional-design
 - **Next Stage**: nfr-requirements
 - **Status**: Running
-- **Last Updated**: 2026-10-18T23:51:53Z
+- **Last Updated**: 2026-10-19T00:07:51Z
 
 - **Construction Autonomy Mode**: autonomous
 

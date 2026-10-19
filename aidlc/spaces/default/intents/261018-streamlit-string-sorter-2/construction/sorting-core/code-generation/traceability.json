@@ -1,0 +1,24 @@
+{
+  "stage": "code-generation",
+  "unit": "sorting-core",
+  "upstream_ids": ["BR-INP-1", "BR-INP-2", "BR-INP-3", "BR-SE-1", "BR-SE-2", "BR-SE-3", "BR-SE-4", "BR-SE-5", "BR-AC-1", "BR-AC-2", "BR-WLP-1", "BR-INT-1", "BR-INT-2", "SD-1", "SD-2", "SD-3", "SD-4"],
+  "coverage": [
+    { "id": "BR-INP-1", "status": "PLANNED", "target": "normalize.py" },
+    { "id": "BR-INP-2", "status": "PLANNED", "target": "normalize.py" },
+    { "id": "BR-INP-3", "status": "PLANNED", "target": "normalize.py" },
+    { "id": "BR-SE-1", "status": "PLANNED", "target": "algorithms.py" },
+    { "id": "BR-SE-2", "status": "PLANNED", "target": "algorithms.py" },
+    { "id": "BR-SE-3", "status": "PLANNED", "target": "algorithms.py" },
+    { "id": "BR-SE-4", "status": "PLANNED", "target": "engine.py" },
+    { "id": "BR-SE-5", "status": "PLANNED", "target": "algorithms.py (index-keying)" },
+    { "id": "BR-AC-1", "status": "PLANNED", "target": "checker.py" },
+    { "id": "BR-AC-2", "status": "PLANNED", "target": "checker.py" },
+    { "id": "BR-WLP-1", "status": "PLANNED", "target": "words.py" },
+    { "id": "BR-INT-1", "status": "PLANNED", "target": "checker.py, engine.py" },
+    { "id": "BR-INT-2", "status": "PLANNED", "target": "engine.py" },
+    { "id": "SD-1", "status": "PLANNED", "target": "entire package (no eval/HTML)" },
+    { "id": "SD-2", "status": "PLANNED", "target": "normalize.py, runner.py" },
+    { "id": "SD-3", "status": "PLANNED", "target": "entire package" },
+    { "id": "SD-4", "status": "PLANNED", "target": "entire package" }
+  ]
+}

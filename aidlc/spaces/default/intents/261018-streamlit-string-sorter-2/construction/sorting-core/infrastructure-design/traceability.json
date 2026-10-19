@@ -1,0 +1,10 @@
+{
+  "stage": "infrastructure-design",
+  "unit": "sorting-core",
+  "upstream_ids": ["FR7.3", "NFR4.1", "NFR4.2"],
+  "coverage": [
+    { "id": "FR7.3", "status": "OK", "target": "GitHub Actions workflow defined (FR7.3, RQ16)" },
+    { "id": "NFR4.1", "status": "OK", "target": "Black and Ruff checks" },
+    { "id": "NFR4.2", "status": "OK", "target": "pytest with 80% line coverage gate; single job for simplicity" }
+  ]
+}
