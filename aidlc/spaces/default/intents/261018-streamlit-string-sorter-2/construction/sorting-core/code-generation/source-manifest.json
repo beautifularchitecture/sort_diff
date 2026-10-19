@@ -1,0 +1,24 @@
+{
+  "stage": "code-generation",
+  "unit": "sorting-core",
+  "version": 1,
+  "writes": [
+    { "path": "sorting_core/__init__.py" },
+    { "path": "sorting_core/types.py" },
+    { "path": "sorting_core/normalize.py" },
+    { "path": "sorting_core/algorithms.py" },
+    { "path": "sorting_core/engine.py" },
+    { "path": "sorting_core/checker.py" },
+    { "path": "sorting_core/words.py" },
+    { "path": "sorting_core/runner.py" },
+    { "path": "tests/test_types.py" },
+    { "path": "tests/test_normalize.py" },
+    { "path": "tests/test_algorithms.py" },
+    { "path": "tests/test_engine.py" },
+    { "path": "tests/test_checker.py" },
+    { "path": "tests/test_words.py" },
+    { "path": "tests/test_runner.py" },
+    { "path": "pyproject.toml" },
+    { "path": "requirements.txt" }
+  ]
+}

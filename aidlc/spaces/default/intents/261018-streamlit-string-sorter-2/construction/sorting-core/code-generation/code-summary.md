@@ -1,23 +1,31 @@
 # Code Summary — sorting-core (U1)
 
-## Implementation Status
-Artifacts specify the complete package structure. Code implementation will follow the plan; this summary describes what will be built.
+## Files Created / Modified
+Package modules (repo root `sorting_core/`):
+- `types.py` — dataclasses `SortInput`, `AlgorithmResult`, `AccuracyCheck`, `Counter`.
+- `normalize.py` — `InputProcessor`: split on `\n` and `,`, trim, drop empties, lowercase ASCII A–Z only, generate `uuid4` `run_id`.
+- `algorithms.py` — bubble, selection, recursive Lomuto quick sort sharing one `Counter`; sorts `(value, index)` pairs for stable output matching `sorted()`.
+- `engine.py` — `SortingEngine`: runs the three algorithms over one normalized input and returns exactly three `AlgorithmResult`s.
+- `checker.py` — `AccuracyChecker`: exact element-wise match against `sorted()`, raises `ValueError` on `run_id` mismatch.
+- `words.py` — `WordListProvider`: fixed, non-empty bundled tuple, no I/O.
+- `runner.py` — `run_all` convenience combining processor, engine, and checker.
+- `__init__.py` — public re-exports and `__all__`.
 
-## Public API
-- `SortInput`, `AlgorithmResult`, `AccuracyCheck`, `Counter` (dataclasses)
-- `InputProcessor`, `SortingEngine`, `AccuracyChecker`, `WordListProvider`
-- `run_all(raw_entries: list[str]) -> tuple[list[AlgorithmResult], list[AccuracyCheck]]` or combined results (final shape per entities.md)
+Tests (`tests/`): `test_types.py`, `test_normalize.py`, `test_algorithms.py`, `test_engine.py`, `test_checker.py`, `test_words.py`, `test_runner.py`.
 
-## Key Rules Enforced
-- Normalization matches BR-INP-1/2; run_id per BR-INP-3.
-- All three algorithms use shared counter definition (BR-SE-1); swap counts per BR-SE-2.
-- Recursive Lomuto quicksort; stable sort semantics achieved via index-keying to match `sorted()` (BR-SE-5).
-- Exactly three algorithms (BR-SE-4).
-- Exact-match accuracy (BR-AC-1), independent checks (BR-AC-2).
-- Type boundary validation (SD-2), no I/O/HTML (SD-1, SD-3, SD-4).
-- Immutable bundled words (BR-WLP-1).
+Build configuration: `pyproject.toml` (Black + Ruff line-length 88 / py312, pytest `testpaths`, `pythonpath`), `requirements.txt` (pytest, pytest-cov, black, ruff).
 
-## Traceability
-Each component traces to business rules in rules.md and security design in security-design.md. The package is a pure library consumed by playground-ui (U2).
+## Key Implementation Decisions
+- Single shared `Counter` per sort, incremented per the BR-SE-1 definition; comparison/swap counting matches the functional-spec worked examples.
+- Stable ordering across all three algorithms via `(value, index)` keys, so each result equals `sorted()` exactly (BR-SE-5); bubble and selection also preserve equal-element order.
+- Recursive Lomuto partitioning (NFR design Q2); depth is bounded well within Python's default recursion limit for the 100-string maximum.
+- All public entry points and `normalize` validate types at the boundary and raise `TypeError` (SD-2); the package performs no I/O, network, `eval`, or process work (SD-1, SD-3, SD-4) and emits plain values only.
+- `AccuracyChecker` performs independent per-algorithm checks and raises `ValueError` on a `run_id` mismatch (BR-INT-1).
 
-Implementation files: 8 modules as specified in the code generation plan. Tests to follow in tests/ (unit-test-instructions.md).
+## Test Coverage Summary
+- Command: `pytest --cov=sorting_core --cov-report=term-missing --cov-fail-under=80`.
+- Result: 97 passed, 0 failed; 100% line coverage on `sorting_core` (80% floor met).
+- `black --check` and `ruff check` (E, F, I, W) are clean.
+
+## Deviations from the Plan
+- None from the approved plan. Where the `rules.md` example tables contained internally contradictory worked figures, the implementation follows the formal BR definitions and `entities.md` (the declared source of truth); the affected test docstrings record the specific discrepancy, and the plan's key notes already specified this behaviour.
