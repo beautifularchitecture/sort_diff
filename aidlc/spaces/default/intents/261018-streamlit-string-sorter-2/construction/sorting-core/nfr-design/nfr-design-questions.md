@@ -10,7 +10,7 @@ A. Fail fast: raise TypeError with a clear message (recommended; matches the con
 B. Return an error result object for the caller to inspect
 X. Other (please specify)
 
-[Answer]:
+[Answer]: A
 
 ## Q2: Quick sort recursion
 
@@ -20,7 +20,7 @@ A. Recursive, relying on Python's default recursion limit (recommended; depth is
 B. Iterative with an explicit stack
 X. Other (please specify)
 
-[Answer]:
+[Answer]: A
 
 ## Q3: How the three algorithms share comparison and swap counting
 
@@ -28,4 +28,15 @@ A. One counter object created per run and passed into each algorithm (recommende
 B. Closure-based counters inside each algorithm function
 X. Other (please specify)
 
-[Answer]:
+[Answer]: A
+
+---
+
+## Consolidated Summary Confirmation
+
+Does this all look correct before I generate the artifact?
+
+- Looks correct
+- Request changes
+
+[Answer]: Looks correct

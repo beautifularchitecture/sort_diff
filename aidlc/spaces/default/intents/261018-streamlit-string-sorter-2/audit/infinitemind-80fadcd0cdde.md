@@ -9545,3 +9545,191 @@
 **Unit**: sorting-core
 
 ---
+
+## Human Turn
+**Timestamp**: 2026-10-18T23:50:58Z
+**Event**: HUMAN_TURN
+**Session**: ses_eaeb652adffeuozdqwG7fbePur
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-18T23:51:06Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-design/nfr-design-questions.md
+**Context**: construction > sorting-core > nfr-design > nfr-design-questions.md
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-18T23:51:27Z
+**Event**: HUMAN_TURN
+**Session**: ses_eaeb652adffeuozdqwG7fbePur
+
+---
+
+## Decision Recorded
+**Timestamp**: 2026-10-18T23:51:32Z
+**Event**: DECISION_RECORDED
+**Stage**: nfr-design
+**Decision**: Does this all look correct before I generate the artifact?
+**Options**: Looks correct,Request changes
+**Checkpoint**: Consolidated Summary Confirmation
+**Questions File**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-design/nfr-design-questions.md
+**Unit**: sorting-core
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-18T23:51:35Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-design/nfr-design-questions.md
+**Context**: construction > sorting-core > nfr-design > nfr-design-questions.md
+
+---
+
+## Summary Confirmation Recorded
+**Timestamp**: 2026-10-18T23:51:36Z
+**Event**: SUMMARY_CONFIRMATION_RECORDED
+**Stage**: nfr-design
+**Details**: Looks correct
+**Checkpoint**: Consolidated Summary Confirmation
+**Questions File**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-design/nfr-design-questions.md
+**Questions SHA-256**: ce0a93d6256e7809e5f2b6f866af4941e17dbab678d5a15854a78cb5c08160ac
+**Hash Scope**: confirmed-content-v2
+**Unit**: sorting-core
+**Person Reply**: 1. Looks correct
+**Summary Authorization Id**: 7cdc933608578f1acba145bf8c1acd4a48eae6ebce7ce32508d10112ec40c450
+
+---
+
+## Unit Started
+**Timestamp**: 2026-10-18T23:51:41Z
+**Event**: UNIT_STARTED
+**Stage**: nfr-design
+**Unit**: sorting-core
+**Run floor**: WORKFLOW_STARTED:2026-10-18T01:05:32Z#1
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-18T23:51:43Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-design/security-design.md
+**Context**: construction > sorting-core > nfr-design > security-design.md
+**Summary Authorization Id**: 7cdc933608578f1acba145bf8c1acd4a48eae6ebce7ce32508d10112ec40c450
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-18T23:51:46Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-design/logical-components.md
+**Context**: construction > sorting-core > nfr-design > logical-components.md
+**Summary Authorization Id**: 7cdc933608578f1acba145bf8c1acd4a48eae6ebce7ce32508d10112ec40c450
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-18T23:51:47Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-design/traceability.json
+**Context**: construction > sorting-core > nfr-design > traceability.json
+**Summary Authorization Id**: 7cdc933608578f1acba145bf8c1acd4a48eae6ebce7ce32508d10112ec40c450
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-18T23:51:48Z
+**Event**: SENSOR_FIRED
+**Fire id**: c7d0b7f0
+**Sensor ID**: traceability
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-design/traceability.json
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-18T23:51:48Z
+**Event**: SENSOR_FAILED
+**Fire id**: c7d0b7f0
+**Sensor ID**: traceability
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-design/traceability.json
+**Detail path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/.aidlc-engine/sensors/nfr-design/traceability-c7d0b7f0.md
+**Findings count**: 5
+
+---
+
+## Unit Completed
+**Timestamp**: 2026-10-18T23:51:53Z
+**Event**: UNIT_COMPLETED
+**Stage**: nfr-design
+**Unit**: sorting-core
+**Run floor**: WORKFLOW_STARTED:2026-10-18T01:05:32Z#1
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-18T23:52:04Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/infrastructure-design/infrastructure-design-questions.md
+**Context**: construction > sorting-core > infrastructure-design > infrastructure-design-questions.md
+
+---
+
+## Decision Recorded
+**Timestamp**: 2026-10-18T23:52:07Z
+**Event**: DECISION_RECORDED
+**Stage**: infrastructure-design
+**Decision**: Q1 CI checks for sorting-core, Q2 where sorting-core tests run relative to the app
+**Options**: Q1 A/B/X,Q2 A/B/X
+**Unit**: sorting-core
+
+---
+
+## Decision Recorded
+**Timestamp**: 2026-10-18T23:52:19Z
+**Event**: DECISION_RECORDED
+**Stage**: infrastructure-design
+**Decision**: Q1 CI checks for sorting-core, Q2 where sorting-core tests run relative to the app (repeat prompt; answers still pending)
+**Options**: Q1 A/B/X,Q2 A/B/X
+**Unit**: sorting-core
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-18T23:58:02Z
+**Event**: HUMAN_TURN
+**Session**: ses_eaeb652adffeuozdqwG7fbePur
+
+---
+
+## Session Compacted
+**Timestamp**: 2026-10-18T23:58:03Z
+**Event**: SESSION_COMPACTED
+**Current Stage**: functional-design
+**State Validity**: valid
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-19T00:01:03Z
+**Event**: HUMAN_TURN
+**Session**: ses_eaeb652adffeuozdqwG7fbePur
+
+---
+
+## Session Compacted
+**Timestamp**: 2026-10-19T00:01:04Z
+**Event**: SESSION_COMPACTED
+**Current Stage**: functional-design
+**State Validity**: valid
+
+---
