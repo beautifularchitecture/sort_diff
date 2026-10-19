@@ -48,7 +48,7 @@ normalize(raw_entries):
 
 **Postconditions**:
 - `SortInput.run_id` is unique and immutable
-- `SortInput.normalized_strings` has length <= `len(raw_entries)`
+- `SortInput.normalized_strings` is derived deterministically from `raw_entries`: every token traces to exactly one entry, and its length is bounded by the total delimiter count (`len(normalized_strings) <= sum over entries of (delimiter count + 1)`), which can exceed `len(raw_entries)` when an entry splits into several tokens
 - All strings in `normalized_strings` are non-empty
 - ASCII capitals are lowercased; non-ASCII pass through unchanged
 - Duplicates are preserved
@@ -118,9 +118,9 @@ bubble_sort(strings):
 
 **Characteristics**:
 - Time: O(n²) comparisons regardless of input order
-- Comparisons for n elements: n*(n-1)/2 on average
-- Swaps: 0 (sorted), up to n*(n-1)/2 (reverse sorted)
-- Stable: Yes (only swaps when strictly greater)
+- Comparisons for n elements: exactly n*(n-1)/2 (there is no early-exit; every adjacent pair of each pass is compared)
+- Swaps: 0 (already sorted or all-identical), up to n*(n-1)/2 (reverse sorted)
+- Output equality: produces `sorted(normalized_strings)`; because equal strings are identical, order among them is unobservable
 
 #### Selection Sort
 ```
@@ -145,36 +145,9 @@ selection_sort(strings):
 
 **Characteristics**:
 - Time: O(n²) comparisons regardless of input order
-- Comparisons for n elements: exactly n*(n-1)/2
-- Swaps: 0 (sorted), up to n-1 (reverse sorted)
-- Stable: No (in-place swaps of non-adjacent elements). **CORRECTION**: Use stable variant or track original indices.
-- **Implementation note**: For this educational tool, comparisons count is the standard n*(n-1)/2 regardless of duplicates.
-
-**Stable Implementation Variant**:
-```
-selection_sort_stable(strings):
-  # Use temporary list to maintain stability
-  comparisons = 0
-  swaps = 0  # Note: "swaps" here counts write operations, not element exchanges
-  output = list(strings)
-  n = len(output)
-  
-  for i in range(n - 1):
-    min_idx = i
-    for j in range(i + 1, n):
-      comparisons += 1
-      if output[j] < output[min_idx]:
-        min_idx = j
-    # Shift elements, not swap
-    if min_idx != i:
-      min_val = output[min_idx]
-      for k in range(min_idx, i, -1):
-        output[k] = output[k-1]
-        swaps += 1
-      output[i] = min_val
-  
-  return output, comparisons, swaps
-```
+- Comparisons for n elements: exactly n*(n-1)/2, regardless of duplicates
+- Swaps: 0 (already sorted or all-identical), up to n-1 (reverse sorted)
+- Output equality: produces `sorted(normalized_strings)`; because equal strings are identical, order among them is unobservable
 
 #### Quick Sort (Lomuto Partition)
 ```
@@ -187,13 +160,15 @@ quick_sort(strings):
     pivot = arr[high]
     i = low - 1
     for j in range(low, high):
-      comparisons[0] += 1  # Compare arr[j] with pivot
+      comparisons[0] += 1  # ordering comparison against the pivot
       if arr[j] < pivot:
         i += 1
-        swap(arr[i], arr[j])
-        swaps[0] += 1
-    swap(arr[i+1], arr[high])
-    swaps[0] += 1
+        if i != j and arr[i] != arr[j]:   # count only a real exchange (BR2.2)
+          swap(arr[i], arr[j])
+          swaps[0] += 1
+    if i + 1 != high and arr[i + 1] != pivot:   # skip no-op pivot placement
+      swap(arr[i + 1], arr[high])
+      swaps[0] += 1
     return i + 1
   
   def quicksort_helper(arr, low, high):
@@ -211,15 +186,16 @@ quick_sort(strings):
 **Characteristics**:
 - Time: O(n log n) average, O(n²) worst case
 - Comparisons: varies based on pivot choice; average O(n log n)
-- Swaps: typically fewer than bubble sort
-- Stable: No (partitioning moves elements)
-- **Implementation note**: Lomuto partition is chosen for predictability.
+- Swaps: typically fewer than bubble sort; 0 on already-sorted and all-identical input (the guards suppress no-op exchanges)
+- Output equality: produces `sorted(normalized_strings)`; because equal strings are identical, order among them is unobservable
+- **Implementation note**: Lomuto partition is chosen for predictability, with guards that count only exchanges that change the array (BR2.2).
 
 **Postconditions for all algorithms**:
-- `sorted_strings` is in lexicographic (Unicode) order
-- `sorted_strings` uses stable sort semantics (duplicates preserve input order)
+- `sorted_strings` is in ascending lexicographic (Unicode) order
+- `sorted_strings` equals `sorted(normalized_strings)` exactly
 - `len(sorted_strings)` == `len(normalized_strings)`
 - `comparisons >= 0`, `swaps >= 0`
+- `swaps = 0` for already-sorted and all-identical input (no real exchange is needed)
 - `comparisons = 0` and `swaps = 0` for empty or single-element input
 - All elements from `normalized_strings` appear in `sorted_strings` (no loss or duplication)
 
@@ -272,7 +248,7 @@ check(algorithm_result, sort_input):
 
 **Postconditions**:
 - `AccuracyCheck.passed` is True only if `sorted_strings == sorted(normalized_strings)` exactly
-- Comparison includes order (stable sort required)
+- Comparison is positional (`result_order[i] == reference_order[i]` for all i); since duplicate strings are identical, this is exactly equality with `sorted()`
 - Each algorithm is verified independently
 
 **Errors**:
@@ -451,15 +427,15 @@ run_all(SortInput(['apple', 'apple', 'apple'])) → [
     # 3 comparisons: (0,1), (1,2), then (0,1) again; no swaps
   AlgorithmResult(run_id, selection, ['apple', 'apple', 'apple'], 3, 0),
     # 3 comparisons: (1 vs 0), (2 vs 0), (2 vs 1); no swaps (already min)
-  AlgorithmResult(run_id, quick, ['apple', 'apple', 'apple'], >=1, 0+)
-    # Partitioning still occurs; swaps may occur (implementation-dependent on pivot)
+  AlgorithmResult(run_id, quick, ['apple', 'apple', 'apple'], 3, 0)
+    # Partitioning still runs (3 comparisons); every candidate exchange is a no-op, so 0 swaps
 ]
 
 check(AlgorithmResult(['apple', 'apple', 'apple'], 3, 0), SortInput(['apple', 'apple', 'apple'])) 
   → AccuracyCheck(run_id, algorithm, passed=True)
 ```
 
-**Rationale**: Identical strings do not need to be reordered, so swaps should be 0. Comparisons still occur (algorithms still execute).
+**Rationale**: Identical strings never need a real exchange, so swaps are 0 for all three algorithms. Comparisons still occur (the algorithms still execute); bubble and selection perform n*(n-1)/2 = 3, and quick performs 3.
 
 ### Edge Case 4: Two Elements (Minimal Sort)
 
@@ -489,8 +465,8 @@ run_all(SortInput(['apple', 'banana', 'cherry'])) → [
     # Bubble: 3 comparisons; 0 swaps (all in order)
   AlgorithmResult(run_id, selection, ['apple', 'banana', 'cherry'], 3, 0),
     # Selection: 3 comparisons; 0 swaps (already selected)
-  AlgorithmResult(run_id, quick, ['apple', 'banana', 'cherry'], 2, 0)
-    # Quick: 2 comparisons; 0 swaps (pivot choice dependent)
+  AlgorithmResult(run_id, quick, ['apple', 'banana', 'cherry'], 3, 0)
+    # Quick (Lomuto): partition(0,2) makes 2 comparisons, partition(0,1) makes 1; 0 swaps (all placements are no-ops)
 ]
 ```
 
@@ -504,19 +480,16 @@ normalize(['bob', 'alice', 'bob', 'alice'])
   → SortInput(run_id, [...], ['bob', 'alice', 'bob', 'alice'])
 
 run_all(SortInput(['bob', 'alice', 'bob', 'alice'])) → [
-  AlgorithmResult(run_id, bubble, ['alice', 'alice', 'bob', 'bob'], comparisons, swaps),
-    # Duplicates maintain input order: first 'bob' stays before first 'alice' initially... 
-    # WAIT: bubble sort will move all 'alice's to front
-    # Input: [bob, alice, bob, alice]
-    # After sort: [alice, alice, bob, bob]
-    # The two alice's appear as: position 0 = alice (from index 1), position 1 = alice (from index 3)
-    # This is stable: the first alice (index 1) comes before the second alice (index 3)
-  AlgorithmResult(...),
-  AlgorithmResult(...)
+  AlgorithmResult(run_id, bubble, ['alice', 'alice', 'bob', 'bob'], 6, 3),
+  AlgorithmResult(run_id, selection, ['alice', 'alice', 'bob', 'bob'], 6, 2),
+  AlgorithmResult(run_id, quick, ['alice', 'alice', 'bob', 'bob'], comparisons, swaps)
 ]
+
+check(AlgorithmResult(['alice', 'alice', 'bob', 'bob'], c, s), SortInput(['bob', 'alice', 'bob', 'alice'])) 
+  → AccuracyCheck(run_id, algorithm, passed=True)
 ```
 
-**Rationale**: Stable sort preserves relative order of duplicates.
+**Rationale**: Duplicates are equal strings, so they sort to adjacent positions; the output equals `sorted()` regardless of which copy landed where, so all three algorithms pass.
 
 ---
 
@@ -529,7 +502,7 @@ run_all(SortInput(['bob', 'alice', 'bob', 'alice'])) → [
 | Swaps are algorithm-specific | Each algorithm has different natural swap counts |
 | Accuracy check is deterministic | Exact match against sorted() is reproducible |
 | Empty input returns empty results | Edge case; caller (U2) prevents empty input from reaching the UI |
-| Stable sort is required | Python's sorted() is stable; accuracy check requires exact-order match |
+| Sorted-output equality is required | Accuracy check compares to Python's sorted(); equal strings are identical, so every correct algorithm yields the same list |
 
 ---
 
@@ -584,7 +557,9 @@ Key testable behaviors (for pytest, ~80% coverage floor):
 | normalize: empty tokens dropped | normalize(['', 'hello', '  ']) → ['hello'] |
 | bubble_sort: 3 elements, unsorted | run_all(...) → [bubble_result with comparisons=3, swaps=2] |
 | selection_sort: 3 elements, unsorted | run_all(...) → [selection_result with comparisons=3, swaps=2] |
-| quick_sort: 3 elements, unsorted | run_all(...) → [quick_result with comparisons>=2, swaps>=1] |
+| quick_sort: 3 elements, unsorted | run_all(...) → [quick_result with comparisons=2, swaps=2] |
+| bubble_sort: 4 elements, reversed | run_all(...) → [bubble_result with comparisons=6, swaps=6] |
+| selection_sort: 4 elements, reversed | run_all(...) → [selection_result with comparisons=6, swaps=3] |
 | accuracy: exact match | check(result, sort_input) → passed=True when sorted_strings == sorted(normalized_strings) |
 | accuracy: order mismatch | check(result_with_swapped_duplicates, sort_input) → passed=False |
 | edge: empty input | run_all(...) → [AlgorithmResult(..., sorted_strings=[], comparisons=0, swaps=0)] |

@@ -26,7 +26,7 @@ entities:
         examples: ["['Alice', 'bob', '', 'Alice', 'cäfe']"]
       - name: normalized_strings
         type: list[string]
-        description: "Processed entries after normalization: split on newlines and commas, trimmed, empty tokens dropped, ASCII capitals lowercased, non-ASCII pass-through. Length <= len(raw_entries). Duplicates preserved."
+        description: "Processed entries after normalization: split on newlines and commas, trimmed, empty tokens dropped, ASCII capitals lowercased, non-ASCII pass-through. Duplicates preserved. Because one entry may split into several tokens, its length is bounded by the total delimiter count rather than by len(raw_entries)."
         nullable: false
         immutable: true
         examples: ["['alice', 'bob', 'alice', 'cäfe']"]
@@ -69,10 +69,10 @@ entities:
         nullable: false
         min: 0
         immutable: true
-        examples: ["6 for bubble sort on 4 items; 3 for selection sort on 4 items"]
+        examples: ["6 for bubble sort on 4 items; 6 for selection sort on 4 items"]
       - name: swaps
         type: integer
-        description: "Total number of element swaps performed (secondary metric, FR4.3). Algorithm-specific: bubble sort counts adjacent swaps, selection sort counts post-selection swaps, quick sort counts partitioning swaps. Swaps are a natural by-product of each algorithm's implementation."
+        description: "Total number of element swaps performed (secondary metric, FR4.3). Algorithm-specific: bubble sort counts adjacent swaps, selection sort counts post-selection swaps, quick sort counts partitioning swaps. Only exchanges that change the array are counted — self-exchanges and exchanges of equal values are no-ops and are excluded, so already-sorted and all-identical input yield 0 for every algorithm."
         nullable: false
         min: 0
         immutable: true
@@ -81,7 +81,7 @@ entities:
       - "(run_id, algorithm) pair uniquely identifies one result within a run"
       - "comparisons >= 0; for empty input or single element, comparisons = 0"
       - "swaps >= 0; for already-sorted input, swaps = 0"
-      - "sorted_strings must be in stable lexicographic order (matches Python's sorted())"
+      - "sorted_strings must equal sorted(normalized_strings) exactly (ascending Unicode lexicographic order)"
       - "len(sorted_strings) must equal len(SortInput.normalized_strings)"
     lifecycle:
       created_by: "SortingEngine.run_all()"
@@ -113,7 +113,7 @@ entities:
         immutable: true
       - name: passed
         type: boolean
-        description: "True if AlgorithmResult.sorted_strings exactly equals sorted(SortInput.normalized_strings); false otherwise. Requires exact order match (stable sort semantics)."
+        description: "True if AlgorithmResult.sorted_strings exactly equals sorted(SortInput.normalized_strings) position by position; false otherwise."
         nullable: false
         immutable: true
     constraints:
@@ -134,34 +134,9 @@ entities:
         relationship: "Each AccuracyCheck compares AlgorithmResult against SortInput.normalized_strings"
         constraint: "run_id must match"
 
-  - name: BundledWordList
-    summary: "Fixed set of word options for the UI picker. Owned by U2 (WordListProvider)."
-    identifier: list_version
-    ownership:
-      component: WordListProvider
-      responsibility: "Supply the fixed, bundled list; no network access or file I/O at runtime"
-    attributes:
-      - name: list_version
-        type: string
-        description: "Version identifier for this word list (e.g., 'v1.0', used for traceability)"
-        nullable: false
-        immutable: true
-      - name: words
-        type: list[string]
-        description: "Non-empty list of common words to select from (e.g., ['apple', 'banana', 'cherry', 'date', 'elephant', ...]). Packaged with the application."
-        nullable: false
-        immutable: true
-        min_length: 1
-    constraints:
-      - "list_version must be unique across application versions"
-      - "words must be non-empty"
-      - "words list must not change between application runs (stateless, immutable)"
-      - "No external data source; all words must be shipped in the application code"
-    lifecycle:
-      created_by: "WordListProvider (shipped with application)"
-      consumed_by: "U2 SortingPlaygroundApp to populate the word picker"
-      lifetime: "Application lifetime (immutable, read-only)"
 ```
+
+> Scope note: `BundledWordList` and the bundled word list are owned by U2 (`unit-of-work.md`, `WordListProvider`); they are not part of U1's entity model and are therefore not defined here.
 
 ---
 
@@ -192,14 +167,9 @@ erDiagram
         enum algorithm PK
         boolean passed
     }
-
-    BundledWordList {
-        string list_version PK
-        list words
-    }
 ```
 
-Text fallback: `SortInput` (identifier: `run_id`) generates the input for three `AlgorithmResult` objects (identifier: `run_id + algorithm`). Each `AlgorithmResult` is verified by one `AccuracyCheck` (identifier: `run_id + algorithm`), which also references the original `SortInput`. `BundledWordList` is standalone, read-only, owned by `WordListProvider`.
+Text fallback: `SortInput` (identifier: `run_id`) generates the input for three `AlgorithmResult` objects (identifier: `run_id + algorithm`). Each `AlgorithmResult` is verified by one `AccuracyCheck` (identifier: `run_id + algorithm`), which also references the original `SortInput`.
 
 ---
 
@@ -210,7 +180,6 @@ Text fallback: `SortInput` (identifier: `run_id`) generates the input for three 
 | SortInput | InputProcessor | run_id | User clicks Sort; U2 invokes normalize() | Passed to SortingEngine and AccuracyChecker | One sort run |
 | AlgorithmResult | SortingEngine | run_id + algorithm | SortingEngine.run_all() (three per run) | Displayed by U2; verified by AccuracyChecker | One sort run |
 | AccuracyCheck | AccuracyChecker | run_id + algorithm | AccuracyChecker.check() (three per run) | Displayed by U2 | One sort run |
-| BundledWordList | WordListProvider | list_version | Shipped with application | Read by U2 on every page render | Application lifetime |
 
 ---
 
@@ -234,30 +203,23 @@ Text fallback: `SortInput` (identifier: `run_id`) generates the input for three 
 
 1. `run_id` must match the input SortInput.run_id
 2. `algorithm` must be one of: bubble, selection, quick
-3. `sorted_strings` must be in stable lexicographic (Unicode) order
+3. `sorted_strings` must be in ascending lexicographic (Unicode) order
 4. `len(sorted_strings)` must equal `len(normalized_strings)` from input
 5. `comparisons` >= 0, integer
 6. `swaps` >= 0, integer
 7. For edge cases:
    - Empty input: `sorted_strings = []`, `comparisons = 0`, `swaps = 0`
    - Single element: `sorted_strings = [element]`, `comparisons = 0`, `swaps = 0`
-   - All identical: `sorted_strings = input`, `comparisons >= 0`, `swaps = 0` (no swaps needed)
+   - All identical: `sorted_strings = input`, `swaps = 0` (no real exchange is possible); comparisons are still performed (bubble and selection do n*(n-1)/2, quick varies)
 
 ### AccuracyCheck Validation
 
 1. `run_id` must match the input SortInput.run_id
 2. `algorithm` must be one of: bubble, selection, quick
 3. `passed = true` only when `AlgorithmResult.sorted_strings` equals `sorted(SortInput.normalized_strings)` **exactly**
-   - Includes order of duplicate strings (stable sort)
+   - Compared position by position; duplicate strings are identical, so this is a plain equality test
    - One mismatch → `passed = false`
 4. Each algorithm checked independently; no cascade failures
-
-### BundledWordList Validation
-
-1. `list_version` must be non-empty
-2. `words` must be a non-empty list
-3. `words` must be immutable (never modified at runtime)
-4. No external data source; all words shipped in code
 
 ---
 
@@ -271,8 +233,6 @@ Text fallback: `SortInput` (identifier: `run_id`) generates the input for three 
 
 3. **AccuracyCheck** — Separates verification logic from sorting. Enables testing of accuracy checking independently from the algorithms. Makes pass/fail explicit in the data model.
 
-4. **BundledWordList** — Gives the fixed word list an explicit owner and a versioned contract. Testable independently; can be swapped with a different list without affecting the sorting logic.
-
 ### Why Comparisons as the Primary Metric?
 
 - **FR4.2** explicitly requires "total element comparisons" as "the primary comparable count… to enable direct comparison" across all three algorithms.
@@ -280,11 +240,11 @@ Text fallback: `SortInput` (identifier: `run_id`) generates the input for three 
 - Swaps, by contrast, vary in meaning across algorithms (bubble = adjacent swap, selection = post-selection swap, quick = partitioning swap), so they are not directly comparable.
 - Swaps are included as a secondary metric for educational value, but the UI's primary focus is comparisons.
 
-### Why Stable Sort?
+### Why Sorted-Output Equality?
 
-- **FR3.1** requires "exact order match" against Python's `sorted()`.
-- Python's `sorted()` is stable: identical elements remain in input order.
-- To pass the accuracy check, all three algorithms must be stable or at minimum must match Python's order on identical elements.
+- **FR3.1** requires an "exact order match" against Python's `sorted()`.
+- The elements are strings, so two equal elements are literally identical; the sorted list therefore has exactly one achievable order. Every correct algorithm produces that list, and internal sort stability is not observable in the result.
+- The accuracy check compares the output to `sorted()` element-by-element, which every correct algorithm satisfies.
 
 ---
 
@@ -296,4 +256,4 @@ Text fallback: `SortInput` (identifier: `run_id`) generates the input for three 
 | Single element | normalized_strings = [s] | sorted_strings = [s], comparisons = 0, swaps = 0 | passed = true |
 | All identical | normalized_strings = [s, s, s, ...] | sorted_strings = [s, s, s, ...], comparisons >= 0, swaps = 0 | passed = true (identical preserves input order) |
 | Mixed ASCII/non-ASCII | normalized_strings preserves order after normalization | sorted by Unicode lexicographic | passed if == sorted() on mixed input |
-| Duplicates present | duplicates preserved | output preserves duplicates in sorted order | passed if stable sort matches |
+| Duplicates present | duplicates preserved | output preserves duplicates in sorted order | passed if output equals sorted() |
