@@ -27,6 +27,13 @@ def normalize(raw_entries: list[str]) -> SortInput:
     ...
 ```
 
+## Caller Obligations (U2 playground-ui)
+
+The core cannot enforce these itself, so the caller must:
+
+- Escape every value before rendering it as HTML (NFR2.2, SD-3).
+- Cap the input at 100 strings before calling `normalize` (the NFR Q2 maximum). The core accepts unbounded lists and does not enforce this cap; the DoS treatment below depends on it.
+
 ## Threats Considered
 
 | Threat | Treatment |

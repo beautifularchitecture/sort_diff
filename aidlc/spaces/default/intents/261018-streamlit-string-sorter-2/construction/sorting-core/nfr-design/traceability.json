@@ -1,11 +1,12 @@
 {
   "stage": "nfr-design",
   "unit": "sorting-core",
-  "upstream_ids": ["NFR1", "NFR2", "NFR3", "NFR4"],
+  "upstream_ids": ["NFR2.1", "NFR2.2", "NFR3.2", "NFR3.3", "NFR3.4"],
   "coverage": [
-    { "id": "NFR1", "status": "OK", "target": "Shared counter (logical-components.md) keeps counting identical across algorithms; exact-match check unchanged" },
-    { "id": "NFR2", "status": "OK", "target": "SD-1, SD-2, SD-3" },
-    { "id": "NFR3", "status": "OK", "target": "SD-4, SD-5" },
-    { "id": "NFR4", "status": "OK", "target": "Boundary checks and counter design are testable by pytest (tech-stack-decisions.md)" }
+    { "id": "NFR2.1", "status": "OK", "target": "SD-1, SD-2 (security-design.md); per-algorithm counters in logical-components.md" },
+    { "id": "NFR2.2", "status": "OK", "target": "SD-3 (security-design.md); caller escaping obligation in security-design.md Caller Obligations" },
+    { "id": "NFR3.2", "status": "OK", "target": "SD-4 (security-design.md)" },
+    { "id": "NFR3.3", "status": "OK", "target": "SD-5 (security-design.md)" },
+    { "id": "NFR3.4", "status": "OK", "target": "Standard-library-only design in logical-components.md Deployment View" }
   ]
 }

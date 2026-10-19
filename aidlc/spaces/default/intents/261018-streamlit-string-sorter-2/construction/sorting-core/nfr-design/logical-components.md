@@ -12,10 +12,10 @@ The sorting-core unit is an in-process Python package with no runtime services, 
 
 ## Shared Counter
 
-- One `Counter` object is created per `run_all` call.
-- It holds two integers: `comparisons` and `swaps`.
-- Each algorithm receives the counter as an argument and increments it. The definitions match BR-SE-1 and BR-SE-2 in `functional-design/rules.md`.
-- The counter is created fresh for each run, so no state leaks between runs.
+- Each `Counter` holds two integers: `comparisons` and `swaps`.
+- `run_all` creates three fresh `Counter` objects per call, one for each algorithm (bubble, selection, quick). Each algorithm receives only its own counter and increments only that counter. Counts are never shared or accumulated across algorithms.
+- The counting definitions match BR2.1 (comparisons) and BR2.2 (swaps) in `functional-design/rules.md`. Worked example for `[3, 1, 2]`: bubble 3 comparisons, selection 3, quick 2; each value is reported from its own counter.
+- No counter state survives a call, so no state leaks between runs.
 
 ## Failure Domains
 
