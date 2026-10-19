@@ -1,0 +1,16 @@
+{
+  "stage": "nfr-design",
+  "unit": "playground-ui",
+  "upstream_ids": ["NFR1.1", "NFR2.1", "NFR2.2", "NFR3.1", "NFR3.2", "NFR3.3", "NFR3.6", "NFR4.1", "NFR4.2"],
+  "coverage": [
+    { "id": "NFR1.1", "status": "OK", "target": "PD-2 / logical-components.md SortingPlaygroundApp renders the AccuracyCheck verbatim" },
+    { "id": "NFR2.1", "status": "OK", "target": "SD-2 (plain-text rendering, no unsafe HTML); logical-components.md SortingPlaygroundApp" },
+    { "id": "NFR2.2", "status": "OK", "target": "PD-3 (three result columns in one pass); logical-components.md" },
+    { "id": "NFR3.1", "status": "OK", "target": "SD-1, SD-6 (inert input; surfaced exceptions)" },
+    { "id": "NFR3.2", "status": "OK", "target": "SD-4 (no file I/O, network, or persistent storage)" },
+    { "id": "NFR3.3", "status": "OK", "target": "SD-5 (no identity)" },
+    { "id": "NFR3.6", "status": "OK", "target": "SD-3 (100-string cap before normalize); PD-1, PD-4 (bounded, uncached work)" },
+    { "id": "NFR4.1", "status": "OK", "target": "logical-components.md Quality Obligations (Black, Ruff, snake_case)" },
+    { "id": "NFR4.2", "status": "OK", "target": "logical-components.md Quality Obligations (pytest, coverage floor in Build and Test)" }
+  ]
+}
