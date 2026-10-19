@@ -118,7 +118,7 @@ entities:
         immutable: true
     constraints:
       - "(run_id, algorithm) pair uniquely identifies one check within a run"
-      - "passed = true only when sorted_strings equals sorted(normalized_strings) element-by-element (including order of identical elements)"
+      - "passed = true only when sorted_strings equals sorted(normalized_strings) element-by-element"
       - "Each algorithm is checked independently; failure of one does not affect others"
     lifecycle:
       created_by: "AccuracyChecker.check()"
