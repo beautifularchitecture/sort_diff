@@ -10,7 +10,7 @@ A. Hide the three columns; show only the warning
 B. Show the three column headings with a "no result" hint under each
 X. Other (please specify)
 
-[Answer]:A
+[Answer]: A
 
 ### Q2: Order of typed entries and picked words
 
@@ -21,7 +21,7 @@ B. Picked words first, then typed entries
 C. Combined and de-duplicated before sorting
 X. Other (please specify)
 
-[Answer]:C
+[Answer]: C
 
 ### Q3: Presentation of the metrics
 
@@ -31,7 +31,7 @@ A. Two plain lines under each column heading: "Comparisons: N" and "Swaps: N"
 B. A small table below the three columns with one row per algorithm
 X. Other (please specify)
 
-[Answer]:A
+[Answer]: A
 
 ### Q4: Accuracy result display
 
@@ -41,4 +41,4 @@ A. A plain text line: "Accuracy: pass" or "Accuracy: fail"
 B. A check mark or cross followed by the word "pass" or "fail"
 X. Other (please specify)
 
-[Answer]:A
+[Answer]: A
