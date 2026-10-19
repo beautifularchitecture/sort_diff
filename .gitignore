@@ -22,3 +22,16 @@ aidlc/spaces/*/intents/*/runtime-graph.json
 aidlc/spaces/*/intents/*/.aidlc-*
 aidlc/diagnostics/
 # END AI-DLC:gitignore
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+*.egg-info/

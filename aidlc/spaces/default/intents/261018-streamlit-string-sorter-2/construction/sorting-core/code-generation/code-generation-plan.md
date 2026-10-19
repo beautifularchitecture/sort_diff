@@ -28,14 +28,14 @@
 - Accuracy: `passed` true iff `sorted_strings == sorted(normalized_strings)` (element-wise equality). (BR-AC-1, BR-AC-2.)
 
 ## Files to Create
-1. `types.py` — dataclasses with type hints.
-2. `normalize.py` — InputProcessor.
-3. `algorithms.py` — implementations + Counter.
-4. `engine.py` — SortingEngine.
-5. `checker.py` — AccuracyChecker.
-6. `words.py` — WordListProvider (fixed list; non-empty).
-7. `runner.py` — `run_all` helper (combines processor, engine, checker).
-8. `__init__.py` — re-exports and `__all__`.
+1. [x] `types.py` — dataclasses with type hints.
+2. [x] `normalize.py` — InputProcessor.
+3. [x] `algorithms.py` — implementations + Counter.
+4. [x] `engine.py` — SortingEngine.
+5. [x] `checker.py` — AccuracyChecker.
+6. [x] `words.py` — WordListProvider (fixed list; non-empty).
+7. [x] `runner.py` — `run_all` helper (combines processor, engine, checker).
+8. [x] `__init__.py` — re-exports and `__all__`.
 9. `__version__.py` (optional) — not required, skip.
 10. `py.typed` (optional) — not required for this demo.
 
