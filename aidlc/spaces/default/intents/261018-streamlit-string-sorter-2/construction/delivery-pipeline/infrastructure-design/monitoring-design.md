@@ -2,6 +2,8 @@
 
 The pipeline configures no monitoring of its own; it relies entirely on the two signals GitHub Actions and Streamlit Community Cloud already produce. This realizes the minimal observability posture inherited from NFR Design (U3's NFR answers record no custom metrics, no dashboards, and no alerts beyond the platform signals). Per infrastructure-design Q4 option 1, no scheduled health check or pipeline-emitted metric is added.
 
+The no-SLO and no-performance-target posture below is sourced from the confirmed NFR requirements answers for this unit, not from a `performance-design`, `scalability-design`, `reliability-design`, `observability-design`, `logical-components`, or `functional-spec` artifact: this is a packaging-kind unit, so those NFR Design artifacts were never produced (only `nfr-design/security-design.md` exists for U3). The minimal posture is a confirmed human choice recorded in `nfr-requirements/security-requirements.md` and the U3 NFR answers, not an unspecified default.
+
 ## Metrics & KPIs
 
 | Metric | Source | Threshold | Why it matters |

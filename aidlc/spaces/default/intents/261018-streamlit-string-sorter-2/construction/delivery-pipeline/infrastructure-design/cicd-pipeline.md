@@ -1,6 +1,6 @@
 # CI/CD Pipeline — delivery-pipeline (U3)
 
-The delivery pipeline: the GitHub Actions checks job and the continuous-deployment path to Streamlit Community Cloud. Consumes `nfr-design/security-design.md` (SD-1..SD-7), `inception/contract-design/contract-summary.md` (Contract 2, the commands U3 invokes), and `inception/domain-design/components.md` (the component topology, which confirms the pipeline owns no runtime service). Platform: GitHub Actions. Deployment target: Streamlit Community Cloud, platform-managed (SD-5).
+The delivery pipeline: the GitHub Actions checks job and the continuous-deployment path to Streamlit Community Cloud. Consumes `nfr-design/security-design.md` (SD-1..SD-7), `inception/contract-design/contract-summary.md` (Contract 2, the commands U3 invokes), and `inception/domain-design/components.md` (the component topology, which confirms the pipeline owns no runtime service). Because this is a packaging-kind unit, the stage's other declared upstream artifacts — `performance-design`, `scalability-design`, `reliability-design`, `observability-design`, `logical-components`, and `functional-spec` — were not produced for this unit; no performance target, scalability, reliability, or observability design applies to a stateless checks job, and the pipeline has no functional spec of its own. Platform: GitHub Actions. Deployment target: Streamlit Community Cloud, platform-managed (SD-5).
 
 ## Pipeline Overview
 
@@ -25,7 +25,7 @@ Per SD-3, steps 4–6 carry `if: always()` so a failing Black or Ruff step does 
 
 | Stage | Gate | Effect of failure |
 |---|---|---|
-| Install (`pip install -r requirements.txt`) | Dependencies resolve | Run fails; nothing else can proceed meaningfully |
+| Install (`pip install -r requirements.txt`) | Dependencies resolve | Run fails; the gate steps that follow still run under `if: always()` and fail too (their commands are missing), so the run shows both the install error and the downstream command-not-found |
 | Format (`black --check .`) | Formatting clean | Fails the run; deploy still proceeds (push-to-`main` model) |
 | Lint (`ruff check .`) | Lint clean | Fails the run; deploy still proceeds |
 | Test (`pytest`) | Suite green + coverage floor met | Fails the run; deploy still proceeds |
@@ -40,37 +40,29 @@ Because the trigger is push-to-`main` only (SD-1), no gate blocks the merge — 
 
 ## Secrets Management
 
-No secrets are required, and none are used (SD-6). The workflow references no `secrets.*` and sources no `env` value from a secret; the automatic `GITHUB_TOKEN` that Actions provides is unused by any step, and `permissions: contents: read` bounds it to read-only. The Streamlit deployment is a platform repository connection with no committable credential (SD-5; nfr-requirements Q3 B). Because no secret is stored, there is no rotation policy to define.
+No secrets are required, and none are used (SD-6). The workflow references no `secrets.*` and sources no `env` value from a secret. The automatic `GITHUB_TOKEN` that Actions provides is used only read-only by `actions/checkout`, and the workflow sets `permissions: contents: read` so it cannot write (SD-6). No step reads a deploy credential. The Streamlit deployment is a platform repository connection with no committable credential (SD-5; nfr-requirements Q3 B). Because no secret is stored, there is no rotation policy to define.
 
 ## Test Paths and Coverage
 
 - The suite lives under `tests/` (U1's tests at the root, U2's UI tests under `tests/ui/`); `pyproject.toml` sets `testpaths = ["tests"]`, so the bare `pytest` step runs everything.
-- The coverage floor names `sorting_core` only (infrastructure-design Q2 option 2): the project pytest configuration carries `--cov=sorting_core --cov-fail-under=80`. No separate floor is declared for `app.py`; the UI entry script is still exercised by its `tests/ui/` `AppTest` tests, but the measured floor is on `sorting_core`. U1 owns the configuration, and U3 invokes bare `pytest` per Contract 2 (SD-4).
+- The coverage floor names `sorting_core` only (infrastructure-design Q2 option 2): `pyproject.toml` `[tool.pytest.ini_options]` `addopts` carries `--cov=sorting_core --cov-report=term-missing --cov-fail-under=80` (U1-owned, verified on disk). No separate floor is declared for `app.py`; the UI entry script is still exercised by its `tests/ui/` `AppTest` tests, but the measured floor is on `sorting_core`. U1 owns the configuration, and U3 invokes bare `pytest` per Contract 2 (SD-4).
 
-Example workflow (illustrative, interface-level):
+Example workflow (illustrative, interface-level, abbreviated):
 
 ```yaml
-name: ci
-on:
-  push:
-    branches: [main]
-permissions:
-  contents: read
+on: { push: { branches: [main] } }
+permissions: { contents: read }
 jobs:
   checks:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
+        with: { python-version: '3.12' }
       - run: pip install -r requirements.txt
-      - if: always()
-        run: black --check .
-      - if: always()
-        run: ruff check .
-      - if: always()
-        run: pytest
+      - { if: always(), run: black --check . }
+      - { if: always(), run: ruff check . }
+      - { if: always(), run: pytest }
 ```
 
 ## Notes

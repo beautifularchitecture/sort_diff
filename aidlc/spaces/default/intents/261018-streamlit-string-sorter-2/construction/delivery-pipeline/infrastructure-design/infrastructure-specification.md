@@ -14,7 +14,7 @@ The unit is a CI/CD pipeline, not a running service. Its "deployment" is the con
 | Environments | Exactly one (`main` → production). No staging, no dev tier; the platform rebuilds on each push to `main` | team.md Deployment (continuous deployment, no staging tier, no manual production gate); SD-1 push-to-`main` only |
 | IaC approach | None — the workflow is a committed YAML file; the deployment is a platform repository connection configured in the console | There is no cloud resource for CDK/Terraform to own; the only infrastructure is GitHub's and the platform's |
 | Resource sizing | Runner defaults; platform defaults | No numeric performance target; a single interactive user per session and a demo-scale test suite |
-| Environments (rollback) | Revert the offending commit on `main`; the platform rebuilds from the reverted tree | Q3 A; trunk-based squash merges (team.md) mean one revert restores the prior state — no automated rollback step |
+| Rollback | Revert the offending commit on `main`; the platform rebuilds from the reverted tree | Q3 A; trunk-based squash merges (team.md) mean one revert restores the prior state — no automated rollback step |
 
 ## Infrastructure Services
 

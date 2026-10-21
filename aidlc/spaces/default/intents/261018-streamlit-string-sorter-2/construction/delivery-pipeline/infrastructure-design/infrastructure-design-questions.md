@@ -10,7 +10,7 @@ A. U3 supersedes the workflow: replace U2's trigger and job split with the U3-co
 B. Keep U2's two-job split and PR trigger for the checks, and add U3's packaging concerns on top
 X. Other (please specify)
 
-[Answer]:
+[Answer]: A
 
 ## Q2: Coverage measurement under a single job
 
@@ -20,7 +20,7 @@ A. The project pytest configuration (`pyproject.toml` addopts) carries `--cov=so
 B. The configuration measures `sorting_core` only, and `app.py` coverage is left to whatever the test suite reaches (no separate floor for the UI entry script).
 X. Other (please specify)
 
-[Answer]:
+[Answer]: B
 
 ## Q3: Rollback for a broken `main`
 
@@ -30,7 +30,7 @@ A. Revert the offending commit on `main`; the platform rebuilds from the reverte
 B. Add an automated rollback step to the workflow that redeploys the previous known-good build on failure
 X. Other (please specify)
 
-[Answer]:
+[Answer]: A
 
 ## Q4: Monitoring of the pipeline itself
 
@@ -40,7 +40,7 @@ A. None beyond the platform's own signals: the Actions run result is the correct
 B. Add a periodic (scheduled) health check that pings the deployed app's URL and opens an issue on failure
 X. Other (please specify)
 
-[Answer]:
+[Answer]: A
 
 ## Q5: Retention of run logs and failures
 
@@ -50,7 +50,7 @@ A. GitHub's default retention (90 days for Actions logs); no artifact upload or 
 B. Upload test/coverage reports as workflow artifacts on every run so failures can be inspected later
 X. Other (please specify)
 
-[Answer]:
+[Answer]: A
 
 ---
 

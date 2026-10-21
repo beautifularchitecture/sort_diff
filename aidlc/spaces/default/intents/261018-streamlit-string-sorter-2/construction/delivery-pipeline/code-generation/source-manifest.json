@@ -1,0 +1,10 @@
+{
+  "stage": "code-generation",
+  "unit": "delivery-pipeline",
+  "version": 1,
+  "writes": [
+    { "path": ".github/workflows/ci.yml" },
+    { "path": "tests/test_workflow.py" },
+    { "path": "requirements.txt" }
+  ]
+}

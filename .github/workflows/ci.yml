@@ -1,0 +1,34 @@
+# CI checks for the repository: format, lint, and tests. Push to `main`
+# only (no pull_request trigger; SD-1), one serial `checks` job, least
+# privilege token (contents: read; SD-6), no stored credential (SD-5):
+# the hosting platform rebuilds the app from the pushed `main` commit.
+name: CI
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Black format check
+        if: always()
+        run: black --check .
+      - name: Ruff lint check
+        if: always()
+        run: ruff check .
+      - name: Tests
+        if: always()
+        run: pytest

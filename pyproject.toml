@@ -18,4 +18,5 @@ select = ["E", "F", "I", "W"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["."]
+addopts = "--cov=sorting_core --cov-report=term-missing --cov-fail-under=80"
 
