@@ -11,7 +11,7 @@ B. A container image on a general-purpose PaaS (for example Render, Fly.io, or C
 C. Local only for now; no hosted deployment in this unit
 X. Other (please specify)
 
-[Answer]:
+[Answer]: A
 
 ## Q2: CI job structure for the UI
 
@@ -21,4 +21,16 @@ A. Reuse U1's single `tests` job; U2's tests and the Streamlit import check run 
 B. Add a separate `ui` job that installs dependencies, runs `pytest tests/`, and imports `app.py` to catch wiring errors
 X. Other (please specify)
 
-[Answer]:
+[Answer]: B
+
+## Consolidated Summary Confirmation
+
+- Q1: Hosting target — Streamlit Community Cloud, deploying directly from the GitHub repository and `app.py`
+- Q2: CI job structure — a separate `ui` job that installs dependencies, runs `pytest tests/`, and imports `app.py` to catch wiring errors
+- Inherited, unchanged: Python 3.12 and `streamlit>=1.40`; Black/Ruff/pytest; no secrets; best-effort reliability with no SLO; platform logs only; continuous deployment to production on merge to `main`; U1's `tests` job kept as the baseline
+- Artifacts to generate: `infrastructure-specification.md`, `monitoring-design.md`, `cicd-pipeline.md`, `traceability.json`
+
+- Looks correct
+- Request changes
+
+[Answer]: Looks correct
