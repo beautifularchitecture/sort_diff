@@ -18543,3 +18543,2007 @@
 **Autonomous**: true
 
 ---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:07:38Z
+**Event**: SENSOR_FIRED
+**Fire id**: a2c0d750
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/functional-design/rules.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:07:38Z
+**Event**: SENSOR_PASSED
+**Fire id**: a2c0d750
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/functional-design/rules.md
+**Duration ms**: 227
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:07:38Z
+**Event**: SENSOR_FIRED
+**Fire id**: 81e2b2c9
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/functional-design/functional-spec.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:07:38Z
+**Event**: SENSOR_PASSED
+**Fire id**: 81e2b2c9
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/functional-design/functional-spec.md
+**Duration ms**: 181
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:07:38Z
+**Event**: SENSOR_FIRED
+**Fire id**: 7f602adb
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/functional-design/traceability.json
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:07:39Z
+**Event**: SENSOR_PASSED
+**Fire id**: 7f602adb
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/functional-design/traceability.json
+**Duration ms**: 199
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:07:39Z
+**Event**: SENSOR_FIRED
+**Fire id**: e48dfaf9
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/functional-design/frontend-components.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:07:39Z
+**Event**: SENSOR_PASSED
+**Fire id**: e48dfaf9
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/functional-design/frontend-components.md
+**Duration ms**: 255
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:07:39Z
+**Event**: SENSOR_FIRED
+**Fire id**: 3cf7082b
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/functional-design/entities.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:07:40Z
+**Event**: SENSOR_PASSED
+**Fire id**: 3cf7082b
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/functional-design/entities.md
+**Duration ms**: 220
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:07:40Z
+**Event**: SENSOR_FIRED
+**Fire id**: ef8c1430
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/functional-design/rules.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:07:40Z
+**Event**: SENSOR_PASSED
+**Fire id**: ef8c1430
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/functional-design/rules.md
+**Duration ms**: 219
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:07:40Z
+**Event**: SENSOR_FIRED
+**Fire id**: 8bcecaa0
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/functional-design/functional-spec.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:07:41Z
+**Event**: SENSOR_PASSED
+**Fire id**: 8bcecaa0
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/functional-design/functional-spec.md
+**Duration ms**: 197
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:07:41Z
+**Event**: SENSOR_FIRED
+**Fire id**: 7f0f354e
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/functional-design/traceability.json
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:07:41Z
+**Event**: SENSOR_PASSED
+**Fire id**: 7f0f354e
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/functional-design/traceability.json
+**Duration ms**: 193
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:07:41Z
+**Event**: SENSOR_FIRED
+**Fire id**: 74bacdb5
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/functional-design/rules.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:07:41Z
+**Event**: SENSOR_PASSED
+**Fire id**: 74bacdb5
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/functional-design/rules.md
+**Duration ms**: 203
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:07:42Z
+**Event**: SENSOR_FIRED
+**Fire id**: 59a823d4
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/functional-design/functional-spec.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:07:42Z
+**Event**: SENSOR_PASSED
+**Fire id**: 59a823d4
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/functional-design/functional-spec.md
+**Duration ms**: 194
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:07:42Z
+**Event**: SENSOR_FIRED
+**Fire id**: 88abeb5d
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/functional-design/traceability.json
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:07:42Z
+**Event**: SENSOR_PASSED
+**Fire id**: 88abeb5d
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/functional-design/traceability.json
+**Duration ms**: 196
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:07:42Z
+**Event**: SENSOR_FIRED
+**Fire id**: 7db4d609
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/functional-design/frontend-components.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:07:43Z
+**Event**: SENSOR_PASSED
+**Fire id**: 7db4d609
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/functional-design/frontend-components.md
+**Duration ms**: 184
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:07:43Z
+**Event**: SENSOR_FIRED
+**Fire id**: 8606af68
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/functional-design/entities.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:07:43Z
+**Event**: SENSOR_PASSED
+**Fire id**: 8606af68
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/functional-design/entities.md
+**Duration ms**: 191
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:07:43Z
+**Event**: SENSOR_FIRED
+**Fire id**: d65ad110
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/functional-design/rules.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:07:43Z
+**Event**: SENSOR_PASSED
+**Fire id**: d65ad110
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/functional-design/rules.md
+**Duration ms**: 182
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:07:44Z
+**Event**: SENSOR_FIRED
+**Fire id**: e66563a9
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/functional-design/functional-spec.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:07:44Z
+**Event**: SENSOR_PASSED
+**Fire id**: e66563a9
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/functional-design/functional-spec.md
+**Duration ms**: 174
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:07:44Z
+**Event**: SENSOR_FIRED
+**Fire id**: 12b9d73b
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/functional-design/traceability.json
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:07:44Z
+**Event**: SENSOR_PASSED
+**Fire id**: 12b9d73b
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/functional-design/traceability.json
+**Duration ms**: 216
+
+---
+
+## Stage Awaiting Approval
+**Timestamp**: 2026-10-21T05:07:45Z
+**Event**: STAGE_AWAITING_APPROVAL
+**Stage**: functional-design
+
+---
+
+## Gate Approved
+**Timestamp**: 2026-10-21T05:07:51Z
+**Event**: GATE_APPROVED
+**Stage**: functional-design
+**Review Finding Dispositions**: {"version":1,"dispositions":[{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/functional-design/functional-spec.md","id":"R-08","fingerprint":"sha256:71b4dc442b058cd95d5e10d198927e3e07f4abb0e4c995e663583583a84bc2ea","status":"Accepted risk","decided_at_severity":"Major","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/sorting-core/4be437220155d14b/2.json","digest":"sha256:acb7130a8c3cd2986e5338a1e1e8ffa93f5b6c8e1e859b19894bc2210fe63371"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/functional-design/functional-spec.md","id":"R-09","fingerprint":"sha256:ab04b6677141c71ab6ad02061d456ff90a36c35cb512eaae103627a7ed8b9125","status":"Accepted risk","decided_at_severity":"Major","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/sorting-core/4be437220155d14b/2.json","digest":"sha256:acb7130a8c3cd2986e5338a1e1e8ffa93f5b6c8e1e859b19894bc2210fe63371"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/functional-design/functional-spec.md","id":"R-10","fingerprint":"sha256:65a69de2d52f0549fa99496f7449ab95f182e8834d0f2373a4c7a001d6236381","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/sorting-core/4be437220155d14b/2.json","digest":"sha256:acb7130a8c3cd2986e5338a1e1e8ffa93f5b6c8e1e859b19894bc2210fe63371"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/functional-design/functional-spec.md","id":"R-11","fingerprint":"sha256:84c06647d9a9d52704c506513c412d6aac05b8d48bb08f3333ab94994651843d","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/sorting-core/4be437220155d14b/2.json","digest":"sha256:acb7130a8c3cd2986e5338a1e1e8ffa93f5b6c8e1e859b19894bc2210fe63371"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/functional-design/functional-spec.md","id":"R-12","fingerprint":"sha256:3b917ad570a57c5715cd409e71efe2a5b226fd05b646b6ceb2688fce7283ae5d","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/sorting-core/4be437220155d14b/2.json","digest":"sha256:acb7130a8c3cd2986e5338a1e1e8ffa93f5b6c8e1e859b19894bc2210fe63371"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/functional-design/functional-spec.md","id":"R-13","fingerprint":"sha256:7bc4a6c6842bb9ceb4d2bc4198681149023d7a0fad4a0a0b8a0e90a9e86c0817","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/sorting-core/4be437220155d14b/2.json","digest":"sha256:acb7130a8c3cd2986e5338a1e1e8ffa93f5b6c8e1e859b19894bc2210fe63371"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/functional-design/functional-spec.md","id":"R-14","fingerprint":"sha256:41a7c7322a7e43a61b41f711b97ecacca96a7cb83b9eaefe6c7d528c77d48c6b","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/sorting-core/4be437220155d14b/2.json","digest":"sha256:acb7130a8c3cd2986e5338a1e1e8ffa93f5b6c8e1e859b19894bc2210fe63371"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/functional-design/functional-spec.md","id":"R-15","fingerprint":"sha256:e7b7572869b9e21b7bfb533a153f36b61e56ec5a843302eea09bd894cc9486c6","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/sorting-core/4be437220155d14b/2.json","digest":"sha256:acb7130a8c3cd2986e5338a1e1e8ffa93f5b6c8e1e859b19894bc2210fe63371"}}]}
+
+---
+
+## Stage Completion
+**Timestamp**: 2026-10-21T05:07:51Z
+**Event**: STAGE_COMPLETED
+**Stage**: functional-design
+**Validation Basis**: {"graphContract":"sha256:c0dd0abcf729725dd1610dbd62efc46a49c3d6e3d7efed0cf53a65f7d271fd9e","inputs":[{"artifact":"components","contentHash":"sha256:398ee55c336944aa3ef5ff21c0971dfada07a35f8b4cee8de3880e540edd1804","instanceCount":1,"presentCount":1,"producer":"domain-design","required":true,"structureHash":"sha256:d8db1700f468f45539c02103bf8faee65266a30837ba5787ef64f136c8d3f706"},{"artifact":"contract-summary","contentHash":"sha256:14e4b9d569f68c9edc984f70baa40f7c5bad2afb0fbf33d1d090fdb37421b3a0","instanceCount":1,"presentCount":1,"producer":"contract-design","required":false,"structureHash":"sha256:5c61ef7cc78aec3a1dab7c5e00d060a2177956e957e6f8204d1521c37413857d"},{"artifact":"requirements","contentHash":"sha256:4362dec7d1c91b4edf246b0cab420279e8079928f12473925933da24545c6997","instanceCount":1,"presentCount":1,"producer":"requirements-analysis","required":true,"structureHash":"sha256:28b1c473c5331babb5afaf4ce30c530aec15c9c798e3f583bde02b23725a3e5f"},{"artifact":"unit-of-work-story-map","contentHash":"sha256:14589d423925abf4605693359207de75786ecc19edc390017811c16c380dbe42","instanceCount":1,"presentCount":1,"producer":"units-generation","required":false,"structureHash":"sha256:fd538a16f435318a42d185469a75f2126572edfd66dfdac6a20cc4d9f1d231a2"},{"artifact":"unit-of-work","contentHash":"sha256:65a1bd8b1e4aa9e8dffe1443d6d579a17e51a92b7998fba08eee525cada77828","instanceCount":1,"presentCount":1,"producer":"units-generation","required":true,"structureHash":"sha256:3d43fe8064251c0f861d38bbc5678c509f9f43f4fdae9ab593fe68aff3afd798"}],"outputs":[{"artifact":"entities","contentHash":"sha256:82c6fb80d03d8a1329f7652d1a61bfa8bf22166a9007b1d1c41c42a2a7f96323","instanceCount":1,"presentCount":1,"producer":"functional-design","required":true,"structureHash":"sha256:c844d21a886c1580c0bfdab5a6f2035d6fb02cc56782b3f89430d95ce59f82cd"},{"artifact":"frontend-components","contentHash":"sha256:f1f365792113b84fb9a21b4e79ae0b516773e0dc38b7cfa5acf5f90e3ba87dba","instanceCount":1,"presentCount":1,"producer":"functional-design","required":false,"structureHash":"sha256:4657635e027a0ab2b88455df34034b6b3a4de5d08bba19dddb7cad03d475d35d"},{"artifact":"functional-spec","contentHash":"sha256:c1345641da2439e74ac251f7727ff70314103bd0a6d794bad567ba79aa05307b","instanceCount":2,"presentCount":2,"producer":"functional-design","required":true,"structureHash":"sha256:fb41c50d463d285ec07c75d98665f11b6c9a99c7ad384e9846437097b2e10786"},{"artifact":"rules","contentHash":"sha256:46e803405a9124d10d751d71b5ce554bbf69cf9bdcab9e5b436fe9f1b30ec24e","instanceCount":1,"presentCount":1,"producer":"functional-design","required":true,"structureHash":"sha256:a1e5c1dbd19b65e9bf38fcb79a9d4a6442947a1de5a62bb72d00142d440b682c"},{"artifact":"traceability","contentHash":"sha256:3b0df4593c96c96b5bb999c6de283d666ec26fb90bf5fb250e6f4f99e7d678cf","instanceCount":2,"presentCount":2,"producer":"functional-design","required":true,"structureHash":"sha256:45eec4687b6669dafa1ae4ad9b56a57d250c8469a25056e99b022f0e702e7928"}],"projectType":"greenfield","schema":3}
+**Details**: Stage Functional Design approved by gate
+
+---
+
+## Stage Start
+**Timestamp**: 2026-10-21T05:07:51Z
+**Event**: STAGE_STARTED
+**Stage**: nfr-requirements
+**Agent**: aidlc-architect-agent
+**Answer Mode**: guide (reused from market-research)
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:07:57Z
+**Event**: SENSOR_FIRED
+**Fire id**: 789a735c
+**Sensor ID**: required-sections
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-requirements/performance-requirements.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:07:58Z
+**Event**: SENSOR_PASSED
+**Fire id**: 789a735c
+**Sensor ID**: required-sections
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-requirements/performance-requirements.md
+**Duration ms**: 201
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:07:58Z
+**Event**: SENSOR_FIRED
+**Fire id**: f9801198
+**Sensor ID**: required-sections
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-requirements/security-requirements.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:07:58Z
+**Event**: SENSOR_PASSED
+**Fire id**: f9801198
+**Sensor ID**: required-sections
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-requirements/security-requirements.md
+**Duration ms**: 228
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:07:58Z
+**Event**: SENSOR_FIRED
+**Fire id**: 167f464a
+**Sensor ID**: required-sections
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-requirements/tech-stack-decisions.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:07:59Z
+**Event**: SENSOR_PASSED
+**Fire id**: 167f464a
+**Sensor ID**: required-sections
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-requirements/tech-stack-decisions.md
+**Duration ms**: 198
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:07:59Z
+**Event**: SENSOR_FIRED
+**Fire id**: 1e861a79
+**Sensor ID**: required-sections
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-requirements/traceability.json
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:07:59Z
+**Event**: SENSOR_PASSED
+**Fire id**: 1e861a79
+**Sensor ID**: required-sections
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-requirements/traceability.json
+**Duration ms**: 201
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:07:59Z
+**Event**: SENSOR_FIRED
+**Fire id**: f21adf36
+**Sensor ID**: required-sections
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/security-requirements.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:07:59Z
+**Event**: SENSOR_PASSED
+**Fire id**: f21adf36
+**Sensor ID**: required-sections
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/security-requirements.md
+**Duration ms**: 185
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:00Z
+**Event**: SENSOR_FIRED
+**Fire id**: d3427312
+**Sensor ID**: required-sections
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/tech-stack-decisions.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:00Z
+**Event**: SENSOR_PASSED
+**Fire id**: d3427312
+**Sensor ID**: required-sections
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/tech-stack-decisions.md
+**Duration ms**: 207
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:00Z
+**Event**: SENSOR_FIRED
+**Fire id**: 58c65a2f
+**Sensor ID**: required-sections
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/traceability.json
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:00Z
+**Event**: SENSOR_PASSED
+**Fire id**: 58c65a2f
+**Sensor ID**: required-sections
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/traceability.json
+**Duration ms**: 227
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:01Z
+**Event**: SENSOR_FIRED
+**Fire id**: 3cd0650c
+**Sensor ID**: required-sections
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/nfr-requirements/security-requirements.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:01Z
+**Event**: SENSOR_PASSED
+**Fire id**: 3cd0650c
+**Sensor ID**: required-sections
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/nfr-requirements/security-requirements.md
+**Duration ms**: 222
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:01Z
+**Event**: SENSOR_FIRED
+**Fire id**: 22a3b859
+**Sensor ID**: required-sections
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/nfr-requirements/tech-stack-decisions.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:01Z
+**Event**: SENSOR_PASSED
+**Fire id**: 22a3b859
+**Sensor ID**: required-sections
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/nfr-requirements/tech-stack-decisions.md
+**Duration ms**: 193
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:01Z
+**Event**: SENSOR_FIRED
+**Fire id**: 041f4155
+**Sensor ID**: required-sections
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/nfr-requirements/traceability.json
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:02Z
+**Event**: SENSOR_PASSED
+**Fire id**: 041f4155
+**Sensor ID**: required-sections
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/nfr-requirements/traceability.json
+**Duration ms**: 206
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:02Z
+**Event**: SENSOR_FIRED
+**Fire id**: cf37bffe
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-requirements/performance-requirements.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:02Z
+**Event**: SENSOR_PASSED
+**Fire id**: cf37bffe
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-requirements/performance-requirements.md
+**Duration ms**: 193
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:02Z
+**Event**: SENSOR_FIRED
+**Fire id**: fa0b9e33
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-requirements/security-requirements.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:02Z
+**Event**: SENSOR_PASSED
+**Fire id**: fa0b9e33
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-requirements/security-requirements.md
+**Duration ms**: 183
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:03Z
+**Event**: SENSOR_FIRED
+**Fire id**: 7123c704
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-requirements/tech-stack-decisions.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:03Z
+**Event**: SENSOR_PASSED
+**Fire id**: 7123c704
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-requirements/tech-stack-decisions.md
+**Duration ms**: 217
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:03Z
+**Event**: SENSOR_FIRED
+**Fire id**: 9c93c05a
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-requirements/traceability.json
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:03Z
+**Event**: SENSOR_PASSED
+**Fire id**: 9c93c05a
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-requirements/traceability.json
+**Duration ms**: 224
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:04Z
+**Event**: SENSOR_FIRED
+**Fire id**: 291dc5a9
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/security-requirements.md
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-21T05:08:04Z
+**Event**: SENSOR_FAILED
+**Fire id**: 291dc5a9
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/security-requirements.md
+**Detail path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/.aidlc-engine/sensors/nfr-requirements/upstream-coverage-291dc5a9.md
+**Findings count**: 2
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:04Z
+**Event**: SENSOR_FIRED
+**Fire id**: f8222e6b
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/tech-stack-decisions.md
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-21T05:08:04Z
+**Event**: SENSOR_FAILED
+**Fire id**: f8222e6b
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/tech-stack-decisions.md
+**Detail path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/.aidlc-engine/sensors/nfr-requirements/upstream-coverage-f8222e6b.md
+**Findings count**: 2
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:05Z
+**Event**: SENSOR_FIRED
+**Fire id**: 1b0777d0
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/traceability.json
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-21T05:08:05Z
+**Event**: SENSOR_FAILED
+**Fire id**: 1b0777d0
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/traceability.json
+**Detail path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/.aidlc-engine/sensors/nfr-requirements/upstream-coverage-1b0777d0.md
+**Findings count**: 2
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:05Z
+**Event**: SENSOR_FIRED
+**Fire id**: 20b0d844
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/nfr-requirements/security-requirements.md
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-21T05:08:05Z
+**Event**: SENSOR_FAILED
+**Fire id**: 20b0d844
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/nfr-requirements/security-requirements.md
+**Detail path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/.aidlc-engine/sensors/nfr-requirements/upstream-coverage-20b0d844.md
+**Findings count**: 2
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:06Z
+**Event**: SENSOR_FIRED
+**Fire id**: 8baab38a
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/nfr-requirements/tech-stack-decisions.md
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-21T05:08:06Z
+**Event**: SENSOR_FAILED
+**Fire id**: 8baab38a
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/nfr-requirements/tech-stack-decisions.md
+**Detail path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/.aidlc-engine/sensors/nfr-requirements/upstream-coverage-8baab38a.md
+**Findings count**: 2
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:06Z
+**Event**: SENSOR_FIRED
+**Fire id**: 88fe99e0
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/nfr-requirements/traceability.json
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-21T05:08:06Z
+**Event**: SENSOR_FAILED
+**Fire id**: 88fe99e0
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-requirements
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/nfr-requirements/traceability.json
+**Detail path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/.aidlc-engine/sensors/nfr-requirements/upstream-coverage-88fe99e0.md
+**Findings count**: 2
+
+---
+
+## Stage Awaiting Approval
+**Timestamp**: 2026-10-21T05:08:08Z
+**Event**: STAGE_AWAITING_APPROVAL
+**Stage**: nfr-requirements
+
+---
+
+## Gate Approved
+**Timestamp**: 2026-10-21T05:08:12Z
+**Event**: GATE_APPROVED
+**Stage**: nfr-requirements
+**Review Finding Dispositions**: {"version":1,"dispositions":[{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/nfr-requirements/security-requirements.md","id":"R-01","fingerprint":"sha256:f993afb7d170338c31d609b77a4adcbe1f9dc8d6bb410b1fc2c5ce664d325a91","status":"Accepted risk","decided_at_severity":"Major","reviewed_record":{"path":".aidlc-engine/reviews/nfr-requirements/units/delivery-pipeline/4be437220155d14b/2.json","digest":"sha256:097ebd13747123c0d273c3ea98a59f951aa1d129b19b716ec54b95a3d8dd658a"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/nfr-requirements/security-requirements.md","id":"R-05","fingerprint":"sha256:b146ba5e7034b691bf7878be5b5a021dfa838a9430d7542c155245fb52a8a9c1","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/nfr-requirements/units/delivery-pipeline/4be437220155d14b/2.json","digest":"sha256:097ebd13747123c0d273c3ea98a59f951aa1d129b19b716ec54b95a3d8dd658a"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/nfr-requirements/security-requirements.md","id":"R-07","fingerprint":"sha256:c5af7f4d575217746054ee687fbb89019e2bbb3d1e23a2c631bba7cf3253fd2f","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/nfr-requirements/units/delivery-pipeline/4be437220155d14b/2.json","digest":"sha256:097ebd13747123c0d273c3ea98a59f951aa1d129b19b716ec54b95a3d8dd658a"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/nfr-requirements/security-requirements.md","id":"R-08","fingerprint":"sha256:14feb399b3ada66f5924765c521ddd412b1961e7f3423485079f607c8e7d5749","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/nfr-requirements/units/delivery-pipeline/4be437220155d14b/2.json","digest":"sha256:097ebd13747123c0d273c3ea98a59f951aa1d129b19b716ec54b95a3d8dd658a"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/nfr-requirements/security-requirements.md","id":"R-09","fingerprint":"sha256:1282b2beed6c83c0e154725dbf6a9458ccabd3d47b05d22600455d86a3c3e23f","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/nfr-requirements/units/delivery-pipeline/4be437220155d14b/2.json","digest":"sha256:097ebd13747123c0d273c3ea98a59f951aa1d129b19b716ec54b95a3d8dd658a"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/nfr-requirements/security-requirements.md","id":"R-10","fingerprint":"sha256:4128bcc4c197f5bfff00c3983362ddc25b4484362a41baf7537f00c1878d8bb3","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/nfr-requirements/units/delivery-pipeline/4be437220155d14b/2.json","digest":"sha256:097ebd13747123c0d273c3ea98a59f951aa1d129b19b716ec54b95a3d8dd658a"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/security-requirements.md","id":"R-01","fingerprint":"sha256:332d0d6bb204f7502f3757e82c0f8c009ac18899f8458210755c8c6644265449","status":"Accepted risk","decided_at_severity":"Major","reviewed_record":{"path":".aidlc-engine/reviews/nfr-requirements/units/sorting-core/4be437220155d14b/1.json","digest":"sha256:101cb5aa5ea00d9064b7f79f3f3454250d64bee66b0ed62544675e3ddfeb83f9"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/security-requirements.md","id":"R-02","fingerprint":"sha256:32fa3a46c2d9783b50984a48cdeabeac22ac624e67d1f40a092396de1195fee9","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/nfr-requirements/units/sorting-core/4be437220155d14b/1.json","digest":"sha256:101cb5aa5ea00d9064b7f79f3f3454250d64bee66b0ed62544675e3ddfeb83f9"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/security-requirements.md","id":"R-03","fingerprint":"sha256:f676e8cb2d371aa2966e1470fdf4687ee34cc948d97199599c37d2ad810e73ab","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/nfr-requirements/units/sorting-core/4be437220155d14b/1.json","digest":"sha256:101cb5aa5ea00d9064b7f79f3f3454250d64bee66b0ed62544675e3ddfeb83f9"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/security-requirements.md","id":"R-04","fingerprint":"sha256:1df6042f5303fe849a7f567ecd9797ff48b69b8bd8f692d297461cc404971622","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/nfr-requirements/units/sorting-core/4be437220155d14b/1.json","digest":"sha256:101cb5aa5ea00d9064b7f79f3f3454250d64bee66b0ed62544675e3ddfeb83f9"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/security-requirements.md","id":"R-05","fingerprint":"sha256:57cf94b6feae6d26e6ea5000936e33494e1f6357dae4f36fd074b9844ce42794","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/nfr-requirements/units/sorting-core/4be437220155d14b/1.json","digest":"sha256:101cb5aa5ea00d9064b7f79f3f3454250d64bee66b0ed62544675e3ddfeb83f9"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-requirements/security-requirements.md","id":"R-06","fingerprint":"sha256:0143c8585534e0d580bc93e55f5e01d056c46b647f508f2ddc5fc512d614a84d","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/nfr-requirements/units/sorting-core/4be437220155d14b/1.json","digest":"sha256:101cb5aa5ea00d9064b7f79f3f3454250d64bee66b0ed62544675e3ddfeb83f9"}}]}
+
+---
+
+## Stage Completion
+**Timestamp**: 2026-10-21T05:08:12Z
+**Event**: STAGE_COMPLETED
+**Stage**: nfr-requirements
+**Validation Basis**: {"graphContract":"sha256:42740ba129331fd7be59c025acef08cda33aa1e1b365637b9662dd2b529d969c","inputs":[{"artifact":"contract-summary","contentHash":"sha256:14e4b9d569f68c9edc984f70baa40f7c5bad2afb0fbf33d1d090fdb37421b3a0","instanceCount":1,"presentCount":1,"producer":"contract-design","required":false,"structureHash":"sha256:5c61ef7cc78aec3a1dab7c5e00d060a2177956e957e6f8204d1521c37413857d"},{"artifact":"functional-spec","contentHash":"sha256:c1345641da2439e74ac251f7727ff70314103bd0a6d794bad567ba79aa05307b","instanceCount":2,"presentCount":2,"producer":"functional-design","required":true,"structureHash":"sha256:fb41c50d463d285ec07c75d98665f11b6c9a99c7ad384e9846437097b2e10786"},{"artifact":"requirements","contentHash":"sha256:4362dec7d1c91b4edf246b0cab420279e8079928f12473925933da24545c6997","instanceCount":1,"presentCount":1,"producer":"requirements-analysis","required":true,"structureHash":"sha256:28b1c473c5331babb5afaf4ce30c530aec15c9c798e3f583bde02b23725a3e5f"},{"artifact":"rules","contentHash":"sha256:46e803405a9124d10d751d71b5ce554bbf69cf9bdcab9e5b436fe9f1b30ec24e","instanceCount":1,"presentCount":1,"producer":"functional-design","required":true,"structureHash":"sha256:a1e5c1dbd19b65e9bf38fcb79a9d4a6442947a1de5a62bb72d00142d440b682c"}],"outputs":[{"artifact":"observability-requirements","contentHash":"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945","instanceCount":0,"presentCount":0,"producer":"nfr-requirements","required":true,"structureHash":"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"},{"artifact":"performance-requirements","contentHash":"sha256:ec4b0b3b0d53d15909abd56ce6215271ae0530d9649f46393c6d716928b03d89","instanceCount":1,"presentCount":1,"producer":"nfr-requirements","required":true,"structureHash":"sha256:9cd41320eca27a81f8c109c1f47ab70b60b392985c657f9b11b4ae68ab963013"},{"artifact":"reliability-requirements","contentHash":"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945","instanceCount":0,"presentCount":0,"producer":"nfr-requirements","required":true,"structureHash":"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"},{"artifact":"scalability-requirements","contentHash":"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945","instanceCount":0,"presentCount":0,"producer":"nfr-requirements","required":true,"structureHash":"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"},{"artifact":"security-requirements","contentHash":"sha256:5982871907113ac1ead91673e1d5ac9c52d16c48453bf5af2236ee72d11c9e91","instanceCount":3,"presentCount":3,"producer":"nfr-requirements","required":true,"structureHash":"sha256:dea6ed054459c1674369c799fcf4efd958da595983c9e91536d393a3a69b651f"},{"artifact":"tech-stack-decisions","contentHash":"sha256:f691c58f7b878a603a509ebf4b4a5a50fe37a31f5e3f3841a3c4b0f4345fbdf6","instanceCount":3,"presentCount":3,"producer":"nfr-requirements","required":true,"structureHash":"sha256:aa25acd79af98f14a3f28210ea9a4399e65ef4f79eb997fd1d12492001c5d17b"},{"artifact":"traceability","contentHash":"sha256:f88521f77dd5e9c0549b088fa9404c75e68ce6a847c557a563906950b0dde84c","instanceCount":3,"presentCount":3,"producer":"nfr-requirements","required":true,"structureHash":"sha256:25b8fb5a9dc591686dce69dc28cf0eb6311df3043e84707ce18faafe21d170e7"}],"projectType":"greenfield","schema":3}
+**Details**: Stage NFR Requirements approved by gate
+
+---
+
+## Stage Start
+**Timestamp**: 2026-10-21T05:08:13Z
+**Event**: STAGE_STARTED
+**Stage**: nfr-design
+**Agent**: aidlc-architect-agent
+**Answer Mode**: guide (reused from market-research)
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:19Z
+**Event**: SENSOR_FIRED
+**Fire id**: 4c7f1eda
+**Sensor ID**: required-sections
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-design/performance-design.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:19Z
+**Event**: SENSOR_PASSED
+**Fire id**: 4c7f1eda
+**Sensor ID**: required-sections
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-design/performance-design.md
+**Duration ms**: 195
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:19Z
+**Event**: SENSOR_FIRED
+**Fire id**: 8ea29882
+**Sensor ID**: required-sections
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-design/security-design.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:20Z
+**Event**: SENSOR_PASSED
+**Fire id**: 8ea29882
+**Sensor ID**: required-sections
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-design/security-design.md
+**Duration ms**: 270
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:20Z
+**Event**: SENSOR_FIRED
+**Fire id**: efbb48e5
+**Sensor ID**: required-sections
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-design/logical-components.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:20Z
+**Event**: SENSOR_PASSED
+**Fire id**: efbb48e5
+**Sensor ID**: required-sections
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-design/logical-components.md
+**Duration ms**: 192
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:20Z
+**Event**: SENSOR_FIRED
+**Fire id**: 036484f5
+**Sensor ID**: required-sections
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-design/traceability.json
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:20Z
+**Event**: SENSOR_PASSED
+**Fire id**: 036484f5
+**Sensor ID**: required-sections
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-design/traceability.json
+**Duration ms**: 201
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:21Z
+**Event**: SENSOR_FIRED
+**Fire id**: 0c5ee972
+**Sensor ID**: required-sections
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-design/security-design.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:21Z
+**Event**: SENSOR_PASSED
+**Fire id**: 0c5ee972
+**Sensor ID**: required-sections
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-design/security-design.md
+**Duration ms**: 200
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:21Z
+**Event**: SENSOR_FIRED
+**Fire id**: 3801e26a
+**Sensor ID**: required-sections
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-design/logical-components.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:21Z
+**Event**: SENSOR_PASSED
+**Fire id**: 3801e26a
+**Sensor ID**: required-sections
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-design/logical-components.md
+**Duration ms**: 205
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:22Z
+**Event**: SENSOR_FIRED
+**Fire id**: ab060679
+**Sensor ID**: required-sections
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-design/traceability.json
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:22Z
+**Event**: SENSOR_PASSED
+**Fire id**: ab060679
+**Sensor ID**: required-sections
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-design/traceability.json
+**Duration ms**: 203
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:22Z
+**Event**: SENSOR_FIRED
+**Fire id**: 4b3caf35
+**Sensor ID**: required-sections
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/nfr-design/security-design.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:22Z
+**Event**: SENSOR_PASSED
+**Fire id**: 4b3caf35
+**Sensor ID**: required-sections
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/nfr-design/security-design.md
+**Duration ms**: 194
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:22Z
+**Event**: SENSOR_FIRED
+**Fire id**: 6a3611d6
+**Sensor ID**: required-sections
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/nfr-design/traceability.json
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:23Z
+**Event**: SENSOR_PASSED
+**Fire id**: 6a3611d6
+**Sensor ID**: required-sections
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/nfr-design/traceability.json
+**Duration ms**: 197
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:23Z
+**Event**: SENSOR_FIRED
+**Fire id**: 58144f46
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-design/performance-design.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:23Z
+**Event**: SENSOR_PASSED
+**Fire id**: 58144f46
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-design/performance-design.md
+**Duration ms**: 187
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:23Z
+**Event**: SENSOR_FIRED
+**Fire id**: 840e9049
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-design/security-design.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:23Z
+**Event**: SENSOR_PASSED
+**Fire id**: 840e9049
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-design/security-design.md
+**Duration ms**: 183
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:24Z
+**Event**: SENSOR_FIRED
+**Fire id**: f4ee9fdb
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-design/logical-components.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:24Z
+**Event**: SENSOR_PASSED
+**Fire id**: f4ee9fdb
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-design/logical-components.md
+**Duration ms**: 171
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:24Z
+**Event**: SENSOR_FIRED
+**Fire id**: 84354a48
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-design/traceability.json
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:24Z
+**Event**: SENSOR_PASSED
+**Fire id**: 84354a48
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/nfr-design/traceability.json
+**Duration ms**: 183
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:24Z
+**Event**: SENSOR_FIRED
+**Fire id**: 67a1320e
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-design/security-design.md
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-21T05:08:25Z
+**Event**: SENSOR_FAILED
+**Fire id**: 67a1320e
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-design/security-design.md
+**Detail path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/.aidlc-engine/sensors/nfr-design/upstream-coverage-67a1320e.md
+**Findings count**: 1
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:25Z
+**Event**: SENSOR_FIRED
+**Fire id**: 85600d49
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-design/logical-components.md
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-21T05:08:25Z
+**Event**: SENSOR_FAILED
+**Fire id**: 85600d49
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-design/logical-components.md
+**Detail path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/.aidlc-engine/sensors/nfr-design/upstream-coverage-85600d49.md
+**Findings count**: 1
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:25Z
+**Event**: SENSOR_FIRED
+**Fire id**: af896e42
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-design/traceability.json
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-21T05:08:25Z
+**Event**: SENSOR_FAILED
+**Fire id**: af896e42
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-design/traceability.json
+**Detail path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/.aidlc-engine/sensors/nfr-design/upstream-coverage-af896e42.md
+**Findings count**: 1
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:26Z
+**Event**: SENSOR_FIRED
+**Fire id**: e0dd4e5a
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/nfr-design/security-design.md
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-21T05:08:26Z
+**Event**: SENSOR_FAILED
+**Fire id**: e0dd4e5a
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/nfr-design/security-design.md
+**Detail path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/.aidlc-engine/sensors/nfr-design/upstream-coverage-e0dd4e5a.md
+**Findings count**: 1
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:26Z
+**Event**: SENSOR_FIRED
+**Fire id**: c569246e
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/nfr-design/traceability.json
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-21T05:08:26Z
+**Event**: SENSOR_FAILED
+**Fire id**: c569246e
+**Sensor ID**: upstream-coverage
+**Stage slug**: nfr-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/nfr-design/traceability.json
+**Detail path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/.aidlc-engine/sensors/nfr-design/upstream-coverage-c569246e.md
+**Findings count**: 1
+
+---
+
+## Stage Awaiting Approval
+**Timestamp**: 2026-10-21T05:08:27Z
+**Event**: STAGE_AWAITING_APPROVAL
+**Stage**: nfr-design
+
+---
+
+## Gate Approved
+**Timestamp**: 2026-10-21T05:08:33Z
+**Event**: GATE_APPROVED
+**Stage**: nfr-design
+**Review Finding Dispositions**: {"version":1,"dispositions":[{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-design/security-design.md","id":"R-00","fingerprint":"sha256:a1f23b305e4c02404fb89e0d75268eb455702812f9f359f87e094fdd18cbeb8f","status":"Accepted risk","decided_at_severity":"Major","reviewed_record":{"path":".aidlc-engine/reviews/nfr-design/units/sorting-core/4be437220155d14b/2.json","digest":"sha256:da79aabad9b7b6c6bb26027c0df4933b22e6210e78b7187e49206b75635bd87c"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-design/security-design.md","id":"R-01","fingerprint":"sha256:6f2aa259970312119181faf29829d52fec06796129bfc783023c174d4b57d18e","status":"Accepted risk","decided_at_severity":"Critical","reviewed_record":{"path":".aidlc-engine/reviews/nfr-design/units/sorting-core/4be437220155d14b/2.json","digest":"sha256:da79aabad9b7b6c6bb26027c0df4933b22e6210e78b7187e49206b75635bd87c"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-design/security-design.md","id":"R-02","fingerprint":"sha256:99c4b86cb4cea01078438d3081257e00e2ff14a428a7770cca6b5dbb08d39d99","status":"Accepted risk","decided_at_severity":"Major","reviewed_record":{"path":".aidlc-engine/reviews/nfr-design/units/sorting-core/4be437220155d14b/2.json","digest":"sha256:da79aabad9b7b6c6bb26027c0df4933b22e6210e78b7187e49206b75635bd87c"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-design/security-design.md","id":"R-03","fingerprint":"sha256:21fdcb88e70e35de023c895a21fdf97015c29faa774046cf799a36e1202d5afa","status":"Accepted risk","decided_at_severity":"Major","reviewed_record":{"path":".aidlc-engine/reviews/nfr-design/units/sorting-core/4be437220155d14b/2.json","digest":"sha256:da79aabad9b7b6c6bb26027c0df4933b22e6210e78b7187e49206b75635bd87c"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-design/security-design.md","id":"R-04","fingerprint":"sha256:76f2be065834bdb98013a41e2f78f82cab8c0d4fd6b476437e68009807947e26","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/nfr-design/units/sorting-core/4be437220155d14b/2.json","digest":"sha256:da79aabad9b7b6c6bb26027c0df4933b22e6210e78b7187e49206b75635bd87c"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-design/security-design.md","id":"R-05","fingerprint":"sha256:8d444f841012d3c8217909e6fa9f827054b2a17c6b0c250c95ed9fa605067edf","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/nfr-design/units/sorting-core/4be437220155d14b/2.json","digest":"sha256:da79aabad9b7b6c6bb26027c0df4933b22e6210e78b7187e49206b75635bd87c"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/nfr-design/security-design.md","id":"R-06","fingerprint":"sha256:ae97b6b8ca58ee7ec6c0c8efbdc7574cccdd2af718d267621b917ea8485bde7e","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/nfr-design/units/sorting-core/4be437220155d14b/2.json","digest":"sha256:da79aabad9b7b6c6bb26027c0df4933b22e6210e78b7187e49206b75635bd87c"}}]}
+
+---
+
+## Stage Completion
+**Timestamp**: 2026-10-21T05:08:33Z
+**Event**: STAGE_COMPLETED
+**Stage**: nfr-design
+**Validation Basis**: {"graphContract":"sha256:ef880741298a28ff1b153f7995686a9c571a06744a85ec1852b3998a0ee954fb","inputs":[{"artifact":"contract-summary","contentHash":"sha256:14e4b9d569f68c9edc984f70baa40f7c5bad2afb0fbf33d1d090fdb37421b3a0","instanceCount":1,"presentCount":1,"producer":"contract-design","required":false,"structureHash":"sha256:5c61ef7cc78aec3a1dab7c5e00d060a2177956e957e6f8204d1521c37413857d"},{"artifact":"functional-spec","contentHash":"sha256:c1345641da2439e74ac251f7727ff70314103bd0a6d794bad567ba79aa05307b","instanceCount":2,"presentCount":2,"producer":"functional-design","required":true,"structureHash":"sha256:fb41c50d463d285ec07c75d98665f11b6c9a99c7ad384e9846437097b2e10786"},{"artifact":"observability-requirements","contentHash":"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945","instanceCount":0,"presentCount":0,"producer":"nfr-requirements","required":true,"structureHash":"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"},{"artifact":"performance-requirements","contentHash":"sha256:ec4b0b3b0d53d15909abd56ce6215271ae0530d9649f46393c6d716928b03d89","instanceCount":1,"presentCount":1,"producer":"nfr-requirements","required":true,"structureHash":"sha256:9cd41320eca27a81f8c109c1f47ab70b60b392985c657f9b11b4ae68ab963013"},{"artifact":"reliability-requirements","contentHash":"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945","instanceCount":0,"presentCount":0,"producer":"nfr-requirements","required":true,"structureHash":"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"},{"artifact":"scalability-requirements","contentHash":"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945","instanceCount":0,"presentCount":0,"producer":"nfr-requirements","required":true,"structureHash":"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"},{"artifact":"security-requirements","contentHash":"sha256:5982871907113ac1ead91673e1d5ac9c52d16c48453bf5af2236ee72d11c9e91","instanceCount":3,"presentCount":3,"producer":"nfr-requirements","required":true,"structureHash":"sha256:dea6ed054459c1674369c799fcf4efd958da595983c9e91536d393a3a69b651f"},{"artifact":"tech-stack-decisions","contentHash":"sha256:f691c58f7b878a603a509ebf4b4a5a50fe37a31f5e3f3841a3c4b0f4345fbdf6","instanceCount":3,"presentCount":3,"producer":"nfr-requirements","required":true,"structureHash":"sha256:aa25acd79af98f14a3f28210ea9a4399e65ef4f79eb997fd1d12492001c5d17b"}],"outputs":[{"artifact":"logical-components","contentHash":"sha256:815c4314856cbe544105940c2f67e1cf19f0c5717b5bc1bf8435a0e6970628cb","instanceCount":2,"presentCount":2,"producer":"nfr-design","required":true,"structureHash":"sha256:2357c6df8bc37273190e91dfa78eda5205881797a26ed65eea63b34c865fba8d"},{"artifact":"observability-design","contentHash":"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945","instanceCount":0,"presentCount":0,"producer":"nfr-design","required":true,"structureHash":"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"},{"artifact":"performance-design","contentHash":"sha256:17756935b4d0ea0850861a1f846ec73c13a19960bd1a1ca98f43f2a82f657636","instanceCount":1,"presentCount":1,"producer":"nfr-design","required":true,"structureHash":"sha256:2d34ccca80b2b10dc73689c2ddc22e9487afba07f2eece4f38a74d85aa4d163a"},{"artifact":"reliability-design","contentHash":"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945","instanceCount":0,"presentCount":0,"producer":"nfr-design","required":true,"structureHash":"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"},{"artifact":"scalability-design","contentHash":"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945","instanceCount":0,"presentCount":0,"producer":"nfr-design","required":true,"structureHash":"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"},{"artifact":"security-design","contentHash":"sha256:5bc464c6293635d240ee6d5033bb7fbe502d04ecfcb7b360516d82ddd23d94ef","instanceCount":3,"presentCount":3,"producer":"nfr-design","required":true,"structureHash":"sha256:5de91d75e78280e728c45088d09ebf51654bd4a06d3255b2965e5bb7a1cf3b2b"},{"artifact":"traceability","contentHash":"sha256:c76554f68dbeaadfbfd3747f2141c436f9d0c357103459072188de36aa12022b","instanceCount":3,"presentCount":3,"producer":"nfr-design","required":true,"structureHash":"sha256:3cbba7e544f2f8a5a7fae1261e82cbd5c170fad829ff8913929b97f65ee1ec22"}],"projectType":"greenfield","schema":3}
+**Details**: Stage NFR Design approved by gate
+
+---
+
+## Stage Start
+**Timestamp**: 2026-10-21T05:08:33Z
+**Event**: STAGE_STARTED
+**Stage**: infrastructure-design
+**Agent**: aidlc-aws-platform-agent
+**Answer Mode**: guide (reused from market-research)
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:39Z
+**Event**: SENSOR_FIRED
+**Fire id**: f5b871dc
+**Sensor ID**: required-sections
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/infrastructure-design/infrastructure-specification.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:40Z
+**Event**: SENSOR_PASSED
+**Fire id**: f5b871dc
+**Sensor ID**: required-sections
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/infrastructure-design/infrastructure-specification.md
+**Duration ms**: 205
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:40Z
+**Event**: SENSOR_FIRED
+**Fire id**: 2a51ea7d
+**Sensor ID**: required-sections
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/infrastructure-design/monitoring-design.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:40Z
+**Event**: SENSOR_PASSED
+**Fire id**: 2a51ea7d
+**Sensor ID**: required-sections
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/infrastructure-design/monitoring-design.md
+**Duration ms**: 271
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:40Z
+**Event**: SENSOR_FIRED
+**Fire id**: c7da3895
+**Sensor ID**: required-sections
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/infrastructure-design/cicd-pipeline.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:41Z
+**Event**: SENSOR_PASSED
+**Fire id**: c7da3895
+**Sensor ID**: required-sections
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/infrastructure-design/cicd-pipeline.md
+**Duration ms**: 190
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:41Z
+**Event**: SENSOR_FIRED
+**Fire id**: 1f306067
+**Sensor ID**: required-sections
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/infrastructure-design/traceability.json
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:41Z
+**Event**: SENSOR_PASSED
+**Fire id**: 1f306067
+**Sensor ID**: required-sections
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/infrastructure-design/traceability.json
+**Duration ms**: 201
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:41Z
+**Event**: SENSOR_FIRED
+**Fire id**: 10b80a7e
+**Sensor ID**: required-sections
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/infrastructure-design/cicd-pipeline.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:41Z
+**Event**: SENSOR_PASSED
+**Fire id**: 10b80a7e
+**Sensor ID**: required-sections
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/infrastructure-design/cicd-pipeline.md
+**Duration ms**: 193
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:42Z
+**Event**: SENSOR_FIRED
+**Fire id**: 6b78d035
+**Sensor ID**: required-sections
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/infrastructure-design/traceability.json
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:42Z
+**Event**: SENSOR_PASSED
+**Fire id**: 6b78d035
+**Sensor ID**: required-sections
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/infrastructure-design/traceability.json
+**Duration ms**: 170
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:42Z
+**Event**: SENSOR_FIRED
+**Fire id**: c2afe1bc
+**Sensor ID**: required-sections
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/infrastructure-design/infrastructure-specification.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:42Z
+**Event**: SENSOR_PASSED
+**Fire id**: c2afe1bc
+**Sensor ID**: required-sections
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/infrastructure-design/infrastructure-specification.md
+**Duration ms**: 187
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:42Z
+**Event**: SENSOR_FIRED
+**Fire id**: d8682697
+**Sensor ID**: required-sections
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/infrastructure-design/monitoring-design.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:43Z
+**Event**: SENSOR_PASSED
+**Fire id**: d8682697
+**Sensor ID**: required-sections
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/infrastructure-design/monitoring-design.md
+**Duration ms**: 256
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:43Z
+**Event**: SENSOR_FIRED
+**Fire id**: cc61ab8a
+**Sensor ID**: required-sections
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/infrastructure-design/cicd-pipeline.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:43Z
+**Event**: SENSOR_PASSED
+**Fire id**: cc61ab8a
+**Sensor ID**: required-sections
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/infrastructure-design/cicd-pipeline.md
+**Duration ms**: 233
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:43Z
+**Event**: SENSOR_FIRED
+**Fire id**: f382cfe0
+**Sensor ID**: required-sections
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/infrastructure-design/traceability.json
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:44Z
+**Event**: SENSOR_PASSED
+**Fire id**: f382cfe0
+**Sensor ID**: required-sections
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/infrastructure-design/traceability.json
+**Duration ms**: 217
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:44Z
+**Event**: SENSOR_FIRED
+**Fire id**: fbfc9746
+**Sensor ID**: upstream-coverage
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/infrastructure-design/infrastructure-specification.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:44Z
+**Event**: SENSOR_PASSED
+**Fire id**: fbfc9746
+**Sensor ID**: upstream-coverage
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/infrastructure-design/infrastructure-specification.md
+**Duration ms**: 201
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:44Z
+**Event**: SENSOR_FIRED
+**Fire id**: 65711213
+**Sensor ID**: upstream-coverage
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/infrastructure-design/monitoring-design.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:45Z
+**Event**: SENSOR_PASSED
+**Fire id**: 65711213
+**Sensor ID**: upstream-coverage
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/infrastructure-design/monitoring-design.md
+**Duration ms**: 214
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:45Z
+**Event**: SENSOR_FIRED
+**Fire id**: ad2eebbd
+**Sensor ID**: upstream-coverage
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/infrastructure-design/cicd-pipeline.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:45Z
+**Event**: SENSOR_PASSED
+**Fire id**: ad2eebbd
+**Sensor ID**: upstream-coverage
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/infrastructure-design/cicd-pipeline.md
+**Duration ms**: 203
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:45Z
+**Event**: SENSOR_FIRED
+**Fire id**: 41434c1e
+**Sensor ID**: upstream-coverage
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/infrastructure-design/traceability.json
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:45Z
+**Event**: SENSOR_PASSED
+**Fire id**: 41434c1e
+**Sensor ID**: upstream-coverage
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/infrastructure-design/traceability.json
+**Duration ms**: 212
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:46Z
+**Event**: SENSOR_FIRED
+**Fire id**: 38659eb1
+**Sensor ID**: upstream-coverage
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/infrastructure-design/cicd-pipeline.md
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-21T05:08:46Z
+**Event**: SENSOR_FAILED
+**Fire id**: 38659eb1
+**Sensor ID**: upstream-coverage
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/infrastructure-design/cicd-pipeline.md
+**Detail path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/.aidlc-engine/sensors/infrastructure-design/upstream-coverage-38659eb1.md
+**Findings count**: 6
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:46Z
+**Event**: SENSOR_FIRED
+**Fire id**: 0ceabe30
+**Sensor ID**: upstream-coverage
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/infrastructure-design/traceability.json
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-21T05:08:46Z
+**Event**: SENSOR_FAILED
+**Fire id**: 0ceabe30
+**Sensor ID**: upstream-coverage
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/infrastructure-design/traceability.json
+**Detail path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/.aidlc-engine/sensors/infrastructure-design/upstream-coverage-0ceabe30.md
+**Findings count**: 5
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:47Z
+**Event**: SENSOR_FIRED
+**Fire id**: 59d5fa4e
+**Sensor ID**: upstream-coverage
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/infrastructure-design/infrastructure-specification.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:47Z
+**Event**: SENSOR_PASSED
+**Fire id**: 59d5fa4e
+**Sensor ID**: upstream-coverage
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/infrastructure-design/infrastructure-specification.md
+**Duration ms**: 200
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:47Z
+**Event**: SENSOR_FIRED
+**Fire id**: 8c270a37
+**Sensor ID**: upstream-coverage
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/infrastructure-design/monitoring-design.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:47Z
+**Event**: SENSOR_PASSED
+**Fire id**: 8c270a37
+**Sensor ID**: upstream-coverage
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/infrastructure-design/monitoring-design.md
+**Duration ms**: 221
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:47Z
+**Event**: SENSOR_FIRED
+**Fire id**: fdcb2b5a
+**Sensor ID**: upstream-coverage
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/infrastructure-design/cicd-pipeline.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:48Z
+**Event**: SENSOR_PASSED
+**Fire id**: fdcb2b5a
+**Sensor ID**: upstream-coverage
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/infrastructure-design/cicd-pipeline.md
+**Duration ms**: 211
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:08:48Z
+**Event**: SENSOR_FIRED
+**Fire id**: fc44c555
+**Sensor ID**: upstream-coverage
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/infrastructure-design/traceability.json
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:08:48Z
+**Event**: SENSOR_PASSED
+**Fire id**: fc44c555
+**Sensor ID**: upstream-coverage
+**Stage slug**: infrastructure-design
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/infrastructure-design/traceability.json
+**Duration ms**: 219
+
+---
+
+## Stage Awaiting Approval
+**Timestamp**: 2026-10-21T05:08:49Z
+**Event**: STAGE_AWAITING_APPROVAL
+**Stage**: infrastructure-design
+
+---
+
+## Gate Approved
+**Timestamp**: 2026-10-21T05:08:55Z
+**Event**: GATE_APPROVED
+**Stage**: infrastructure-design
+**Review Finding Dispositions**: {"version":1,"dispositions":[{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/infrastructure-design/cicd-pipeline.md","id":"R-01","fingerprint":"sha256:532502cece86a2f1c7a90b1b99df00320afa0bff8e3670050e10746a84a9248e","status":"Accepted risk","decided_at_severity":"Major","reviewed_record":{"path":".aidlc-engine/reviews/infrastructure-design/units/playground-ui/4be437220155d14b/1.json","digest":"sha256:720897653eba410c8c31834762a8888439ef940b195f161982debb3221d86609"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/infrastructure-design/cicd-pipeline.md","id":"R-02","fingerprint":"sha256:9789f16f665c6b1f3575e29bfb0d88434374f1352e850c5cb0a525f0be2647f7","status":"Accepted risk","decided_at_severity":"Major","reviewed_record":{"path":".aidlc-engine/reviews/infrastructure-design/units/playground-ui/4be437220155d14b/1.json","digest":"sha256:720897653eba410c8c31834762a8888439ef940b195f161982debb3221d86609"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/infrastructure-design/cicd-pipeline.md","id":"R-03","fingerprint":"sha256:d83c062052925bac80dfbc58d1c207ee46119bcfc143e2d6c490a454926a6485","status":"Accepted risk","decided_at_severity":"Major","reviewed_record":{"path":".aidlc-engine/reviews/infrastructure-design/units/playground-ui/4be437220155d14b/1.json","digest":"sha256:720897653eba410c8c31834762a8888439ef940b195f161982debb3221d86609"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/infrastructure-design/cicd-pipeline.md","id":"R-04","fingerprint":"sha256:19bb55db397866ff593b6831a0504ac3a077f532f762e1a7dc369059fba0f42c","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/infrastructure-design/units/playground-ui/4be437220155d14b/1.json","digest":"sha256:720897653eba410c8c31834762a8888439ef940b195f161982debb3221d86609"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/infrastructure-design/cicd-pipeline.md","id":"R-05","fingerprint":"sha256:0be69f293b5de90d9d4ae8c3ff8c6e89fea0d8cdb19db0d4f66b5996393ee711","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/infrastructure-design/units/playground-ui/4be437220155d14b/1.json","digest":"sha256:720897653eba410c8c31834762a8888439ef940b195f161982debb3221d86609"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/infrastructure-design/cicd-pipeline.md","id":"R-06","fingerprint":"sha256:25c48bf04381e54b859f4b3f3fa94ccd8b4a0df3fa27513a9cdbf5ffeb7d1ae5","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/infrastructure-design/units/playground-ui/4be437220155d14b/1.json","digest":"sha256:720897653eba410c8c31834762a8888439ef940b195f161982debb3221d86609"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/infrastructure-design/cicd-pipeline.md","id":"R-07","fingerprint":"sha256:5246cc551f47cffef7448d7458743c3bd24304182d972fd6bd2b41fc05820b20","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/infrastructure-design/units/playground-ui/4be437220155d14b/1.json","digest":"sha256:720897653eba410c8c31834762a8888439ef940b195f161982debb3221d86609"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/infrastructure-design/cicd-pipeline.md","id":"R-00","fingerprint":"sha256:8972e610c41a921ea49abbb9987a168cf50e36a51e7a4725f768da98c5b2a2fd","status":"Accepted risk","decided_at_severity":"Major","reviewed_record":{"path":".aidlc-engine/reviews/infrastructure-design/units/sorting-core/4be437220155d14b/2.json","digest":"sha256:9561e8d4939f2cb444e52b0c944ee1dfa1e81122f1af9419f3743094e44e91f9"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/infrastructure-design/cicd-pipeline.md","id":"R-01","fingerprint":"sha256:6c1ce1e877648643e0649b1b559eeff805b6e55041a48dff47bc1ba88343ee3a","status":"Accepted risk","decided_at_severity":"Major","reviewed_record":{"path":".aidlc-engine/reviews/infrastructure-design/units/sorting-core/4be437220155d14b/2.json","digest":"sha256:9561e8d4939f2cb444e52b0c944ee1dfa1e81122f1af9419f3743094e44e91f9"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/infrastructure-design/cicd-pipeline.md","id":"R-02","fingerprint":"sha256:5d7d770bfa272ea0a5817ff45d83b44f9d13ac1870951903affd1bcb09e123ba","status":"Accepted risk","decided_at_severity":"Major","reviewed_record":{"path":".aidlc-engine/reviews/infrastructure-design/units/sorting-core/4be437220155d14b/2.json","digest":"sha256:9561e8d4939f2cb444e52b0c944ee1dfa1e81122f1af9419f3743094e44e91f9"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/infrastructure-design/cicd-pipeline.md","id":"R-03","fingerprint":"sha256:9f7091bedb8ea9438fe8692679554da7ed3bc8c9be7f9979519f87d2e6aa3ca8","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/infrastructure-design/units/sorting-core/4be437220155d14b/2.json","digest":"sha256:9561e8d4939f2cb444e52b0c944ee1dfa1e81122f1af9419f3743094e44e91f9"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/infrastructure-design/cicd-pipeline.md","id":"R-04","fingerprint":"sha256:d484b13bf28010a7238872c184c3a04d2a54f4076566ad8156831beecd14ecdd","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/infrastructure-design/units/sorting-core/4be437220155d14b/2.json","digest":"sha256:9561e8d4939f2cb444e52b0c944ee1dfa1e81122f1af9419f3743094e44e91f9"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/infrastructure-design/cicd-pipeline.md","id":"R-05","fingerprint":"sha256:2c8de6c5f389a05ce7b5547e1308e555f598fd45c66b127a7f1291eed4b2d955","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/infrastructure-design/units/sorting-core/4be437220155d14b/2.json","digest":"sha256:9561e8d4939f2cb444e52b0c944ee1dfa1e81122f1af9419f3743094e44e91f9"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/infrastructure-design/cicd-pipeline.md","id":"R-06","fingerprint":"sha256:c4a5c4ac94d4dc4f8b7705a56cf7c0d89b6cda31165aaabb2f2931c803ec1548","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/infrastructure-design/units/sorting-core/4be437220155d14b/2.json","digest":"sha256:9561e8d4939f2cb444e52b0c944ee1dfa1e81122f1af9419f3743094e44e91f9"}}]}
+
+---
+
+## Stage Completion
+**Timestamp**: 2026-10-21T05:08:55Z
+**Event**: STAGE_COMPLETED
+**Stage**: infrastructure-design
+**Validation Basis**: {"graphContract":"sha256:5b36300e4a848f35345dfd56bbf1a1355d108707996db2db5863ed6de1e50085","inputs":[{"artifact":"components","contentHash":"sha256:398ee55c336944aa3ef5ff21c0971dfada07a35f8b4cee8de3880e540edd1804","instanceCount":1,"presentCount":1,"producer":"domain-design","required":true,"structureHash":"sha256:d8db1700f468f45539c02103bf8faee65266a30837ba5787ef64f136c8d3f706"},{"artifact":"contract-summary","contentHash":"sha256:14e4b9d569f68c9edc984f70baa40f7c5bad2afb0fbf33d1d090fdb37421b3a0","instanceCount":1,"presentCount":1,"producer":"contract-design","required":false,"structureHash":"sha256:5c61ef7cc78aec3a1dab7c5e00d060a2177956e957e6f8204d1521c37413857d"},{"artifact":"functional-spec","contentHash":"sha256:c1345641da2439e74ac251f7727ff70314103bd0a6d794bad567ba79aa05307b","instanceCount":2,"presentCount":2,"producer":"functional-design","required":true,"structureHash":"sha256:fb41c50d463d285ec07c75d98665f11b6c9a99c7ad384e9846437097b2e10786"},{"artifact":"logical-components","contentHash":"sha256:815c4314856cbe544105940c2f67e1cf19f0c5717b5bc1bf8435a0e6970628cb","instanceCount":2,"presentCount":2,"producer":"nfr-design","required":true,"structureHash":"sha256:2357c6df8bc37273190e91dfa78eda5205881797a26ed65eea63b34c865fba8d"},{"artifact":"observability-design","contentHash":"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945","instanceCount":0,"presentCount":0,"producer":"nfr-design","required":true,"structureHash":"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"},{"artifact":"performance-design","contentHash":"sha256:17756935b4d0ea0850861a1f846ec73c13a19960bd1a1ca98f43f2a82f657636","instanceCount":1,"presentCount":1,"producer":"nfr-design","required":true,"structureHash":"sha256:2d34ccca80b2b10dc73689c2ddc22e9487afba07f2eece4f38a74d85aa4d163a"},{"artifact":"reliability-design","contentHash":"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945","instanceCount":0,"presentCount":0,"producer":"nfr-design","required":true,"structureHash":"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"},{"artifact":"scalability-design","contentHash":"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945","instanceCount":0,"presentCount":0,"producer":"nfr-design","required":true,"structureHash":"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"},{"artifact":"security-design","contentHash":"sha256:5bc464c6293635d240ee6d5033bb7fbe502d04ecfcb7b360516d82ddd23d94ef","instanceCount":3,"presentCount":3,"producer":"nfr-design","required":true,"structureHash":"sha256:5de91d75e78280e728c45088d09ebf51654bd4a06d3255b2965e5bb7a1cf3b2b"}],"outputs":[{"artifact":"cicd-pipeline","contentHash":"sha256:482bf52074a0f919fc2c2ecf8d84b87884257030be37cab8dfab64175092ce6d","instanceCount":3,"presentCount":3,"producer":"infrastructure-design","required":true,"structureHash":"sha256:a2f41baa4a0783b591b8d7b81e183baa4b2f40a2166d53a1476ff41f73d289d5"},{"artifact":"infrastructure-specification","contentHash":"sha256:14c2b66ddb6f95a7fcca3c256550503b770a5ed7ea1313f963dcca59ad8817a9","instanceCount":2,"presentCount":2,"producer":"infrastructure-design","required":true,"structureHash":"sha256:ba3d71f046c5852df188bbaaaf93134142f3ecd2ee04ba4e131e1149c898788e"},{"artifact":"monitoring-design","contentHash":"sha256:647b27c62a75f4777af3d5d8646991c64d6791c8c71e58aea3ac5bfd2534fea5","instanceCount":2,"presentCount":2,"producer":"infrastructure-design","required":true,"structureHash":"sha256:161d5587e8663abca3573256c41fa0172b6741fdf1938b38947b64718c0c5050"},{"artifact":"traceability","contentHash":"sha256:fb3fa9d1fd616b706fac952fc2a39e40e831eb682e2402390ec9d9d702609c91","instanceCount":3,"presentCount":3,"producer":"infrastructure-design","required":true,"structureHash":"sha256:f36db8d4e539f166e04ba2927821f4823ce1bbf1008164c19feb6174449d9c1d"}],"projectType":"greenfield","schema":3}
+**Details**: Stage Infrastructure Design approved by gate
+
+---
+
+## Stage Start
+**Timestamp**: 2026-10-21T05:08:55Z
+**Event**: STAGE_STARTED
+**Stage**: code-generation
+**Agent**: aidlc-developer-agent
+**Answer Mode**: guide (reused from market-research)
+**Source Baseline**: sha256:ad0b861a3476fa4ba3eca2dd685ea9022a2539c7f63cff183f14cf5527a8e590
+
+---
+
+## Change Accepted
+**Timestamp**: 2026-10-21T05:09:01Z
+**Event**: CHANGE_ACCEPTED
+**Stage**: code-generation
+**Checkpoint**: review-receipt
+**Changed**: README.md
+**Recorded**: (outside the units)
+**Current**: sha256:608cd06130858c72dec0651a8a4ce58454fce9c70a72cf42592a5b51cdd8cd86
+**Details**: These files changed outside any unit's work in Code Generation: README.md. Kept them.
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:09:02Z
+**Event**: SENSOR_FIRED
+**Fire id**: 9f0dbaea
+**Sensor ID**: required-sections
+**Stage slug**: code-generation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/code-generation/code-generation-plan.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:09:02Z
+**Event**: SENSOR_PASSED
+**Fire id**: 9f0dbaea
+**Sensor ID**: required-sections
+**Stage slug**: code-generation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/code-generation/code-generation-plan.md
+**Duration ms**: 193
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:09:02Z
+**Event**: SENSOR_FIRED
+**Fire id**: e83b9c2a
+**Sensor ID**: required-sections
+**Stage slug**: code-generation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/code-generation/unit-test-instructions.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:09:03Z
+**Event**: SENSOR_PASSED
+**Fire id**: e83b9c2a
+**Sensor ID**: required-sections
+**Stage slug**: code-generation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/code-generation/unit-test-instructions.md
+**Duration ms**: 193
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:09:03Z
+**Event**: SENSOR_FIRED
+**Fire id**: fa8ba4b2
+**Sensor ID**: required-sections
+**Stage slug**: code-generation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/code-generation/code-summary.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:09:03Z
+**Event**: SENSOR_PASSED
+**Fire id**: fa8ba4b2
+**Sensor ID**: required-sections
+**Stage slug**: code-generation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/code-generation/code-summary.md
+**Duration ms**: 162
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:09:03Z
+**Event**: SENSOR_FIRED
+**Fire id**: 16c58de7
+**Sensor ID**: required-sections
+**Stage slug**: code-generation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/code-generation/traceability.json
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:09:03Z
+**Event**: SENSOR_PASSED
+**Fire id**: 16c58de7
+**Sensor ID**: required-sections
+**Stage slug**: code-generation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/code-generation/traceability.json
+**Duration ms**: 219
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:09:04Z
+**Event**: SENSOR_FIRED
+**Fire id**: cb1e824b
+**Sensor ID**: required-sections
+**Stage slug**: code-generation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/code-generation/code-generation-plan.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:09:04Z
+**Event**: SENSOR_PASSED
+**Fire id**: cb1e824b
+**Sensor ID**: required-sections
+**Stage slug**: code-generation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/code-generation/code-generation-plan.md
+**Duration ms**: 201
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:09:04Z
+**Event**: SENSOR_FIRED
+**Fire id**: a856d023
+**Sensor ID**: required-sections
+**Stage slug**: code-generation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/code-generation/unit-test-instructions.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:09:04Z
+**Event**: SENSOR_PASSED
+**Fire id**: a856d023
+**Sensor ID**: required-sections
+**Stage slug**: code-generation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/code-generation/unit-test-instructions.md
+**Duration ms**: 173
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:09:04Z
+**Event**: SENSOR_FIRED
+**Fire id**: 31da8a0d
+**Sensor ID**: required-sections
+**Stage slug**: code-generation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/code-generation/code-summary.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:09:05Z
+**Event**: SENSOR_PASSED
+**Fire id**: 31da8a0d
+**Sensor ID**: required-sections
+**Stage slug**: code-generation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/code-generation/code-summary.md
+**Duration ms**: 219
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:09:05Z
+**Event**: SENSOR_FIRED
+**Fire id**: ca14da09
+**Sensor ID**: required-sections
+**Stage slug**: code-generation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/code-generation/traceability.json
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:09:05Z
+**Event**: SENSOR_PASSED
+**Fire id**: ca14da09
+**Sensor ID**: required-sections
+**Stage slug**: code-generation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/code-generation/traceability.json
+**Duration ms**: 212
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:09:05Z
+**Event**: SENSOR_FIRED
+**Fire id**: 04a19bdc
+**Sensor ID**: required-sections
+**Stage slug**: code-generation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/code-generation/code-generation-plan.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:09:06Z
+**Event**: SENSOR_PASSED
+**Fire id**: 04a19bdc
+**Sensor ID**: required-sections
+**Stage slug**: code-generation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/code-generation/code-generation-plan.md
+**Duration ms**: 190
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:09:06Z
+**Event**: SENSOR_FIRED
+**Fire id**: bdb76fb7
+**Sensor ID**: required-sections
+**Stage slug**: code-generation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/code-generation/unit-test-instructions.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:09:06Z
+**Event**: SENSOR_PASSED
+**Fire id**: bdb76fb7
+**Sensor ID**: required-sections
+**Stage slug**: code-generation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/code-generation/unit-test-instructions.md
+**Duration ms**: 193
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:09:06Z
+**Event**: SENSOR_FIRED
+**Fire id**: 0638a1c4
+**Sensor ID**: required-sections
+**Stage slug**: code-generation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/code-generation/code-summary.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:09:07Z
+**Event**: SENSOR_PASSED
+**Fire id**: 0638a1c4
+**Sensor ID**: required-sections
+**Stage slug**: code-generation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/code-generation/code-summary.md
+**Duration ms**: 251
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-21T05:09:07Z
+**Event**: SENSOR_FIRED
+**Fire id**: 992c80fa
+**Sensor ID**: required-sections
+**Stage slug**: code-generation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/code-generation/traceability.json
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-21T05:09:07Z
+**Event**: SENSOR_PASSED
+**Fire id**: 992c80fa
+**Sensor ID**: required-sections
+**Stage slug**: code-generation
+**Output path**: aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/delivery-pipeline/code-generation/traceability.json
+**Duration ms**: 200
+
+---
+
+## Stage Awaiting Approval
+**Timestamp**: 2026-10-21T05:09:09Z
+**Event**: STAGE_AWAITING_APPROVAL
+**Stage**: code-generation
+
+---
+
+## Gate Approved
+**Timestamp**: 2026-10-21T05:09:14Z
+**Event**: GATE_APPROVED
+**Stage**: code-generation
+**Review Finding Dispositions**: {"version":1,"dispositions":[{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/playground-ui/code-generation/code-generation-plan.md","id":"R-01","fingerprint":"sha256:cd6308265113a624bb93ac9f22227028af5b0945d108ce3b110f79dc54f0e3a8","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/code-generation/units/playground-ui/4be437220155d14b/1.json","digest":"sha256:8509490198fa2db5eadb9ec9ff9e11d3d0638a7d9a537a3af1fc208a8c6571d3"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/code-generation/code-generation-plan.md","id":"R-01","fingerprint":"sha256:b6030728af5729c8b72bdfefc51e0551b7bc30abae35813d1e3eb92d424ef80a","status":"Accepted risk","decided_at_severity":"Major","reviewed_record":{"path":".aidlc-engine/reviews/code-generation/units/sorting-core/4be437220155d14b/1.json","digest":"sha256:be846be085be8e80b87385bfcbaa876a991d160deee0dd323fb817fd86523a9e"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/code-generation/code-generation-plan.md","id":"R-02","fingerprint":"sha256:13471b5900831b1ba1a8a29c4c3f02cbfbf700413a5911090e128d5eb72e2fd5","status":"Accepted risk","decided_at_severity":"Major","reviewed_record":{"path":".aidlc-engine/reviews/code-generation/units/sorting-core/4be437220155d14b/1.json","digest":"sha256:be846be085be8e80b87385bfcbaa876a991d160deee0dd323fb817fd86523a9e"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/code-generation/code-generation-plan.md","id":"R-03","fingerprint":"sha256:05bd2a0fec680d69db0f44f64f5b195954bf25c4050fd9cdd119a14ea5f49987","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/code-generation/units/sorting-core/4be437220155d14b/1.json","digest":"sha256:be846be085be8e80b87385bfcbaa876a991d160deee0dd323fb817fd86523a9e"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/code-generation/code-generation-plan.md","id":"R-04","fingerprint":"sha256:36f6a7011b4d7f22caa33f993d0c7e7071396164c5aa0290e4bf75a4aff240fd","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/code-generation/units/sorting-core/4be437220155d14b/1.json","digest":"sha256:be846be085be8e80b87385bfcbaa876a991d160deee0dd323fb817fd86523a9e"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/code-generation/code-generation-plan.md","id":"R-05","fingerprint":"sha256:9f3131baa7e91c19789baace9a2cfba48f2e0448dbfd40b187e1cf6ab9ef1aaa","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/code-generation/units/sorting-core/4be437220155d14b/1.json","digest":"sha256:be846be085be8e80b87385bfcbaa876a991d160deee0dd323fb817fd86523a9e"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/code-generation/code-generation-plan.md","id":"R-06","fingerprint":"sha256:c9a825377b4f8e882e1e4e15772a32c11e7b1e25181cff129c758a266087f7bf","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/code-generation/units/sorting-core/4be437220155d14b/1.json","digest":"sha256:be846be085be8e80b87385bfcbaa876a991d160deee0dd323fb817fd86523a9e"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/code-generation/code-generation-plan.md","id":"R-07","fingerprint":"sha256:dce20b31e6022a08a2bd79882d099e85e3eaea7fb377f3fa7494de5cecd88c2c","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/code-generation/units/sorting-core/4be437220155d14b/1.json","digest":"sha256:be846be085be8e80b87385bfcbaa876a991d160deee0dd323fb817fd86523a9e"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/code-generation/code-generation-plan.md","id":"R-08","fingerprint":"sha256:7d077efc5d695590657c5ddf38f2c4272eb0dc92cfcdd51c1d501e4f52b4a63f","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/code-generation/units/sorting-core/4be437220155d14b/1.json","digest":"sha256:be846be085be8e80b87385bfcbaa876a991d160deee0dd323fb817fd86523a9e"}},{"artifact":"aidlc/spaces/default/intents/261018-streamlit-string-sorter-2/construction/sorting-core/code-generation/code-generation-plan.md","id":"R-09","fingerprint":"sha256:d85fe9f83ebaf99245f85a53d2cd9500101cdc3bf8a89250d9817f1e3ac0f4c9","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/code-generation/units/sorting-core/4be437220155d14b/1.json","digest":"sha256:be846be085be8e80b87385bfcbaa876a991d160deee0dd323fb817fd86523a9e"}}]}
+
+---
+
+## Stage Completion
+**Timestamp**: 2026-10-21T05:09:14Z
+**Event**: STAGE_COMPLETED
+**Stage**: code-generation
+**Validation Basis**: {"graphContract":"sha256:ac0ef7ae03ae2fcfab9e2a94500d84c4fe00d00384d1f8dcff92c96b2e1f50de","inputs":[{"artifact":"contract-summary","contentHash":"sha256:14e4b9d569f68c9edc984f70baa40f7c5bad2afb0fbf33d1d090fdb37421b3a0","instanceCount":1,"presentCount":1,"producer":"contract-design","required":false,"structureHash":"sha256:5c61ef7cc78aec3a1dab7c5e00d060a2177956e957e6f8204d1521c37413857d"},{"artifact":"entities","contentHash":"sha256:82c6fb80d03d8a1329f7652d1a61bfa8bf22166a9007b1d1c41c42a2a7f96323","instanceCount":1,"presentCount":1,"producer":"functional-design","required":false,"structureHash":"sha256:c844d21a886c1580c0bfdab5a6f2035d6fb02cc56782b3f89430d95ce59f82cd"},{"artifact":"functional-spec","contentHash":"sha256:c1345641da2439e74ac251f7727ff70314103bd0a6d794bad567ba79aa05307b","instanceCount":2,"presentCount":2,"producer":"functional-design","required":false,"structureHash":"sha256:fb41c50d463d285ec07c75d98665f11b6c9a99c7ad384e9846437097b2e10786"},{"artifact":"infrastructure-specification","contentHash":"sha256:14c2b66ddb6f95a7fcca3c256550503b770a5ed7ea1313f963dcca59ad8817a9","instanceCount":2,"presentCount":2,"producer":"infrastructure-design","required":false,"structureHash":"sha256:ba3d71f046c5852df188bbaaaf93134142f3ecd2ee04ba4e131e1149c898788e"},{"artifact":"performance-design","contentHash":"sha256:17756935b4d0ea0850861a1f846ec73c13a19960bd1a1ca98f43f2a82f657636","instanceCount":1,"presentCount":1,"producer":"nfr-design","required":false,"structureHash":"sha256:2d34ccca80b2b10dc73689c2ddc22e9487afba07f2eece4f38a74d85aa4d163a"},{"artifact":"requirements","contentHash":"sha256:4362dec7d1c91b4edf246b0cab420279e8079928f12473925933da24545c6997","instanceCount":1,"presentCount":1,"producer":"requirements-analysis","required":true,"structureHash":"sha256:28b1c473c5331babb5afaf4ce30c530aec15c9c798e3f583bde02b23725a3e5f"},{"artifact":"rules","contentHash":"sha256:46e803405a9124d10d751d71b5ce554bbf69cf9bdcab9e5b436fe9f1b30ec24e","instanceCount":1,"presentCount":1,"producer":"functional-design","required":false,"structureHash":"sha256:a1e5c1dbd19b65e9bf38fcb79a9d4a6442947a1de5a62bb72d00142d440b682c"},{"artifact":"security-design","contentHash":"sha256:5bc464c6293635d240ee6d5033bb7fbe502d04ecfcb7b360516d82ddd23d94ef","instanceCount":3,"presentCount":3,"producer":"nfr-design","required":false,"structureHash":"sha256:5de91d75e78280e728c45088d09ebf51654bd4a06d3255b2965e5bb7a1cf3b2b"},{"artifact":"unit-of-work","contentHash":"sha256:65a1bd8b1e4aa9e8dffe1443d6d579a17e51a92b7998fba08eee525cada77828","instanceCount":1,"presentCount":1,"producer":"units-generation","required":true,"structureHash":"sha256:3d43fe8064251c0f861d38bbc5678c509f9f43f4fdae9ab593fe68aff3afd798"}],"outputs":[{"artifact":"code-generation-plan","contentHash":"sha256:3d377130d8ed6036a2423f88847ce9e4e7a094a224bfc3a0c3c9046467eca89a","instanceCount":3,"presentCount":3,"producer":"code-generation","required":true,"structureHash":"sha256:ca8730e4783cdf33922a20d43638378143ca688ec2cb7459de9343f97f975d2a"},{"artifact":"code-summary","contentHash":"sha256:b89793fb9bc6b4a2c84238657e599d70a9e0074b3e5371aca6617a2f46da3d9c","instanceCount":3,"presentCount":3,"producer":"code-generation","required":true,"structureHash":"sha256:0a0412ac6ae69fe969e6a8807f7702cb3b08262db963067146b6e1e7a05bcef0"},{"artifact":"traceability","contentHash":"sha256:2f5630aa527c490e1e3f4499ace4228eeb75007458b5f08c26137e9cff2c330e","instanceCount":3,"presentCount":3,"producer":"code-generation","required":true,"structureHash":"sha256:87ef862850fc10b9a37ea8cdb2c314f04a3e023edbe88408f805b5c0c725abef"},{"artifact":"unit-test-instructions","contentHash":"sha256:23ed335c3303e4ea54891fbc8ded0427f274460be92c91555f9f57f605173e4a","instanceCount":3,"presentCount":3,"producer":"code-generation","required":true,"structureHash":"sha256:db800b8505f62eea891e9233c02d5956036d9f87c21d7a9c7c6f11c0173fdef4"}],"projectType":"greenfield","schema":3}
+**Details**: Stage Code Generation approved by gate
+
+---
+
+## Stage Start
+**Timestamp**: 2026-10-21T05:09:14Z
+**Event**: STAGE_STARTED
+**Stage**: build-and-test
+**Agent**: aidlc-quality-agent
+**Answer Mode**: guide (reused from market-research)
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-21T05:11:00Z
+**Event**: HUMAN_TURN
+**Session**: ses_eadbaadf8ffez0O6jhuS3t9M0k
+
+---
