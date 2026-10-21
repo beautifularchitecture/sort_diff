@@ -1,0 +1,16 @@
+{
+  "stage": "infrastructure-design",
+  "unit": "playground-ui",
+  "upstream_ids": ["NFR1.1", "NFR2.1", "NFR2.2", "NFR3.1", "NFR3.2", "NFR3.3", "NFR3.6", "NFR4.1", "NFR4.2"],
+  "coverage": [
+    { "id": "NFR1.1", "status": "OK", "target": "infrastructure-specification.md Deployment (platform default sizing); no numeric latency target, PD-2 recompute-per-rerun needs no infra" },
+    { "id": "NFR2.1", "status": "OK", "target": "infrastructure-specification.md Networking topology (platform-provided public HTTPS only, NFR3.4); SD-2 escaping stays in-process, CI has no exposed surface" },
+    { "id": "NFR2.2", "status": "OK", "target": "monitoring-design.md SLI table deferred to best-effort (no SLO); PD-3 single-pass render consumes no infrastructure" },
+    { "id": "NFR3.1", "status": "OK", "target": "infrastructure-specification.md Infrastructure Services (no code execution services); SD-1/SD-6 stay in-process" },
+    { "id": "NFR3.2", "status": "OK", "target": "cicd-pipeline.md job tests step 5 No-I/O guard; SD-4 no I/O, one Streamlit process" },
+    { "id": "NFR3.3", "status": "OK", "target": "cicd-pipeline.md Secrets Management (no secrets); SD-5 no identity, public unauthenticated deployment" },
+    { "id": "NFR3.6", "status": "OK", "target": "infrastructure-specification.md Resource sizing (platform default); the 100-string cap (SD-3) bounds worst-case work with no scaling infrastructure needed" },
+    { "id": "NFR4.1", "status": "OK", "target": "cicd-pipeline.md job ui steps 3-4 (black --check, ruff check on app.py and tests/)" },
+    { "id": "NFR4.2", "status": "OK", "target": "cicd-pipeline.md job ui step 6 (pytest --cov=app --cov-fail-under=80); job tests step 6 core coverage" }
+  ]
+}
