@@ -1,0 +1,11 @@
+{
+  "stage": "nfr-requirements",
+  "unit": "delivery-pipeline",
+  "upstream_ids": ["NFR1", "NFR2", "NFR3", "NFR4"],
+  "coverage": [
+    { "id": "NFR1", "status": "OK", "target": "NFR4.1 (CI runs pytest as the correctness gate; NFR1 itself is verified by U1/U2 tests)" },
+    { "id": "NFR2", "status": "OK", "target": "NFR3.2 (no integrations beyond the hosting platform; NFR2.3 self-contained)" },
+    { "id": "NFR3", "status": "OK", "target": "NFR3.1, NFR3.2, NFR3.3" },
+    { "id": "NFR4", "status": "OK", "target": "NFR4.1" }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "stage": "code-generation",
+  "unit": "playground-ui",
+  "version": 1,
+  "writes": [
+    { "path": "app.py" },
+    { "path": "tests/ui/test_app.py" },
+    { "path": "requirements.txt" }
+  ]
+}

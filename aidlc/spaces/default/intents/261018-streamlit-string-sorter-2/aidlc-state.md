@@ -80,6 +80,18 @@
 
 
 
+
+
+
+
+
+
+- **Active Unit**: delivery-pipeline
+
+- **Unit Stage**: nfr-requirements
+
+- **Unit State**: in-progress
+
 ## Phase Progress
 <!-- Status values: Pending, Active, Verified, Skipped -->
 
@@ -142,7 +154,7 @@ Per unit: [TBD]
 - **Current Stage**: functional-design
 - **Next Stage**: nfr-requirements
 - **Status**: Running
-- **Last Updated**: 2026-10-19T20:59:24Z
+- **Last Updated**: 2026-10-21T01:17:44Z
 
 - **Construction Autonomy Mode**: autonomous
 

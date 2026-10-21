@@ -1,5 +1,7 @@
-# Development / test dependencies (minimum-version ranges, Python >= 3.12)
-# The sorting_core package itself is pure stdlib and needs no runtime deps.
+# App runtime and development/test dependencies (minimum-version ranges,
+# Python >= 3.12). streamlit is the app runtime (Contract 2); the
+# sorting_core package itself is pure stdlib.
+streamlit>=1.40
 pytest>=8.0
 pytest-cov>=5.0
 black>=24.0
