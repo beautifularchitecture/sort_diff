@@ -1,0 +1,12 @@
+{
+  "stage": "infrastructure-design",
+  "unit": "delivery-pipeline",
+  "upstream_ids": ["NFR2.3", "NFR3.3", "NFR3.4", "NFR4.1", "NFR4.2"],
+  "coverage": [
+    { "id": "NFR2.3", "status": "OK", "target": "infrastructure-specification.md Infrastructure Services and Storage strategy (no database/cache/queue/artifact store; platform-owned deploy); no external integrations" },
+    { "id": "NFR3.3", "status": "OK", "target": "infrastructure-specification.md Deployment Networking topology (no VPC/inbound surface we configure) and cicd-pipeline.md Secrets Management (no secrets); push-to-main only, no identity surface" },
+    { "id": "NFR3.4", "status": "OK", "target": "cicd-pipeline.md Secrets Management (no secrets.*, permissions: contents: read) and Infrastructure Services (PyPI install only, platform-managed deploy, no deploy credential)" },
+    { "id": "NFR4.1", "status": "OK", "target": "cicd-pipeline.md checks steps 4-5 (black --check ., ruff check . with if: always())" },
+    { "id": "NFR4.2", "status": "OK", "target": "cicd-pipeline.md checks step 6 (bare pytest; floor in the project pytest configuration, sorting_core-scoped)" }
+  ]
+}

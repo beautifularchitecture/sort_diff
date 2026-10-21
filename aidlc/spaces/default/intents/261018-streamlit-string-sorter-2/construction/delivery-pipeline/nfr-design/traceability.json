@@ -1,0 +1,12 @@
+{
+  "stage": "nfr-design",
+  "unit": "delivery-pipeline",
+  "upstream_ids": ["NFR2.3", "NFR3.3", "NFR3.4", "NFR4.1", "NFR4.2"],
+  "coverage": [
+    { "id": "NFR2.3", "status": "OK", "target": "SD-1, SD-2, SD-5 (no PR trigger, closed step list, platform-owned deploy; no external integrations)" },
+    { "id": "NFR3.3", "status": "OK", "target": "SD-1, SD-2, SD-5 (no identity surface: no PR context, no accounts, platform-owned deploy)" },
+    { "id": "NFR3.4", "status": "OK", "target": "SD-5, SD-6, SD-7 (no stored credential, read-only token, no external systems)" },
+    { "id": "NFR4.1", "status": "OK", "target": "SD-2, SD-3 (Black and Ruff checks in the workflow)" },
+    { "id": "NFR4.2", "status": "OK", "target": "SD-4 (pytest with the 80% coverage gate in pyproject.toml)" }
+  ]
+}

@@ -86,9 +86,15 @@
 
 
 
+
+
+
+
+
+
 - **Active Unit**: delivery-pipeline
 
-- **Unit Stage**: nfr-requirements
+- **Unit Stage**: infrastructure-design
 
 - **Unit State**: in-progress
 
@@ -154,7 +160,7 @@ Per unit: [TBD]
 - **Current Stage**: functional-design
 - **Next Stage**: nfr-requirements
 - **Status**: Running
-- **Last Updated**: 2026-10-21T01:17:44Z
+- **Last Updated**: 2026-10-21T03:41:18Z
 
 - **Construction Autonomy Mode**: autonomous
 

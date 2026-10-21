@@ -12,7 +12,7 @@ A. On every push to `main` and every pull request: run install â†’ Black check â
 B. On push to `main` only: run the checks and deploy in the same job, no pull-request gate
 X. Other (please specify)
 
-[Answer]:
+[Answer]: B
 
 ## Q2: Dependency install step and pinned CI environment
 
@@ -22,7 +22,7 @@ A. `pip install -r requirements.txt` on the runner, using the project's Python 3
 B. Add a lockfile (for example `pip-compile`) and install from it for fully reproducible CI
 X. Other (please specify)
 
-[Answer]:
+[Answer]: A
 
 ## Q3: Deployment credentials
 
@@ -32,7 +32,7 @@ A. Store the deploy credential as a GitHub Actions repository secret (never in t
 B. Use a no-secret mechanism (for example a hosted Git integration that auto-deploys on push, with no credential in the workflow)
 X. Other (please specify)
 
-[Answer]:
+[Answer]: B
 
 ## Q4: Coverage and lint strictness in CI
 
@@ -42,7 +42,7 @@ A. Fail the pipeline if any test fails or the sorting-logic coverage floor (80%)
 B. Report coverage and lint as warnings that do not fail the build
 X. Other (please specify)
 
-[Answer]:
+[Answer]: A
 
 ## Q5: Deployment failure handling
 
@@ -52,7 +52,7 @@ A. Fail the pipeline run and surface the error; the previous deployment stays li
 B. Retry the deploy step a fixed number of times before failing
 X. Other (please specify)
 
-[Answer]:
+[Answer]: A
 
 ---
 
@@ -63,4 +63,4 @@ Does this all look correct before I generate the artifact?
 - Looks correct
 - Request changes
 
-[Answer]:
+[Answer]: Looks correct
