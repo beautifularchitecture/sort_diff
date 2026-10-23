@@ -2,13 +2,17 @@
 > This file is kept up to date automatically while the stage runs. Add observations at the review step, not by editing here directly.
 
 ## Interpretations
-<!-- example: 2026-05-29T10:14:32Z — chose REST over GraphQL; the consuming team only needs CRUD, revisit if subscriptions land -->
+- 2026-10-22T20:36:44Z — treated the U3 workflow-only pytest run's exit 1 (0% coverage) as a measurement artifact of the project-wide `--cov=sorting_core` addopts, not a test failure; the full-suite `pytest` run is the authoritative floor measurement and reports 100%.
+- 2026-10-22T20:36:44Z — read "N/A" rows in U1's traceability as valid reassignment to U2 (display concerns), not missing coverage, because U2 holds OK entries for the same ACs.
 
 ## Deviations
-<!-- example: 2026-05-29T10:14:32Z — skipped the optional caching layer the stage prose suggested; the dataset is small enough that it adds risk -->
+- 2026-10-22T20:36:44Z — generated `performance-test-instructions.md` and `security-test-instructions.md` although the Standard strategy only requires integration instructions; the stage's produces contract lists all seven artifacts and measurable security/NFR targets exist.
+- 2026-10-22T20:36:44Z — installed dependencies with `uv pip` because the workspace `.venv` has no pip module; no dependency versions or configuration changed.
+- 2026-10-22T20:36:44Z — did not use `--no-cov` or lower the coverage floor to make the U3 scoped command pass; documented the artifact instead, per the stage's rule against weakening verification.
 
 ## Tradeoffs
-<!-- example: 2026-05-29T10:14:32Z — picked TDD over BDD this run; the team is unit-first and the domain is well-understood -->
+- 2026-10-22T20:36:44Z — accepted a FAIL verdict in `cross-unit-traceability.md` for the identifier-level FR/NFR gap rather than inferring coverage from AC proxies; keeps the record honest at the cost of surfacing a defect the gate must address.
+- 2026-10-22T20:36:44Z — verified the CI workflow by structural tests plus a local run of the same commands instead of waiting for a live GitHub Actions run; the live run is owned by the next stage.
 
 ## Open questions
-<!-- example: 2026-05-29T10:14:32Z — confirm the retention window with compliance before the next stage hardens the schema -->
+- 2026-10-22T20:36:44Z — should the three `traceability.json` files be refreshed with FR-level and NFR1.2/NFR3.5/NFR4.3 rows before CI Pipeline, or accepted as a known documentation gap at this gate?
