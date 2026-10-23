@@ -160,9 +160,9 @@ Per unit: [TBD]
 - **Current Stage**: ci-pipeline
 - **Next Stage**: deployment-pipeline
 - **Status**: Running
-- **Last Updated**: 2026-10-23T04:26:44Z
+- **Last Updated**: 2026-10-23T05:26:53Z
 
-- **Construction Autonomy Mode**: autonomous
+- **Construction Autonomy Mode**: gated
 
 ## Session Resume Point
 - **Last Completed Stage**: build-and-test

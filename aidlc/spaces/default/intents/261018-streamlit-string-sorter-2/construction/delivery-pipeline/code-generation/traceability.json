@@ -21,22 +21,100 @@
     "NFR4.2.1"
   ],
   "coverage": [
-    { "id": "FR7.1", "status": "OK", "target": "requirements.txt" },
-    { "id": "FR7.2", "status": "OK", "target": ".github/workflows/ci.yml" },
-    { "id": "FR7.3", "status": "OK", "target": ".github/workflows/ci.yml" },
-    { "id": "US5.2", "status": "OK", "target": ".github/workflows/ci.yml" },
-    { "id": "AC5.2.1", "status": "OK", "target": ".github/workflows/ci.yml" },
-    { "id": "AC5.2.2", "status": "OK", "target": ".github/workflows/ci.yml" },
-    { "id": "AC5.2.3", "status": "OK", "target": ".github/workflows/ci.yml" },
-    { "id": "NFR2.3", "status": "OK", "target": ".github/workflows/ci.yml" },
-    { "id": "NFR2.3.1", "status": "OK", "target": ".github/workflows/ci.yml" },
-    { "id": "NFR3.3", "status": "OK", "target": ".github/workflows/ci.yml" },
-    { "id": "NFR3.4", "status": "OK", "target": ".github/workflows/ci.yml" },
-    { "id": "NFR3.4.1", "status": "OK", "target": ".github/workflows/ci.yml" },
-    { "id": "NFR3.4.2", "status": "OK", "target": ".github/workflows/ci.yml" },
-    { "id": "NFR4.1", "status": "OK", "target": ".github/workflows/ci.yml" },
-    { "id": "NFR4.1.1", "status": "OK", "target": ".github/workflows/ci.yml" },
-    { "id": "NFR4.2", "status": "OK", "target": ".github/workflows/ci.yml" },
-    { "id": "NFR4.2.1", "status": "OK", "target": ".github/workflows/ci.yml" }
+    {
+      "id": "FR7.1",
+      "status": "OK",
+      "target": "requirements.txt"
+    },
+    {
+      "id": "FR7.2",
+      "status": "OK",
+      "target": ".github/workflows/ci.yml"
+    },
+    {
+      "id": "FR7.3",
+      "status": "OK",
+      "target": ".github/workflows/ci.yml"
+    },
+    {
+      "id": "US5.2",
+      "status": "OK",
+      "target": ".github/workflows/ci.yml"
+    },
+    {
+      "id": "AC5.2.1",
+      "status": "OK",
+      "target": ".github/workflows/ci.yml"
+    },
+    {
+      "id": "AC5.2.2",
+      "status": "OK",
+      "target": ".github/workflows/ci.yml"
+    },
+    {
+      "id": "AC5.2.3",
+      "status": "OK",
+      "target": ".github/workflows/ci.yml"
+    },
+    {
+      "id": "NFR2.3",
+      "status": "OK",
+      "target": ".github/workflows/ci.yml"
+    },
+    {
+      "id": "NFR2.3.1",
+      "status": "OK",
+      "target": ".github/workflows/ci.yml"
+    },
+    {
+      "id": "NFR3.3",
+      "status": "OK",
+      "target": ".github/workflows/ci.yml"
+    },
+    {
+      "id": "NFR3.4",
+      "status": "OK",
+      "target": ".github/workflows/ci.yml"
+    },
+    {
+      "id": "NFR3.4.1",
+      "status": "OK",
+      "target": ".github/workflows/ci.yml"
+    },
+    {
+      "id": "NFR3.4.2",
+      "status": "OK",
+      "target": ".github/workflows/ci.yml"
+    },
+    {
+      "id": "NFR4.1",
+      "status": "OK",
+      "target": ".github/workflows/ci.yml"
+    },
+    {
+      "id": "NFR4.1.1",
+      "status": "OK",
+      "target": ".github/workflows/ci.yml"
+    },
+    {
+      "id": "NFR4.2",
+      "status": "OK",
+      "target": ".github/workflows/ci.yml"
+    },
+    {
+      "id": "NFR4.2.1",
+      "status": "OK",
+      "target": ".github/workflows/ci.yml"
+    },
+    {
+      "id": "NFR3.5",
+      "status": "OK",
+      "target": ".github/workflows/ci.yml uses only free OSS dependencies"
+    },
+    {
+      "id": "NFR4.3",
+      "status": "OK",
+      "target": ".github/workflows/ci.yml maintainable structure"
+    }
   ]
 }

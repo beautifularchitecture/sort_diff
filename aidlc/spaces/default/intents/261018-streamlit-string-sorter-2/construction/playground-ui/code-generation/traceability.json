@@ -42,43 +42,315 @@
     "NFR4.2"
   ],
   "coverage": [
-    { "id": "AC1.1.1", "status": "OK", "target": "app.py" },
-    { "id": "AC1.1.2", "status": "OK", "target": "app.py" },
-    { "id": "AC1.1.3", "status": "OK", "target": "app.py" },
-    { "id": "AC1.1.4", "status": "OK", "target": "app.py" },
-    { "id": "AC1.2.1", "status": "OK", "target": "app.py" },
-    { "id": "AC1.2.2", "status": "OK", "target": "app.py" },
-    { "id": "AC1.2.3", "status": "OK", "target": "app.py" },
-    { "id": "AC2.1.1", "status": "OK", "target": "app.py" },
-    { "id": "AC2.1.2", "status": "OK", "target": "app.py" },
-    { "id": "AC2.1.3", "status": "OK", "target": "app.py" },
-    { "id": "AC3.1.1", "status": "OK", "target": "app.py" },
-    { "id": "AC3.1.2", "status": "OK", "target": "app.py" },
-    { "id": "AC3.1.3", "status": "OK", "target": "app.py" },
-    { "id": "AC3.1.4", "status": "OK", "target": "app.py" },
-    { "id": "AC3.2.1", "status": "OK", "target": "app.py" },
-    { "id": "AC3.2.2", "status": "OK", "target": "app.py" },
-    { "id": "AC3.2.3", "status": "OK", "target": "app.py" },
-    { "id": "AC3.2.4", "status": "OK", "target": "app.py" },
-    { "id": "AC3.2.5", "status": "OK", "target": "app.py" },
-    { "id": "AC4.1.1", "status": "OK", "target": "app.py" },
-    { "id": "AC4.1.2", "status": "OK", "target": "app.py" },
-    { "id": "AC5.1.1", "status": "OK", "target": "app.py" },
-    { "id": "AC5.1.2", "status": "OK", "target": "app.py" },
-    { "id": "BR1.1", "status": "OK", "target": "app.py" },
-    { "id": "BR1.2", "status": "OK", "target": "app.py" },
-    { "id": "BR1.3", "status": "OK", "target": "app.py" },
-    { "id": "BR2.1", "status": "OK", "target": "app.py" },
-    { "id": "BR2.2", "status": "OK", "target": "app.py" },
-    { "id": "BR2.3", "status": "OK", "target": "app.py" },
-    { "id": "NFR1.1", "status": "OK", "target": "app.py" },
-    { "id": "NFR2.1", "status": "OK", "target": "app.py" },
-    { "id": "NFR2.2", "status": "OK", "target": "app.py" },
-    { "id": "NFR3.1", "status": "OK", "target": "app.py" },
-    { "id": "NFR3.2", "status": "OK", "target": "app.py" },
-    { "id": "NFR3.3", "status": "OK", "target": "app.py" },
-    { "id": "NFR3.6", "status": "OK", "target": "app.py" },
-    { "id": "NFR4.1", "status": "OK", "target": "app.py" },
-    { "id": "NFR4.2", "status": "OK", "target": "tests/ui/test_app.py" }
+    {
+      "id": "AC1.1.1",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "AC1.1.2",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "AC1.1.3",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "AC1.1.4",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "AC1.2.1",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "AC1.2.2",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "AC1.2.3",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "AC2.1.1",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "AC2.1.2",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "AC2.1.3",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "AC3.1.1",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "AC3.1.2",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "AC3.1.3",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "AC3.1.4",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "AC3.2.1",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "AC3.2.2",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "AC3.2.3",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "AC3.2.4",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "AC3.2.5",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "AC4.1.1",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "AC4.1.2",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "AC5.1.1",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "AC5.1.2",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "BR1.1",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "BR1.2",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "BR1.3",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "BR2.1",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "BR2.2",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "BR2.3",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "NFR1.1",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "NFR2.1",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "NFR2.2",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "NFR3.1",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "NFR3.2",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "NFR3.3",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "NFR3.6",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "NFR4.1",
+      "status": "OK",
+      "target": "app.py"
+    },
+    {
+      "id": "NFR4.2",
+      "status": "OK",
+      "target": "tests/ui/test_app.py"
+    },
+    {
+      "id": "FR1.1",
+      "status": "OK",
+      "target": "app.py text area for manual entry"
+    },
+    {
+      "id": "FR1.2",
+      "status": "OK",
+      "target": "app.py word list multiselect"
+    },
+    {
+      "id": "FR1.3",
+      "status": "OK",
+      "target": "sorting_core/normalize.py lowercases ASCII A\u2013Z"
+    },
+    {
+      "id": "FR1.4",
+      "status": "OK",
+      "target": "app.py displays input echo"
+    },
+    {
+      "id": "FR1.5",
+      "status": "OK",
+      "target": "app.py uses WordListProvider bundled list"
+    },
+    {
+      "id": "FR3.1",
+      "status": "OK",
+      "target": "app.py calls AccuracyChecker"
+    },
+    {
+      "id": "FR3.2",
+      "status": "OK",
+      "target": "app.py displays accuracy pass/fail"
+    },
+    {
+      "id": "FR3.3",
+      "status": "OK",
+      "target": "app.py checks all three algorithms"
+    },
+    {
+      "id": "FR4.1",
+      "status": "OK",
+      "target": "app.py displays comparisons"
+    },
+    {
+      "id": "FR4.2",
+      "status": "OK",
+      "target": "app.py displays comparisons"
+    },
+    {
+      "id": "FR4.3",
+      "status": "OK",
+      "target": "app.py displays swaps"
+    },
+    {
+      "id": "FR4.4",
+      "status": "OK",
+      "target": "app.py renders counts as integers"
+    },
+    {
+      "id": "FR4.5",
+      "status": "OK",
+      "target": "app.py handles edge cases"
+    },
+    {
+      "id": "FR5.1",
+      "status": "OK",
+      "target": "app.py Streamlit application"
+    },
+    {
+      "id": "FR5.2",
+      "status": "OK",
+      "target": "app.py Sort button runs all three"
+    },
+    {
+      "id": "FR5.3",
+      "status": "OK",
+      "target": "app.py displays name, list, comparisons, swaps, accuracy"
+    },
+    {
+      "id": "FR5.4",
+      "status": "OK",
+      "target": "app.py shows input"
+    },
+    {
+      "id": "FR5.5",
+      "status": "OK",
+      "target": "app.py clear presentation"
+    },
+    {
+      "id": "FR6.1",
+      "status": "OK",
+      "target": "app.py exact empty message, no columns"
+    },
+    {
+      "id": "FR6.2",
+      "status": "OK",
+      "target": "app.py handles single string"
+    },
+    {
+      "id": "FR6.3",
+      "status": "OK",
+      "target": "app.py handles identical strings"
+    },
+    {
+      "id": "FR6.4",
+      "status": "OK",
+      "target": "app.py drops empty tokens via normalize"
+    },
+    {
+      "id": "NFR1.2",
+      "status": "OK",
+      "target": "app.py uses core counting definitions"
+    },
+    {
+      "id": "NFR4.3",
+      "status": "OK",
+      "target": "app.py clean, testable"
+    }
   ]
 }
