@@ -144,7 +144,7 @@ Per unit: [TBD]
 - [x] infrastructure-design — EXECUTE
 - [x] code-generation — EXECUTE
 - [x] build-and-test — EXECUTE
-- [-] ci-pipeline — EXECUTE
+- [?] ci-pipeline — EXECUTE
 
 ### OPERATION PHASE
 - [ ] deployment-pipeline — EXECUTE
@@ -160,7 +160,7 @@ Per unit: [TBD]
 - **Current Stage**: ci-pipeline
 - **Next Stage**: deployment-pipeline
 - **Status**: Running
-- **Last Updated**: 2026-10-23T05:26:53Z
+- **Last Updated**: 2026-10-23T19:15:12Z
 
 - **Construction Autonomy Mode**: gated
 
