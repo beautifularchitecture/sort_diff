@@ -74,3 +74,9 @@
 
 <!-- Project-specific corrections from human feedback. -->
 <!-- Format: NEVER/ALWAYS [behavior] (learned [date]) -->
+- When local `main` is behind remote, treat the actual remote HEAD as the release candidate if the only difference is non-application configuration; do not force-push shared `main` to match a stale local commit. (learned 2026-10-26) <!-- cid:261018-streamlit-string-sorter-2:deployment-execution:a3a82909b139fcfc1508ccb7356ed10ce5edddf2bf0daf2a4d6b1b888c0cba26 -->
+- Accept the app owner's authenticated manual smoke test as post-deploy evidence when the app is private and the orchestrator cannot sign in or drive a browser. (learned 2026-10-26) <!-- cid:261018-streamlit-string-sorter-2:deployment-execution:3237cea350cdd9ac3beec00547d21b8d2fb4baa56112b096f0e1c412a2c6bdcd -->
+- When the platform owns deployment and no credential is available, have the app owner perform the console steps and supply the build log. (learned 2026-10-26) <!-- cid:261018-streamlit-string-sorter-2:deployment-execution:d1e37784196c9b2e4f7b5bfadb800cf8c157df77c528811d3be2d18e7793f203 -->
+- When an app is private, use build logs, CI results, and owner smoke tests instead of unauthenticated HTTP content checks. (learned 2026-10-26) <!-- cid:261018-streamlit-string-sorter-2:deployment-execution:cc7d96272f959f85085581ad0601c5485fce6634d1e409ac0492c178ad552a39 -->
+- Never force-push shared `main` to rewind a non-application commit; accept the newer HEAD when the application diff is empty. (learned 2026-10-26) <!-- cid:261018-streamlit-string-sorter-2:deployment-execution:75928cdcdf86a2893ade0d6dacff80aef02ca852226fc3a3c8c165508a0def17 -->
+- Do not block a deployment on app visibility; record public access as pending when the app is functional for the authenticated owner. (learned 2026-10-26) <!-- cid:261018-streamlit-string-sorter-2:deployment-execution:915f262f402a965501837a593886952f16a9c81cd2769375e5c1cda1d9f29182 -->
