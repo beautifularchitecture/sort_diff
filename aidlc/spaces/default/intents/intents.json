@@ -22,5 +22,13 @@
     "scope": "refactor",
     "status": "in-flight",
     "request": "b47395d9"
+  },
+  {
+    "uuid": "01a18430-8437-7b86-90e3-b6424326d8be",
+    "slug": "swap-counters-fix",
+    "dirName": "261028-swap-counters-fix",
+    "scope": "classic",
+    "status": "in-flight",
+    "request": "d33b9168"
   }
 ]
