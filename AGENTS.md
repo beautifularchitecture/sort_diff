@@ -3,10 +3,10 @@
 Python 3.12 / Streamlit app. `app.py` (UI only) → `sorting_core/` (pure-stdlib domain, re-exported from `__init__.py`). `tests/ui/test_app.py` uses `streamlit.testing.v1.AppTest`.
 
 ## Commands
-- Setup: `python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt`
-- Run: `streamlit run app.py`
-- Full gate (CI order): `black --check .` → `ruff check .` → `pytest`
-- Single test: `pytest tests/test_algorithms.py::test_name --no-cov`  
+- Setup: install uv; no manual virtual environment to create or activate. `uv run` / `uvx` provision Python and `requirements.txt` on demand.
+- Run: `uv run --with-requirements requirements.txt streamlit run app.py`
+- Full gate (CI order): `uvx black --check .` → `uvx ruff check .` → `uvx --with-requirements requirements.txt pytest`
+- Single test: `uvx --with-requirements requirements.txt pytest tests/test_algorithms.py::test_name --no-cov`  
   (partial runs fail without `--no-cov` because `pyproject.toml` sets `--cov=sorting_core --cov-fail-under=80`; coverage only measures `sorting_core`)
 
 ## Critical constraints (tests enforce)

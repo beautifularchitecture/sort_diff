@@ -14,5 +14,13 @@
     "scope": "feature",
     "status": "complete",
     "request": "6b06ff2d"
+  },
+  {
+    "uuid": "01a183fc-e74c-771c-afe9-3515f7badf2c",
+    "slug": "uvx-migration",
+    "dirName": "261028-uvx-migration",
+    "scope": "refactor",
+    "status": "in-flight",
+    "request": "b47395d9"
   }
 ]
